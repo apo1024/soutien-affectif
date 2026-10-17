@@ -22,10 +22,23 @@ h1{font-size:1rem;font-weight:600;margin:0 0 8px;color:var(--muted);letter-spaci
 .row b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums}
 .row span{font-size:.8rem;color:var(--muted)}
 svg{width:100%;height:70px;margin-top:18px}
+.lock{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.lock input{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);width:100%}
+.lock button{font:inherit;font-weight:600;padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;cursor:pointer}
+.err{color:var(--accent);font-size:.9rem;min-height:1.4em}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
-<div class="card">
+<div class="card" id="login">
+  <h1>Soutien Affectif — statistiques</h1>
+  <form class="lock" id="lockForm">
+    <input type="password" id="pw" placeholder="Mot de passe" autocomplete="current-password" autofocus>
+    <button type="submit">Entrer</button>
+    <div class="err" id="err"></div>
+  </form>
+</div>
+<div class="card" id="panel" hidden>
   <h1>Soutien Affectif — personnes connectées maintenant</h1>
   <div class="count" id="count">–</div>
   <div class="sub" id="sub">connexion…</div>
@@ -36,8 +49,34 @@ svg{width:100%;height:70px;margin-top:18px}
   </div>
   <div class="status"><span class="dot" id="dot"></span><span id="state">connexion au relais…</span></div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/mqtt@5/dist/mqtt.min.js"></script>
 <script>
+var SALT = 'acf4d8ad1dd9d4a8edaa7a9b22f7e091';
+var HASH = '9dc7103cd8e518028ead11f5e6534c9180600dcfaaf6e4d937b1988609975ebb';
+async function hashPw(pw) {
+  var salt = new Uint8Array(SALT.match(/../g).map(function (h) { return parseInt(h, 16); }));
+  var key = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveBits']);
+  var bits = await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt: salt, iterations: 200000 }, key, 256);
+  return Array.from(new Uint8Array(bits)).map(function (b) { return b.toString(16).padStart(2, '0'); }).join('');
+}
+function unlock() {
+  try { sessionStorage.setItem('sa-stats', HASH); } catch (e) {}
+  document.getElementById('login').hidden = true;
+  document.getElementById('panel').hidden = false;
+  var s = document.createElement('script');
+  s.src = 'https://cdn.jsdelivr.net/npm/mqtt@5/dist/mqtt.min.js';
+  s.onload = start;
+  document.head.appendChild(s);
+}
+document.getElementById('lockForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  var err = document.getElementById('err');
+  err.textContent = 'Vérification…';
+  if (await hashPw(document.getElementById('pw').value) === HASH) unlock();
+  else { err.textContent = 'Mot de passe incorrect.'; document.getElementById('pw').select(); }
+});
+try { if (sessionStorage.getItem('sa-stats') === HASH) unlock(); } catch (e) {}
+
+function start() {
 var TOPIC = 'soutien-affectif-5b20042376e5/presence/';
 var TTL = 40000;              // un visiteur est compté s'il a donné signe de vie dans les 40 dernières secondes
 var visitors = {}, allIds = {}, peak = 0, history = [];
@@ -74,6 +113,7 @@ client.on('message', function (topic, payload) {
   render();
 });
 setInterval(render, 5000);
+}
 </script>
 </body>
 </html>
