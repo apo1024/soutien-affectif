@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Visiteurs en direct</title>
+<style>
+:root{--bg:#faf7f5;--card:#fff;--text:#2b2326;--muted:#7a6d71;--accent:#b4475f;--line:#eadfe1}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1719;--card:#262022;--text:#f3ecee;--muted:#a99ca0;--accent:#e07a92;--line:#3a3134}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px 28px;width:100%;max-width:520px;text-align:center}
+h1{font-size:1rem;font-weight:600;margin:0 0 8px;color:var(--muted);letter-spacing:.02em}
+.count{font-size:5.5rem;font-weight:700;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.sub{color:var(--muted);margin-top:8px;font-size:.95rem}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:.85rem;color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:#aaa}
+.dot.on{background:#2f9e5b;animation:p 2s infinite}
+@keyframes p{50%{opacity:.4}}
+.row{display:flex;justify-content:space-around;margin-top:24px;border-top:1px solid var(--line);padding-top:18px}
+.row b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums}
+.row span{font-size:.8rem;color:var(--muted)}
+svg{width:100%;height:70px;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Soutien Affectif — personnes connectées maintenant</h1>
+  <div class="count" id="count">–</div>
+  <div class="sub" id="sub">connexion…</div>
+  <svg id="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div class="row">
+    <div><b id="peak">0</b><span>pic depuis l'ouverture</span></div>
+    <div><b id="seen">0</b><span>visites vues depuis l'ouverture</span></div>
+  </div>
+  <div class="status"><span class="dot" id="dot"></span><span id="state">connexion au relais…</span></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mqtt@5/dist/mqtt.min.js"></script>
+<script>
+var TOPIC = 'soutien-affectif-5b20042376e5/presence/';
+var TTL = 40000;              // un visiteur est compté s'il a donné signe de vie dans les 40 dernières secondes
+var visitors = {}, allIds = {}, peak = 0, history = [];
+var $ = function (id) { return document.getElementById(id); };
+
+function render() {
+  var now = Date.now(), n = 0, active = 0;
+  for (var k in visitors) {
+    if (now - visitors[k].t > TTL) { delete visitors[k]; continue; }
+    n++; if (visitors[k].v) active++;
+  }
+  peak = Math.max(peak, n);
+  $('count').textContent = n;
+  $('sub').textContent = n === 0 ? 'personne en ce moment' : active + ' sur l’onglet du site, ' + (n - active) + ' en arrière-plan';
+  $('peak').textContent = peak;
+  $('seen').textContent = Object.keys(allIds).length;
+  history.push(n); if (history.length > 60) history.shift();
+  var max = Math.max(1, Math.max.apply(null, history)), w = 300 / 59;
+  var pts = history.map(function (v, i) { return (i * w).toFixed(1) + ',' + (66 - v / max * 60).toFixed(1); }).join(' ');
+  $('spark').innerHTML = '<polyline fill="none" stroke="currentColor" stroke-width="2" points="' + pts + '" style="color:var(--accent)"/>';
+}
+
+var client = mqtt.connect('wss://broker.hivemq.com:8884/mqtt', { clientId: 'sa_admin_' + Math.random().toString(36).slice(2, 10), reconnectPeriod: 5000 });
+client.on('connect', function () {
+  client.subscribe(TOPIC + '+');
+  $('dot').className = 'dot on'; $('state').textContent = 'en direct';
+});
+client.on('close', function () { $('dot').className = 'dot'; $('state').textContent = 'déconnecté, nouvelle tentative…'; });
+client.on('message', function (topic, payload) {
+  var id = topic.slice(TOPIC.length), msg = payload.toString();
+  if (!/^[a-z0-9]{1,16}$/.test(id)) return;
+  if (msg === '') { delete visitors[id]; }
+  else { visitors[id] = { t: Date.now(), v: msg === 'on' }; allIds[id] = 1; }
+  render();
+});
+setInterval(render, 5000);
+</script>
+</body>
+</html>
