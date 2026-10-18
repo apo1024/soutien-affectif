@@ -20,6 +20,12 @@ h1{font-size:1rem;font-weight:600;margin:0 0 8px;color:var(--muted);letter-spaci
 @keyframes p{50%{opacity:.4}}
 .row{display:flex;justify-content:space-around;margin-top:24px;border-top:1px solid var(--line);padding-top:18px}
 .row b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums}
+.pays{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px;min-height:8px}
+.pays span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:.85rem}
+.ptot{margin-top:14px;text-align:left;font-size:.9rem}
+.ptot summary{cursor:pointer;color:var(--muted);text-align:center}
+.ptot ol{margin:10px 0 0;padding-left:22px}
+.ptot li{padding:2px 0}
 .row.total{margin-top:12px;padding-top:14px}
 .row span{font-size:.8rem;color:var(--muted)}
 svg{width:100%;height:70px;margin-top:18px}
@@ -52,10 +58,12 @@ svg{width:100%;height:70px;margin-top:18px}
     <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
     <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
   </div>
+  <div class="pays" data-f="plive"></div>
   <div class="row total">
     <div><b data-f="tvis">…</b><span>visites au total</span></div>
     <div><b data-f="tdev">…</b><span>appareils différents au total</span></div>
   </div>
+  <details class="ptot"><summary>Visites par pays (total)</summary><div data-f="ptot">…</div></details>
 </div>
 <div class="card site" data-site="cna">
   <h1>CNA Prep — personnes connectées maintenant</h1>
@@ -66,10 +74,12 @@ svg{width:100%;height:70px;margin-top:18px}
     <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
     <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
   </div>
+  <div class="pays" data-f="plive"></div>
   <div class="row total">
     <div><b data-f="tvis">…</b><span>visites au total</span></div>
     <div><b data-f="tdev">…</b><span>appareils différents au total</span></div>
   </div>
+  <details class="ptot"><summary>Visites par pays (total)</summary><div data-f="ptot">…</div></details>
 </div>
 <div class="status"><span class="dot" id="dot"></span><span id="state">connexion au relais…</span></div>
 </div>
@@ -105,6 +115,12 @@ var SITES = {
   sa:  { topic: 'soutien-affectif-5b20042376e5/presence/', ns: 'apo1024-soutien-5b2004' },
   cna: { topic: 'cna-prep-8c9bf415b53b/presence/', ns: 'apo1024-cna-8c9bf4' }
 };
+/*PAYS*/var PAYS_TZ = {"America/New_York":"US","America/Detroit":"US","America/Chicago":"US","America/Denver":"US","America/Phoenix":"US","America/Los_Angeles":"US","America/Anchorage":"US","America/Boise":"US","America/Juneau":"US","America/Sitka":"US","America/Adak":"US","America/Nome":"US","America/Yakutat":"US","America/Menominee":"US","Pacific/Honolulu":"US","America/Toronto":"CA","America/Montreal":"CA","America/Vancouver":"CA","America/Edmonton":"CA","America/Winnipeg":"CA","America/Halifax":"CA","America/St_Johns":"CA","America/Regina":"CA","America/Moncton":"CA","America/Whitehorse":"CA","America/Yellowknife":"CA","America/Iqaluit":"CA","America/Glace_Bay":"CA","America/Goose_Bay":"CA","America/Swift_Current":"CA","America/Dawson_Creek":"CA","America/Atikokan":"CA","America/Port-au-Prince":"HT","America/Santo_Domingo":"DO","America/Puerto_Rico":"PR","America/Havana":"CU","America/Jamaica":"JM","America/Nassau":"BS","America/Grand_Turk":"TC","America/Guadeloupe":"GP","America/Martinique":"MQ","America/Cayenne":"GF","America/Mexico_City":"MX","America/Cancun":"MX","America/Monterrey":"MX","America/Tijuana":"MX","America/Merida":"MX","America/Chihuahua":"MX","America/Hermosillo":"MX","America/Mazatlan":"MX","America/Sao_Paulo":"BR","America/Fortaleza":"BR","America/Recife":"BR","America/Bahia":"BR","America/Belem":"BR","America/Manaus":"BR","America/Cuiaba":"BR","America/Maceio":"BR","America/Campo_Grande":"BR","America/Santiago":"CL","America/Punta_Arenas":"CL","Europe/Paris":"FR","Europe/Brussels":"BE","Europe/Zurich":"CH","Europe/London":"GB","Europe/Madrid":"ES","Africa/Dakar":"SN","Africa/Kinshasa":"CD","Africa/Lubumbashi":"CD","Africa/Abidjan":"CI","Africa/Douala":"CM","Asia/Dhaka":"BD"};
+var PAYS_CODES = ["US", "CA", "HT", "DO", "PR", "CU", "JM", "BS", "TC", "GP", "MQ", "GF", "MX", "BR", "CL", "FR", "BE", "CH", "GB", "ES", "SN", "CD", "CI", "CM", "BD", "ZZ"];
+function paysDuFuseau() { try { var z = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; return PAYS_TZ[z] || (/^America\/(Indiana|Kentucky|North_Dakota)\//.test(z) ? "US" : "ZZ"); } catch (e) { return "ZZ"; } }/*FINPAYS*/
+var NOMS = (function () { try { return new Intl.DisplayNames(['fr'], { type: 'region' }); } catch (e) { return null; } })();
+function drapeau(c) { return c === 'ZZ' ? '🌐' : '<img src="https://flagcdn.com/20x15/' + c.toLowerCase() + '.png" width="20" height="15" alt="" style="vertical-align:-2px">'; }
+function nomPays(c) { return c === 'ZZ' ? 'Autre / inconnu' : (NOMS ? NOMS.of(c) : c); }
 var TTL = 40000;              // un visiteur est compté s'il a donné signe de vie dans les 40 dernières secondes
 Object.keys(SITES).forEach(function (k) {
   var S = SITES[k], box = document.querySelector('[data-site="' + k + '"]');
@@ -125,6 +141,10 @@ function render() {
     S.f('sub').textContent = n === 0 ? 'personne en ce moment' : active + ' sur l’onglet du site, ' + (n - active) + ' en arrière-plan';
     S.f('peak').textContent = S.peak;
     S.f('seen').textContent = Object.keys(S.allIds).length;
+    var byC = {};
+    for (var vid in S.visitors) { var c = S.visitors[vid].c || 'ZZ'; byC[c] = (byC[c] || 0) + 1; }
+    S.f('plive').innerHTML = Object.keys(byC).sort(function (a, b) { return byC[b] - byC[a]; })
+      .map(function (c) { return '<span>' + drapeau(c) + ' ' + nomPays(c) + ' ' + byC[c] + '</span>'; }).join('');
     S.history.push(n); if (S.history.length > 60) S.history.shift();
     var max = Math.max(1, Math.max.apply(null, S.history)), w = 300 / 59;
     var pts = S.history.map(function (v, i) { return (i * w).toFixed(1) + ',' + (66 - v / max * 60).toFixed(1); }).join(' ');
@@ -145,7 +165,7 @@ client.on('message', function (topic, payload) {
   var S = SITES[k], id = topic.slice(S.topic.length), msg = payload.toString();
   if (!/^[a-z0-9]{1,16}$/.test(id)) return;
   if (msg === '') { delete S.visitors[id]; }
-  else { S.visitors[id] = { t: Date.now(), v: msg === 'on' }; S.allIds[id] = 1; }
+  else { var parts = msg.split('|'); S.visitors[id] = { t: Date.now(), v: parts[0] === 'on', c: /^[A-Z]{2}$/.test(parts[1] || '') ? parts[1] : 'ZZ' }; S.allIds[id] = 1; }
   render();
 });
 function totals() {
@@ -158,7 +178,37 @@ function totals() {
     });
   });
 }
-totals(); setInterval(totals, 30000);
+totals(); setInterval(totals, 60000);
+// Le service gratuit limite les requêtes : une à la fois, espacées, et un rafraîchissement toutes les 15 minutes.
+async function getCount(ns, key) {
+  for (var essai = 0; essai < 4; essai++) {
+    try {
+      var r = await fetch('https://abacus.jasoncameron.dev/get/' + ns + '/' + key);
+      if (r.status === 404) return 0;
+      if (r.ok) { var j = await r.json(); return j.value || 0; }
+      if (r.status !== 429) return null;
+    } catch (e) { return null; }
+    await wait(4000 * (essai + 1));   // service occupé : on attend puis on réessaie
+  }
+  return null;
+}
+var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+async function totalsPays() {
+  for (var k of Object.keys(SITES)) {
+    var S = SITES[k], list = [], missed = 0;
+    S.f('ptot').innerHTML = '<p style="text-align:center;color:var(--muted)">Chargement…</p>';
+    for (var c of PAYS_CODES) {
+      var v = await getCount(S.ns, 'pays-' + c);
+      if (v === null) missed++; else if (v > 0) list.push([c, v]);
+      await wait(650);
+    }
+    list.sort(function (a, b) { return b[1] - a[1]; });
+    S.f('ptot').innerHTML = (list.length ? '<ol>' + list.map(function (x) { return '<li>' + drapeau(x[0]) + ' ' + nomPays(x[0]) + ' : <b>' + x[1].toLocaleString('fr-FR') + '</b></li>'; }).join('') + '</ol>'
+      : '<p style="text-align:center;color:var(--muted)">Pas encore de visite comptée par pays.</p>')
+      + (missed ? '<p style="text-align:center;color:var(--muted);font-size:.8rem">' + missed + ' pays non chargés (service occupé), nouvel essai dans 15 min.</p>' : '');
+  }
+}
+setTimeout(totalsPays, 3000); setInterval(totalsPays, 900000);
 setInterval(render, 5000);
 }
 </script>
