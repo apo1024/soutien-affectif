@@ -1,6 +1,6 @@
 // Tests du module « Analyse progressive d'un récit » : node src/check_recit.cjs (après python build.py)
 const fs = require('fs'), vm = require('vm'), assert = require('assert');
-const code = fs.readFileSync('index.html', 'utf8').match(/<script>([\s\S]*)<\/script>/)[1];
+const code = fs.readFileSync('_test_full.html', 'utf8').match(/<script>([\s\S]*)<\/script>/)[1];
 const saved = {}, els = {};
 const el = (x) => els[x] ??= { innerHTML: '', value: '', checked: false, textContent: '', querySelectorAll: () => [], classList: { toggle() {} }, scrollIntoView() {}, click() {}, focus() {}, setRangeText() {} };
 const ctx = {

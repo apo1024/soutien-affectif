@@ -1,6 +1,6 @@
 // Tests d'acceptation des fiches enrichies « Doutes de tromperie » : node src/check_fiches_ui.cjs (après python build.py)
 const fs = require('fs'), vm = require('vm'), assert = require('assert');
-const code = fs.readFileSync('index.html', 'utf8').match(/<script>([\s\S]*)<\/script>/)[1];
+const code = fs.readFileSync('_test_full.html', 'utf8').match(/<script>([\s\S]*)<\/script>/)[1];
 const saved = {}, els = {};
 const el = (x) => els[x] ??= { innerHTML: '', value: '', checked: false, textContent: '', querySelectorAll: () => [], classList: { toggle() {}, add() {} }, scrollIntoView() {}, click() {}, focus() {}, setRangeText() {} };
 const ctx = {
