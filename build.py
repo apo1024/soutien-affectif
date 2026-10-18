@@ -27,20 +27,12 @@ def page(content_js, recit_js_data, extra=''):
 # Full version (everything open) — used only by the automated tests, never published.
 (root/'_test_full.html').write_text(page(content,recit),encoding='utf-8')
 
-# Public showcase: home + fiche 02 + danger signs readable; the rest is encrypted with the members' code.
-code_file=root/'.access_code'
-access=(os.environ.get('SOUTIEN_ACCESS_CODE') or (code_file.read_text(encoding='utf-8') if code_file.exists() else '')).strip().upper()
-if not access:
-    raise SystemExit('Code membres manquant : créez le fichier .access_code (jamais publié) ou la variable SOUTIEN_ACCESS_CODE.')
-from cryptography.hazmat.primitives.ciphers.aead import AESGCM
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from cryptography.hazmat.primitives import hashes
-ITER=310000
-salt, iv = os.urandom(16), os.urandom(12)
-key=PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=salt,iterations=ITER).derive(access.encode('utf-8'))
+# Public showcase: home + fiche 02 + danger signs readable; the rest is encrypted for every subscriber code.
+import sys
+sys.path.insert(0, r'C:/Projets/prive')
+import keyring   # trousseau des 500 codes abonnés (+ ancien code commun)
 secret=json.dumps({'CONTENT':content,'RECIT':recit},ensure_ascii=False).encode('utf-8')
-ct=AESGCM(key).encrypt(iv,secret,None)
-payload={'salt':base64.b64encode(salt).decode(),'iv':base64.b64encode(iv).decode(),'iter':ITER,'data':base64.b64encode(ct).decode()}
+payload=keyring.seal(secret)
 
 public=copy.deepcopy(content)
 for code,c in public.items():
@@ -48,5 +40,5 @@ for code,c in public.items():
     c['fiches']=[f if i==FREE_FICHE else None for i,f in enumerate(c['fiches'])]
     c['signs']=[]                     # « Corps & expressions » is a members page; dangerItems stay public (safety first)
 public_recit={l:{} for l in recit}
-(root/'index.html').write_text(page(public,public_recit,' const MEMBERS_PAYLOAD='+json.dumps(payload)+';'),encoding='utf-8')
+(root/'index.html').write_text(page(public,public_recit,' const MEMBERS_PAYLOAD='+json.dumps(payload)+';\n'+keyring.JS),encoding='utf-8')
 print('Site generated: index.html (vitrine publique + espace membres chiffré) and _test_full.html (tests)')

@@ -1,6 +1,6 @@
 /* ===== Espace membres =====
    Le lien public (vidéo) ouvre une vitrine : l'accueil, la fiche 02 et « Signaux de danger ».
-   Tout le reste est chiffré (AES-GCM, clé dérivée du code par PBKDF2) dans MEMBERS_PAYLOAD :
+   Tout le reste est chiffré (AES-GCM) dans MEMBERS_PAYLOAD ; chaque code abonné de la liste (C:\Projets\prive\codes_abonnes.csv) l'ouvre :
    sans le code donné aux abonnés de la chaîne, ce contenu est illisible, même en lisant le code de la page.
    La version complète utilisée par les tests n'a pas de MEMBERS_PAYLOAD : tout y est ouvert. */
 const MEMBERS_KEY = 'soutien-acces-membres';
@@ -16,11 +16,7 @@ function isLocked(p, i) {
   return !FREE_PAGES.includes(p);
 }
 async function membersDecrypt(code) {
-  const P = MEMBERS_PAYLOAD, b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
-  const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(String(code).trim().toUpperCase()), 'PBKDF2', false, ['deriveKey']);
-  const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(P.salt), iterations: P.iter, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
-  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(P.iv) }, key, b64(P.data));
-  return JSON.parse(new TextDecoder().decode(plain));
+  return JSON.parse(await ccOpen(MEMBERS_PAYLOAD, code)); // ccOpen : trousseau des codes abonnés (keyring.py)
 }
 function membersApply(data) {
   for (const l of Object.keys(data.CONTENT)) Object.assign(CONTENT[l], data.CONTENT[l]);
@@ -32,7 +28,7 @@ async function membersUnlock(code, silent) {
   if (msg && !silent) msg.textContent = t('lockChecking');
   try {
     membersApply(await membersDecrypt(code));
-    try { localStorage.setItem(MEMBERS_KEY, String(code).trim().toUpperCase()); } catch { /* private mode */ }
+    try { const c = String(code).trim().toUpperCase(); localStorage.setItem(MEMBERS_KEY, c); localStorage.setItem('compumaster-code', c); } catch { /* private mode */ }
     const target = lockedFrom; lockedFrom = null;
     if (target && target.p === 'path') start(target.i); else navigate(target ? target.p : 'home');
     return true;
@@ -79,5 +75,5 @@ cards = function (q) {
   });
 };
 // A member who already entered the code is let in again silently
-try { const saved = localStorage.getItem(MEMBERS_KEY); if (saved && !unlocked) membersUnlock(saved, true).then((ok) => { if (ok) { current = 'home'; shell(); render(); } }); } catch { /* */ }
+try { const saved = localStorage.getItem(MEMBERS_KEY) || localStorage.getItem('compumaster-code'); /* même code pour tous les sites apo1024.github.io */ if (saved && !unlocked) membersUnlock(saved, true).then((ok) => { if (ok) { current = 'home'; shell(); render(); } }); } catch { /* */ }
 if (!unlocked && current === 'home') render();
