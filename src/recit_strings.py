@@ -379,7 +379,7 @@ FR.update({
  "markCentralLink": "→ Marquez les points centraux dans l'étape 1", "markVerifiableLink": "→ Indiquez les affirmations vérifiables dans l'étape 1",
  "consentNeeded": "Cochez d'abord le consentement de la personne pour enregistrer sa réponse.",
  "aiSizeBig": "environ 2 Go", "aiSizeSmall": "environ 1 Go",
- "aiConfirm": "La suggestion IA fonctionne entièrement dans ce navigateur, sans envoyer le dossier. Téléchargement de {size} la première fois (plusieurs minutes), puis gardé en cache. Continuer ?",
+ "aiConfirm": "La suggestion IA fonctionne entièrement dans ce navigateur, sans envoyer le dossier. Téléchargement la première fois : {size} (plusieurs minutes), puis gardé en cache. Continuer ?",
  "aiTextLabel": "TEXTE DU DOSSIER", "aiGapsLabel": "ÉCARTS DÉJÀ RELEVÉS (n'en invente pas d'autres)", "aiAmbLabel": "AMBIGUÏTÉS DÉJÀ RELEVÉES", "aiNoneLabel": "aucun",
  "aiBadJson": "La réponse de l'IA n'était pas dans le format attendu : elle n'est pas utilisée.", "aiRaw": "Voir la réponse brute",
  "aiAbsent": "absent du dossier", "aiLeading": "question orientée : à reformuler", "aiCentral": "Affirmations centrales", "aiAmbiguities": "Ambiguïtés", "aiGaps": "Écarts", "aiQuestions": "Questions neutres proposées",
@@ -424,6 +424,12 @@ HT.update({
  "aiAbsent": "pa nan dosye a", "aiLeading": "kesyon ki pouse yon repons: refòmile l", "aiCentral": "Afimasyon santral", "aiAmbiguities": "Sa ki pa klè", "aiGaps": "Diferans", "aiQuestions": "Kesyon net yo pwopoze",
  "aiSystem": "Ou ede egzamine yon istwa san ou pa janm jije. Sèvi SÈLMAN ak enfòmasyon ki nan tèks yo ba ou a. Kopye lè yo ak chif yo egzakteman. Si yon enfòmasyon manke, ekri \"pa presize\". Pa envante okenn moun, okenn kote, okenn fè. Site sèlman diferans nou deja jwenn yo. Kesyon yo dwe louvri epi net: kòmanse ak \"Èske w ka presize…\", \"Kisa k te pase…\" oswa \"Kijan…\". Entèdi: \"Poukisa\", \"ta konsa\", nenpòt mo ki jije. Pa janm di si yon moun ap bay manti. Reponn an kreyòl ayisyen, SÈLMAN ak JSON sa a: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (twa kesyon pou pi plis).",
 })
+
+# --- Cache du modèle IA (état du bouton)
+FR.update({"aiCachedHint": "déjà téléchargé sur cet appareil — chargement rapide", "aiFirstHint": "premier téléchargement : {size}, ensuite gardé sur l'appareil", "aiReady": "prêt"})
+EN.update({"aiCachedHint": "already downloaded on this device — quick loading", "aiFirstHint": "first download of {size}, then kept on the device", "aiReady": "ready"})
+ES.update({"aiCachedHint": "ya descargado en este dispositivo — carga rápida", "aiFirstHint": "primera descarga de {size}, luego se guarda en el dispositivo", "aiReady": "listo"})
+HT.update({"aiCachedHint": "deja telechaje sou aparèy sa a — li chaje vit", "aiFirstHint": "premye telechajman {size}, apre sa li rete sou aparèy la", "aiReady": "pare"})
 
 data = {"fr": FR, "en": EN, "es": ES, "ht": HT}
 keys = set(FR)

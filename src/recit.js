@@ -682,11 +682,39 @@ const ROLE_WORDS = {
 };
 const LEADING = /^\s*(pourquoi|why|por ?qu[eé]|poukisa)\b|\b(si tard|so late|tan tarde|ta konsa|pourquoi ne|why didn'?t|why don'?t)\b/i;
 
-function recitAiPick() { return (navigator.deviceMemory || 4) >= 8 ? 'big' : 'small'; }
+const RECIT_AI_KEY = 'soutien-recit-ai-model';
+let recitAiCached = null; // null = not checked yet, true / false once the browser cache was inspected
+function recitAiSaved() { try { return localStorage.getItem(RECIT_AI_KEY); } catch { return null; } }
+function recitAiPick() {
+  const saved = recitAiSaved();
+  const k = Object.keys(RECIT_AI_MODELS).find((x) => RECIT_AI_MODELS[x] === saved);
+  return k || ((navigator.deviceMemory || 4) >= 8 ? 'big' : 'small');
+}
+/** Is the model already in the browser cache (WebLLM stores it with the Cache API)? Checked once, no download. */
+async function recitAiCheckCache() {
+  if (recitAiCached !== null) return recitAiCached;
+  try {
+    const id = RECIT_AI_MODELS[recitAiPick()];
+    const names = typeof caches !== 'undefined' ? await caches.keys() : [];
+    let hit = false;
+    for (const n of names.filter((x) => /webllm/i.test(x))) {
+      const keys = await (await caches.open(n)).keys();
+      if (keys.some((r) => r.url.includes(id))) { hit = true; break; }
+    }
+    recitAiCached = hit && recitAiSaved() === id;
+  } catch { recitAiCached = false; }
+  return recitAiCached;
+}
+/** Ask the browser not to evict the site's storage (model + cases) when the disk fills up. */
+async function recitAiPersist() {
+  try { if (navigator.storage && navigator.storage.persist && !(await navigator.storage.persisted())) await navigator.storage.persist(); } catch { /* not supported */ }
+}
 function recitAiButton() {
   if (typeof navigator === 'undefined' || !navigator.gpu) return `<small>${R('aiUnavailable')}</small>`;
   const busy = recitAiLoading && !recitAi;
-  return `<button ${busy ? 'disabled' : ''} onclick="recitAiRun()">✦ ${R('aiButton')}</button>`;
+  if (recitAiCached === null && !recitAi) recitAiCheckCache().then(() => { const b = document.querySelector('#recitAiBtn'); if (b) b.outerHTML = recitAiButton(); });
+  const hint = recitAi ? R('aiReady') : recitAiCached ? R('aiCachedHint') : recitAiCached === false ? R('aiFirstHint').replace('{size}', R(recitAiPick() === 'big' ? 'aiSizeBig' : 'aiSizeSmall')) : '';
+  return `<span id="recitAiBtn"><button ${busy ? 'disabled' : ''} onclick="recitAiRun()">✦ ${R('aiButton')}</button>${hint ? ` <small>${esc(hint)}</small>` : ''}</span>`;
 }
 function recitAiRenderProgress() {
   const box = document.querySelector('#recitAi'); if (!box) return;
@@ -707,10 +735,15 @@ function recitAiEngine() {
 }
 async function recitAiRun() {
   if (recitAiLoading && !recitAi) return; // already loading: never start a second download
-  if (!recitAi && !confirm(R('aiConfirm').replace('{size}', R(recitAiPick() === 'big' ? 'aiSizeBig' : 'aiSizeSmall')))) return;
+  if (!recitAi && !(await recitAiCheckCache()) && !confirm(R('aiConfirm').replace('{size}', R(recitAiPick() === 'big' ? 'aiSizeBig' : 'aiSizeSmall')))) return;
+  if (!recitAi) recitAiPersist();
   const db = recitLoad(), d = recitGet(db, recitView.id), L = d.analysisLang || lang;
   try {
-    if (!recitAi) { const p = recitAiEngine(); recitWork(); recitAi = await p; }
+    if (!recitAi) {
+      const p = recitAiEngine(); recitWork(); recitAi = await p;
+      try { localStorage.setItem(RECIT_AI_KEY, recitAiModel); } catch { /* private mode */ }
+      recitAiCached = true;
+    }
     recitAiLast = `<p>${R('aiThinking')}</p>`; recitWork();
     recitAnalyse(d); recitSave(db);
     const material = [RL('aiTextLabel', L) + ':', ...recitSources(d).map((s) => `[${s.label}] ${s.text}`), '',
