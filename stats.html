@@ -27,27 +27,42 @@ svg{width:100%;height:70px;margin-top:18px}
 .lock button{font:inherit;font-weight:600;padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;cursor:pointer}
 .err{color:var(--accent);font-size:.9rem;min-height:1.4em}
 [hidden]{display:none!important}
+#panel{width:100%;max-width:520px;display:flex;flex-direction:column;gap:16px;align-items:center}
+#panel .card{padding:24px 22px}
+#panel .count{font-size:4.5rem}
 </style>
 </head>
 <body>
 <div class="card" id="login">
-  <h1>Soutien Affectif — statistiques</h1>
+  <h1>Statistiques — Soutien Affectif et CNA Prep</h1>
   <form class="lock" id="lockForm">
     <input type="password" id="pw" placeholder="Mot de passe" autocomplete="current-password" autofocus>
     <button type="submit">Entrer</button>
     <div class="err" id="err"></div>
   </form>
 </div>
-<div class="card" id="panel" hidden>
+<div id="panel" hidden>
+<div class="card site" data-site="sa">
   <h1>Soutien Affectif — personnes connectées maintenant</h1>
-  <div class="count" id="count">–</div>
-  <div class="sub" id="sub">connexion…</div>
-  <svg id="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div class="count" data-f="count">–</div>
+  <div class="sub" data-f="sub">connexion…</div>
+  <svg data-f="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
   <div class="row">
-    <div><b id="peak">0</b><span>pic depuis l'ouverture</span></div>
-    <div><b id="seen">0</b><span>visites vues depuis l'ouverture</span></div>
+    <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
+    <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
   </div>
-  <div class="status"><span class="dot" id="dot"></span><span id="state">connexion au relais…</span></div>
+</div>
+<div class="card site" data-site="cna">
+  <h1>CNA Prep — personnes connectées maintenant</h1>
+  <div class="count" data-f="count">–</div>
+  <div class="sub" data-f="sub">connexion…</div>
+  <svg data-f="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div class="row">
+    <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
+    <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
+  </div>
+</div>
+<div class="status"><span class="dot" id="dot"></span><span id="state">connexion au relais…</span></div>
 </div>
 <script>
 var SALT = 'acf4d8ad1dd9d4a8edaa7a9b22f7e091';
@@ -77,39 +92,51 @@ document.getElementById('lockForm').addEventListener('submit', async function (e
 try { if (sessionStorage.getItem('sa-stats') === HASH) unlock(); } catch (e) {}
 
 function start() {
-var TOPIC = 'soutien-affectif-5b20042376e5/presence/';
+var SITES = {
+  sa:  { topic: 'soutien-affectif-5b20042376e5/presence/' },
+  cna: { topic: 'cna-prep-8c9bf415b53b/presence/' }
+};
 var TTL = 40000;              // un visiteur est compté s'il a donné signe de vie dans les 40 dernières secondes
-var visitors = {}, allIds = {}, peak = 0, history = [];
-var $ = function (id) { return document.getElementById(id); };
+Object.keys(SITES).forEach(function (k) {
+  var S = SITES[k], box = document.querySelector('[data-site="' + k + '"]');
+  S.f = function (n) { return box.querySelector('[data-f="' + n + '"]'); };
+  S.visitors = {}; S.allIds = {}; S.peak = 0; S.history = [];
+});
 
 function render() {
-  var now = Date.now(), n = 0, active = 0;
-  for (var k in visitors) {
-    if (now - visitors[k].t > TTL) { delete visitors[k]; continue; }
-    n++; if (visitors[k].v) active++;
-  }
-  peak = Math.max(peak, n);
-  $('count').textContent = n;
-  $('sub').textContent = n === 0 ? 'personne en ce moment' : active + ' sur l’onglet du site, ' + (n - active) + ' en arrière-plan';
-  $('peak').textContent = peak;
-  $('seen').textContent = Object.keys(allIds).length;
-  history.push(n); if (history.length > 60) history.shift();
-  var max = Math.max(1, Math.max.apply(null, history)), w = 300 / 59;
-  var pts = history.map(function (v, i) { return (i * w).toFixed(1) + ',' + (66 - v / max * 60).toFixed(1); }).join(' ');
-  $('spark').innerHTML = '<polyline fill="none" stroke="currentColor" stroke-width="2" points="' + pts + '" style="color:var(--accent)"/>';
+  var now = Date.now();
+  Object.keys(SITES).forEach(function (k) {
+    var S = SITES[k], n = 0, active = 0;
+    for (var id in S.visitors) {
+      if (now - S.visitors[id].t > TTL) { delete S.visitors[id]; continue; }
+      n++; if (S.visitors[id].v) active++;
+    }
+    S.peak = Math.max(S.peak, n);
+    S.f('count').textContent = n;
+    S.f('sub').textContent = n === 0 ? 'personne en ce moment' : active + ' sur l’onglet du site, ' + (n - active) + ' en arrière-plan';
+    S.f('peak').textContent = S.peak;
+    S.f('seen').textContent = Object.keys(S.allIds).length;
+    S.history.push(n); if (S.history.length > 60) S.history.shift();
+    var max = Math.max(1, Math.max.apply(null, S.history)), w = 300 / 59;
+    var pts = S.history.map(function (v, i) { return (i * w).toFixed(1) + ',' + (66 - v / max * 60).toFixed(1); }).join(' ');
+    S.f('spark').innerHTML = '<polyline fill="none" stroke="currentColor" stroke-width="2" points="' + pts + '" style="color:var(--accent)"/>';
+  });
 }
 
+var $ = function (id) { return document.getElementById(id); };
 var client = mqtt.connect('wss://broker.hivemq.com:8884/mqtt', { clientId: 'sa_admin_' + Math.random().toString(36).slice(2, 10), reconnectPeriod: 5000 });
 client.on('connect', function () {
-  client.subscribe(TOPIC + '+');
+  Object.keys(SITES).forEach(function (k) { client.subscribe(SITES[k].topic + '+'); });
   $('dot').className = 'dot on'; $('state').textContent = 'en direct';
 });
 client.on('close', function () { $('dot').className = 'dot'; $('state').textContent = 'déconnecté, nouvelle tentative…'; });
 client.on('message', function (topic, payload) {
-  var id = topic.slice(TOPIC.length), msg = payload.toString();
+  var k = Object.keys(SITES).find(function (x) { return topic.indexOf(SITES[x].topic) === 0; });
+  if (!k) return;
+  var S = SITES[k], id = topic.slice(S.topic.length), msg = payload.toString();
   if (!/^[a-z0-9]{1,16}$/.test(id)) return;
-  if (msg === '') { delete visitors[id]; }
-  else { visitors[id] = { t: Date.now(), v: msg === 'on' }; allIds[id] = 1; }
+  if (msg === '') { delete S.visitors[id]; }
+  else { S.visitors[id] = { t: Date.now(), v: msg === 'on' }; S.allIds[id] = 1; }
   render();
 });
 setInterval(render, 5000);
