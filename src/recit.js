@@ -680,6 +680,15 @@ const ROLE_WORDS = {
   es: ['vecino', 'vecina', 'colega', 'compañero', 'compañera', 'amigo', 'amiga', 'hermano', 'hermana', 'madre', 'padre', 'jefe', 'jefa', 'primo', 'prima', 'esposo', 'esposa', 'novio', 'novia', 'amante'],
   ht: ['vwazen', 'vwazin', 'kolèg', 'zanmi', 'frè', 'sè', 'manman', 'papa', 'patwon', 'kouzen', 'kouzin', 'mari', 'madanm', 'mennaj', 'chèf'],
 };
+// JSON schema given to WebLLM as a STRING. "centrales" must not come back empty.
+const RECIT_AI_SCHEMA = JSON.stringify({ type: 'object', properties: {
+  centrales: { type: 'array', items: { type: 'string' }, minItems: 1, maxItems: 8 },
+  ambiguites: { type: 'array', items: { type: 'string' }, maxItems: 8 },
+  ecarts: { type: 'array', items: { type: 'string' }, maxItems: 8 },
+  questions: { type: 'array', items: { type: 'string' }, maxItems: 3 } },
+  required: ['centrales', 'ambiguites', 'ecarts', 'questions'] });
+// Judging or presupposing wording in a question (« comportement changeant », « rentré plus tôt »…)
+const JUDGING = /\b(changeant|suspect|suspecte|bizarre|etrange|louche|mensonge|ment|mentir|cache|cachait|infidel|infidele|trompe|tromper|coupable|plus tot|si tot|changing|suspicious|weird|strange|lying|lie|hiding|cheating|guilty|earlier|cambiante|sospechos[oa]|raro|extrano|miente|mentir|oculta|engana|culpable|mas temprano|dwol|etranj|sispek|manti|kache|twonpe|koupab|pi bone)\b/;
 const LEADING = /^\s*(pourquoi|why|por ?qu[eé]|poukisa)\b|\b(si tard|so late|tan tarde|ta konsa|pourquoi ne|why didn'?t|why don'?t)\b/i;
 
 const RECIT_AI_KEY = 'soutien-recit-ai-model';
@@ -751,11 +760,12 @@ async function recitAiRun() {
       RL('aiAmbLabel', L) + ':', ...(d.ambiguities.length ? d.ambiguities.map((a) => `- « ${a.term} » (${a.claim})`) : ['- ' + RL('aiNoneLabel', L)])].join('\n').slice(0, 7000);
     const res = await recitAi.chat.completions.create({
       messages: [{ role: 'system', content: RL('aiSystem', L) }, { role: 'user', content: material }],
-      temperature: 0, max_tokens: 900, response_format: { type: 'json_object' } });
+      temperature: 0, max_tokens: 900, response_format: { type: 'json_object', schema: RECIT_AI_SCHEMA } });
     recitAiShow(res.choices[0].message.content || '', d);
   } catch (e) {
+    console.error('[Soutien Affectif] Suggestion IA :', e);
     if (!recitAi) recitAiLoading = null; // a failed download can be retried
-    recitAiLast = `<p>${R('aiError')}</p>`;
+    recitAiLast = `<p>${R('aiError')}</p><details><summary>${R('aiErrorDetail')}</summary><pre>${esc(String((e && (e.message || e)) || e).slice(0, 600))}</pre></details>`;
   }
   recitWork();
 }
@@ -785,7 +795,7 @@ function recitAiShow(raw, d) {
   recitAiQuestions = [];
   const item = (txt, isQuestion) => {
     const t = String(typeof txt === 'object' ? (txt.texte || txt.text || txt.question || JSON.stringify(txt)) : txt);
-    const unknown = recitAiUnknown(t, d, L), leading = isQuestion && LEADING.test(t);
+    const unknown = recitAiUnknown(t, d, L), leading = isQuestion && (LEADING.test(t) || JUDGING.test(norm(t)));
     const warn = (unknown.length ? `<span class="recit-warn">⚠ ${R('aiAbsent')} : ${esc(unknown.join(', '))}</span>` : '') + (leading ? `<span class="recit-warn">⚠ ${R('aiLeading')}</span>` : '');
     const ok = !unknown.length && !leading;
     let use = '';

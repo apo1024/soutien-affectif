@@ -383,7 +383,7 @@ FR.update({
  "aiTextLabel": "TEXTE DU DOSSIER", "aiGapsLabel": "ÉCARTS DÉJÀ RELEVÉS (n'en invente pas d'autres)", "aiAmbLabel": "AMBIGUÏTÉS DÉJÀ RELEVÉES", "aiNoneLabel": "aucun",
  "aiBadJson": "La réponse de l'IA n'était pas dans le format attendu : elle n'est pas utilisée.", "aiRaw": "Voir la réponse brute",
  "aiAbsent": "absent du dossier", "aiLeading": "question orientée : à reformuler", "aiCentral": "Affirmations centrales", "aiAmbiguities": "Ambiguïtés", "aiGaps": "Écarts", "aiQuestions": "Questions neutres proposées",
- "aiSystem": "Tu aides à examiner un récit sans jamais juger. N'utilise QUE les informations présentes dans le texte fourni. Recopie les heures et les chiffres exactement. Si une information manque, écris \"non précisé\". N'invente aucune personne, aucun lieu, aucun fait. Ne signale que les écarts déjà relevés. Les questions doivent être ouvertes et neutres : commence par \"Peux-tu préciser…\", \"Que s'est-il passé…\" ou \"Comment…\". Interdits : \"Pourquoi\", \"si tard\", \"pourquoi ne… pas\", tout adjectif de jugement. Ne dis jamais si quelqu'un ment. Réponds en français, UNIQUEMENT avec ce JSON : {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (au plus 3 questions).",
+ "aiSystem": "Tu aides à examiner un récit sans jamais juger. N'utilise QUE les informations présentes dans le texte fourni. Recopie les heures et les chiffres exactement. Si une information manque, écris \"non précisé\". N'invente aucune personne, aucun lieu, aucun fait. Dans \"centrales\", recopie mot pour mot de 3 à 6 faits centraux du texte (jamais une liste vide). Ne signale que les écarts déjà relevés. Les questions doivent être ouvertes et neutres : commence par \"Peux-tu préciser…\", \"Que s'est-il passé…\" ou \"Comment…\". Interdits : \"Pourquoi\", \"si tard\", \"plus tôt\", \"pourquoi ne… pas\", tout mot qui juge ou suppose une faute (changeant, bizarre, suspect, cacher, mentir…). Ne dis jamais si quelqu'un ment. Réponds en français, UNIQUEMENT avec ce JSON : {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (au plus 3 questions).",
 })
 EN.update({
  "refDescription": "Initial description", "amb_thing": "Vague object or action", "amb_approx": "Approximation",
@@ -396,7 +396,7 @@ EN.update({
  "aiTextLabel": "CASE TEXT", "aiGapsLabel": "DISCREPANCIES ALREADY FOUND (do not invent others)", "aiAmbLabel": "AMBIGUITIES ALREADY FOUND", "aiNoneLabel": "none",
  "aiBadJson": "The AI answer was not in the expected format: it is not used.", "aiRaw": "See the raw answer",
  "aiAbsent": "not in the case", "aiLeading": "leading question: rephrase", "aiCentral": "Central claims", "aiAmbiguities": "Ambiguities", "aiGaps": "Discrepancies", "aiQuestions": "Suggested neutral questions",
- "aiSystem": "You help examine an account without ever judging. Use ONLY information present in the text provided. Copy times and numbers exactly. If information is missing, write \"not specified\". Invent no person, place or fact. Only report the discrepancies already found. Questions must be open and neutral: start with \"Can you specify…\", \"What happened…\" or \"How…\". Forbidden: \"Why\", \"so late\", \"why didn't\", any judgemental adjective. Never say whether someone is lying. Answer in English, ONLY with this JSON: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (at most 3 questions).",
+ "aiSystem": "You help examine an account without ever judging. Use ONLY information present in the text provided. Copy times and numbers exactly. If information is missing, write \"not specified\". Invent no person, place or fact. In \"centrales\", copy word for word 3 to 6 central facts from the text (never an empty list). Only report the discrepancies already found. Questions must be open and neutral: start with \"Can you specify…\", \"What happened…\" or \"How…\". Forbidden: \"Why\", \"so late\", \"earlier\", \"why didn't\", any word that judges or presumes a fault (changing, weird, suspicious, hiding, lying…). Never say whether someone is lying. Answer in English, ONLY with this JSON: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (at most 3 questions).",
 })
 ES.update({
  "refDescription": "Descripción inicial", "amb_thing": "Objeto o acción vaga", "amb_approx": "Aproximación",
@@ -409,7 +409,7 @@ ES.update({
  "aiTextLabel": "TEXTO DEL EXPEDIENTE", "aiGapsLabel": "DISCREPANCIAS YA DETECTADAS (no inventes otras)", "aiAmbLabel": "AMBIGÜEDADES YA DETECTADAS", "aiNoneLabel": "ninguna",
  "aiBadJson": "La respuesta de la IA no tenía el formato esperado: no se utiliza.", "aiRaw": "Ver la respuesta bruta",
  "aiAbsent": "ausente del expediente", "aiLeading": "pregunta tendenciosa: reformular", "aiCentral": "Afirmaciones centrales", "aiAmbiguities": "Ambigüedades", "aiGaps": "Discrepancias", "aiQuestions": "Preguntas neutrales propuestas",
- "aiSystem": "Ayudas a examinar un relato sin juzgar nunca. Usa SOLO la información presente en el texto. Copia las horas y las cifras exactamente. Si falta información, escribe \"no precisado\". No inventes personas, lugares ni hechos. Señala solo las discrepancias ya detectadas. Las preguntas deben ser abiertas y neutrales: empieza con \"¿Puedes precisar…\", \"¿Qué pasó…\" o \"¿Cómo…\". Prohibido: \"Por qué\", \"tan tarde\", \"por qué no\", cualquier adjetivo de juicio. Nunca digas si alguien miente. Responde en español, SOLO con este JSON: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (como máximo 3 preguntas).",
+ "aiSystem": "Ayudas a examinar un relato sin juzgar nunca. Usa SOLO la información presente en el texto. Copia las horas y las cifras exactamente. Si falta información, escribe \"no precisado\". No inventes personas, lugares ni hechos. En \"centrales\", copia palabra por palabra de 3 a 6 hechos centrales del texto (nunca una lista vacía). Señala solo las discrepancias ya detectadas. Las preguntas deben ser abiertas y neutrales: empieza con \"¿Puedes precisar…\", \"¿Qué pasó…\" o \"¿Cómo…\". Prohibido: \"Por qué\", \"tan tarde\", \"más temprano\", \"por qué no\", toda palabra que juzgue o suponga una falta (cambiante, raro, sospechoso, ocultar, mentir…). Nunca digas si alguien miente. Responde en español, SOLO con este JSON: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (como máximo 3 preguntas).",
 })
 HT.update({
  "refDescription": "Premye deskripsyon an", "amb_thing": "Bagay oswa aksyon ki pa klè", "amb_approx": "Apeprè",
@@ -422,7 +422,7 @@ HT.update({
  "aiTextLabel": "TÈKS DOSYE A", "aiGapsLabel": "DIFERANS NOU DEJA JWENN (pa envante lòt)", "aiAmbLabel": "SA KI PA KLÈ NOU DEJA JWENN", "aiNoneLabel": "okenn",
  "aiBadJson": "Repons IA a pa t nan fòma yo te tann nan: yo p ap sèvi avè l.", "aiRaw": "Wè repons brit la",
  "aiAbsent": "pa nan dosye a", "aiLeading": "kesyon ki pouse yon repons: refòmile l", "aiCentral": "Afimasyon santral", "aiAmbiguities": "Sa ki pa klè", "aiGaps": "Diferans", "aiQuestions": "Kesyon net yo pwopoze",
- "aiSystem": "Ou ede egzamine yon istwa san ou pa janm jije. Sèvi SÈLMAN ak enfòmasyon ki nan tèks yo ba ou a. Kopye lè yo ak chif yo egzakteman. Si yon enfòmasyon manke, ekri \"pa presize\". Pa envante okenn moun, okenn kote, okenn fè. Site sèlman diferans nou deja jwenn yo. Kesyon yo dwe louvri epi net: kòmanse ak \"Èske w ka presize…\", \"Kisa k te pase…\" oswa \"Kijan…\". Entèdi: \"Poukisa\", \"ta konsa\", nenpòt mo ki jije. Pa janm di si yon moun ap bay manti. Reponn an kreyòl ayisyen, SÈLMAN ak JSON sa a: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (twa kesyon pou pi plis).",
+ "aiSystem": "Ou ede egzamine yon istwa san ou pa janm jije. Sèvi SÈLMAN ak enfòmasyon ki nan tèks yo ba ou a. Kopye lè yo ak chif yo egzakteman. Si yon enfòmasyon manke, ekri \"pa presize\". Pa envante okenn moun, okenn kote, okenn fè. Nan \"centrales\", kopye mo pou mo 3 a 6 fè santral ki nan tèks la (pa janm yon lis vid). Site sèlman diferans nou deja jwenn yo. Kesyon yo dwe louvri epi net: kòmanse ak \"Èske w ka presize…\", \"Kisa k te pase…\" oswa \"Kijan…\". Entèdi: \"Poukisa\", \"ta konsa\", \"pi bonè\", nenpòt mo ki jije oswa ki sipoze yon fot (dwòl, sispèk, kache, manti…). Pa janm di si yon moun ap bay manti. Reponn an kreyòl ayisyen, SÈLMAN ak JSON sa a: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (twa kesyon pou pi plis).",
 })
 
 # --- Cache du modèle IA (état du bouton)
@@ -430,6 +430,10 @@ FR.update({"aiCachedHint": "déjà téléchargé sur cet appareil — chargement
 EN.update({"aiCachedHint": "already downloaded on this device — quick loading", "aiFirstHint": "first download of {size}, then kept on the device", "aiReady": "ready"})
 ES.update({"aiCachedHint": "ya descargado en este dispositivo — carga rápida", "aiFirstHint": "primera descarga de {size}, luego se guarda en el dispositivo", "aiReady": "listo"})
 HT.update({"aiCachedHint": "deja telechaje sou aparèy sa a — li chaje vit", "aiFirstHint": "premye telechajman {size}, apre sa li rete sou aparèy la", "aiReady": "pare"})
+
+# --- Détail d'erreur IA
+FR.update({"aiErrorDetail": "Détail technique"}); EN.update({"aiErrorDetail": "Technical detail"})
+ES.update({"aiErrorDetail": "Detalle técnico"}); HT.update({"aiErrorDetail": "Detay teknik"})
 
 data = {"fr": FR, "en": EN, "es": ES, "ht": HT}
 keys = set(FR)

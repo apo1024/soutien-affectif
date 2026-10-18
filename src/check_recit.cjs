@@ -118,4 +118,13 @@ el('#aText').value = 'Réponse test'; el('#qText').value = 'Q'; el('#aConsent').
 run('recitAddAnswer()');
 assert.equal(el('#aStatus').textContent, run("R('consentNeeded')"), 'P7: message de consentement absent');
 
+// Retour de test n°2 : schéma passé en texte à WebLLM ; questions qui jugent ou présupposent signalées
+assert.equal(typeof run('RECIT_AI_SCHEMA'), 'string', 'le schéma JSON doit être une chaîne pour WebLLM');
+assert(JSON.parse(run('RECIT_AI_SCHEMA')).properties.centrales.minItems === 1, '« centrales » ne doit pas être vide');
+run(`recitAiShow(JSON.stringify({ centrales: ['Marc est rentré à 22 h mardi dernier.'], ambiguites: [], ecarts: [], questions: ['Peux-tu préciser pourquoi il n’est pas rentré plus tôt ?', 'Comment expliques-tu ce comportement changeant ?', 'Que s’est-il passé au bureau mardi soir ?'] }), recitGet(recitLoad(), '${mid}'))`);
+const ai2 = run('recitAiLast');
+assert(/<del>Peux-tu préciser pourquoi il n’est pas rentré plus tôt \?<\/del>/.test(ai2), 'question « plus tôt » non signalée');
+assert(/<del>Comment expliques-tu ce comportement changeant \?<\/del>/.test(ai2), 'question « comportement changeant » non signalée');
+assert.deepEqual(run('JSON.stringify(recitAiQuestions)'), JSON.stringify(['Que s’est-il passé au bureau mardi soir ?']), 'seule la question neutre doit rester utilisable');
+
 console.log('PASS recit (rapport Marc P1–P7 compris): 4 langues — détection (moments, personnes, ouï-dire, nuances, passages incertains, écarts d\'heure), langue, 5 indicateurs, ≤3 questions, 4 vues + édition + liste, conclusion sans verdict, versions, retrait, échappement HTML.');
