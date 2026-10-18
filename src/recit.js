@@ -64,6 +64,21 @@ const LEX = {
     es: ['ellos', 'ellas', 'alguien', 'la gente', 'una persona', 'ese tipo', 'esa chica'],
     ht: ['yo', 'yon moun', 'moun yo', 'nèg sa a', 'fi sa a', 'kèk moun'],
   },
+  // P3 — vague objects or actions, and approximations worth clarifying
+  vagueThing: {
+    fr: ['un truc', 'une chose', 'quelque chose', 'des trucs', 'un machin', 'des affaires', 'sans détailler', 'sans préciser', 'vaguement', 'reste vague', 'je ne sais pas trop'],
+    en: ['something', 'stuff', 'a thing', 'without details', 'without detail', 'vaguely', 'stays vague'],
+    es: ['algo', 'una cosa', 'cosas', 'sin detallar', 'sin precisar', 'vagamente'],
+    ht: ['yon bagay', 'kèk bagay', 'san detay', 'san presize'],
+  },
+  approx: {
+    fr: ['environ', 'à peu près', 'plus ou moins'], en: ['about', 'roughly', 'more or less'],
+    es: ['aproximadamente', 'más o menos'], ht: ['anviwon', 'apeprè', 'apepre'],
+  },
+  // P1 — a time introduced by these markers is the usual reference, not the time of the event
+  habitual: ['au lieu de', 'habituellement', "d'habitude", 'normalement', 'instead of', 'usually', 'normally', 'en lugar de', 'en vez de', 'normalmente', 'habitualmente', 'olye', 'dabitid', 'abityèlman'],
+  // P5 — "at/in/to + noun" marks a place that can be checked
+  place: /\b(au|aux|a la|dans (?:un|une|le|la|les)|chez|at the|in the|to the|en el|en la|al|nan|lakay)\s+[a-z]/,
   stop: {
     fr: 'le la les un une des de du et ou à au aux en dans sur pour par avec ce cet cette ces je tu il elle nous vous ils elles on me te se mon ma mes ton ta tes son sa ses que qui quoi ne pas plus est était été suis a ai avait avoir être y lui leur très bien aussi mais donc alors puis',
     en: 'the a an and or of to in on at for by with this that these those i you he she we they it me him her my your his our their is was were be been am are have had has do did not no very also but then so',
@@ -83,7 +98,11 @@ function hasTerm(text, term) {
   const t = norm(text), w = norm(term);
   return new RegExp('(^|[^a-z0-9])' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^a-z0-9])').test(t);
 }
-function findTerms(text, list) { return (list || []).filter((w) => hasTerm(text, w)); }
+function findTerms(text, list) {
+  const found = (list || []).filter((w) => hasTerm(text, w));
+  // keep the longest expression only (« plus tard » makes « tard » redundant)
+  return found.filter((w) => !found.some((o) => o !== w && hasTerm(o, w)));
+}
 
 /** Détection simple de langue (mots fréquents) — toujours confirmée par l'utilisateur. */
 function detectLang(text) {
@@ -99,8 +118,15 @@ function detectLang(text) {
 }
 
 /** Repères factuels extraits d'une phrase : heures, dates, jours, nombres. */
-function facts(text, l) {
-  const t = norm(text), out = { times: [], dates: [], days: [], numbers: [] };
+const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const HOUR_TXT = '\\d{1,2}\\s*(?:h|:|heures?|hours?|horas?|e)?\\s*(?:\\d{2})?(?:\\s*(?:am|pm))?';
+function facts(text, l, raw) {
+  const out = { times: [], dates: [], days: [], numbers: [] };
+  let t = norm(text);
+  if (!raw) for (const m of LEX.habitual.map(norm)) {
+    t = t.replace(new RegExp(reEsc(m) + '\\s*(?:a|vers|at|a las|nan)?\\s*' + HOUR_TXT, 'g'), ' ');
+    t = t.replace(new RegExp(HOUR_TXT + '\\s*' + reEsc(m), 'g'), ' ');
+  }
   // Haitian Creole writes hours as « 9è » (norm() removes the accent → « 9e »); elsewhere « 9e » would be an ordinal
   const hour = l === 'ht' ? /\b(\d{1,2})\s*(?:h|:|heures?|hours?|horas?|e)\s*(\d{2})?\b/g : /\b(\d{1,2})\s*(?:h|:|heures?|hours?|horas?)\s*(\d{2})?\b/g;
   for (const m of t.matchAll(hour)) out.times.push(m[1].padStart(2, '0') + ':' + (m[2] || '00'));
@@ -110,9 +136,17 @@ function facts(text, l) {
   for (const m of t.matchAll(/\b(\d+)\b/g)) out.numbers.push(m[1]);
   return out;
 }
-function contentWords(text, l) {
+const DAY_WORDS = new Set(Object.values(DAYS).flat().map(norm));
+// approximation / time words never show that two claims describe the same action (« vers 18 h » / « vers 20 h »)
+['vers', 'environ', 'pres', 'heure', 'heures', 'soir', 'matin', 'nuit', 'around', 'about', 'hour', 'hours', 'evening', 'morning', 'night',
+ 'hacia', 'hora', 'horas', 'noche', 'tarde', 'manana', 'anviwon', 'apepre', 'lannwit', 'aswe', 'maten'].forEach((w) => DAY_WORDS.add(w));
+function contentWords(text, l, exclude) {
   const stop = new Set(norm(LEX.stop[l] || LEX.stop.fr).split(' '));
-  return new Set(norm(text).split(/[^a-z0-9]+/).filter((w) => w.length > 3 && !stop.has(w)));
+  return new Set(norm(text).split(/[^a-z0-9]+/).filter((w) => w.length > 3 && !/^\d+$/.test(w) && !stop.has(w) && !DAY_WORDS.has(w) && !(exclude && exclude.has(w))));
+}
+/** Names of the people in the case (« Personnes concernées ») never show that two claims share a topic. */
+function personWords(d) {
+  return new Set(norm(d.persons || '').split(/[^a-z]+/).filter((w) => w.length > 2));
 }
 function splitSentences(text) {
   // the "[? … ?]" markers contain "?" + space: hide them while splitting so they never end a sentence
@@ -126,6 +160,7 @@ function hasUncertain(text) { return /\[\?[\s\S]*?\?\]/.test(text || ''); }
 /** Rassemble toutes les sources actives : éléments initiaux, réponses validées, pièces. */
 function recitSources(d) {
   const src = [];
+  if ((d.desc || '').trim()) src.push({ ref: 'desc', label: R('refDescription'), text: d.desc, nature: 'interp', lang: d.analysisLang || lang, kind: 'initial' });
   (d.items || []).forEach((it, i) => src.push({ ref: it.id, label: R('refInitial') + ' ' + (i + 1), text: it.text, nature: it.nature, lang: d.analysisLang || lang, kind: 'initial' }));
   (d.answers || []).filter((a) => a.active !== false).forEach((a, i) => {
     const q = (d.questions || []).find((x) => x.id === a.qid);
@@ -149,11 +184,13 @@ function recitAnalyse(d) {
       const hedges = findTerms(sentence, LEX.hedge[l]), hearsay = findTerms(sentence, LEX.hearsay[l]);
       const prev = keepClaims.get(key);
       const auto = hearsay.length ? 'report' : (s.kind === 'piece' ? 'doc' : (s.nature || 'obs'));
+      const fx = facts(sentence, l);
+      const checkable = auto !== 'interp' && auto !== 'suspicion' && (fx.times.length + fx.dates.length + fx.days.length > 0 || LEX.place.test(norm(sentence)));
       const c = Object.assign({
         key, id: 'A' + (claims.length + 1), ref: s.ref, label: s.label, text: sentence, lang: l,
-        nature: auto, central: false, described: false, verifiable: false, status: 'unverified',
+        nature: auto, central: false, described: false, verifiable: checkable, status: 'unverified',
         verifySource: '', verifyNote: '', uncertain: hasUncertain(sentence),
-      }, prev || {}, { id: 'A' + (claims.length + 1), text: sentence, label: s.label, hedges, hearsay, facts: facts(sentence, l), uncertain: hasUncertain(sentence) });
+      }, prev || {}, { id: 'A' + (claims.length + 1), text: sentence, label: s.label, hedges, hearsay, facts: fx, uncertain: hasUncertain(sentence) });
       claims.push(c);
       const mk = (kind, term, qKey) => {
         const k = key + '|' + kind + '|' + norm(term);
@@ -162,20 +199,36 @@ function recitAnalyse(d) {
       };
       findTerms(sentence, LEX.vagueTime[l]).forEach((term) => mk('time', term, 'qVagueTime'));
       findTerms(sentence, LEX.vaguePerson[l]).forEach((term) => mk('person', term, 'qVaguePerson'));
+      findTerms(sentence, LEX.vagueThing[l]).forEach((term) => mk('thing', term, 'qVagueThing'));
+      findTerms(sentence, LEX.approx[l]).forEach((term) => mk('approx', term, 'qApprox'));
       if (hearsay.length) mk('source', hearsay[0], 'qHearsay');
       if (c.uncertain) mk('uncertain', '[? ?]', 'qUncertain');
     });
   }
-  // Écarts : deux affirmations de sources différentes qui parlent du même sujet avec des repères incompatibles.
+  // Écarts (P1). Two claims are compared only when they describe the same action of the same event:
+  // - names of the people and day words never count as a shared topic, nor words found in most claims;
+  // - different days → two distinct events → no discrepancy;
+  // - different times → discrepancy only for the same action: same day + ≥1 shared action word,
+  //   or ≥2 shared action words when a day is missing on one side.
+  const exclude = personWords(d);
+  const wordsOf = claims.map((c) => contentWords(c.text, c.lang, exclude));
+  if (claims.length >= 4) {
+    const df = new Map();
+    wordsOf.forEach((ws) => ws.forEach((w) => df.set(w, (df.get(w) || 0) + 1)));
+    df.forEach((n, w) => { if (n / claims.length > 0.5) exclude.add(w); });
+  }
   for (let i = 0; i < claims.length; i++) {
     for (let j = i + 1; j < claims.length; j++) {
       const a = claims[i], b = claims[j];
       if (a.ref === b.ref || a.uncertain || b.uncertain) continue;
-      const wa = contentWords(a.text, a.lang), wb = contentWords(b.text, b.lang);
-      const shared = [...wa].filter((w) => wb.has(w));
-      if (shared.length < 1) continue;
+      const wb = new Set([...wordsOf[j]].filter((w) => !exclude.has(w)));
+      const shared = [...wordsOf[i]].filter((w) => !exclude.has(w) && wb.has(w));
+      const dayA = a.facts.days, dayB = b.facts.days;
+      if (dayA.length && dayB.length && !dayA.some((x) => dayB.includes(x))) continue; // two different days: two events
+      const sameDay = dayA.length > 0 && dayB.length > 0, noDay = !dayA.length && !dayB.length;
+      if (!(shared.length >= 2 || ((sameDay || noDay) && shared.length >= 1))) continue; // not the same action
       const diff = [];
-      for (const f of ['times', 'dates', 'days']) {
+      for (const f of ['times', 'dates']) {
         if (a.facts[f].length && b.facts[f].length && !a.facts[f].some((x) => b.facts[f].includes(x))) diff.push([f, a.facts[f].join(', '), b.facts[f].join(', ')]);
       }
       if (!diff.length) continue;
@@ -331,6 +384,7 @@ function recitWork() {
   else body = recitConclusionView(d);
   app.innerHTML = recitTabs(d) + body;
   if (recitView.tab === 'interview') recitBindInterview(d);
+  if (recitView.tab === 'analysis') recitAiRenderProgress();
 }
 
 /* ---------- entretien ---------- */
@@ -391,6 +445,12 @@ async function recitAddAnswer() {
   const db = recitLoad(), d = recitGet(db, recitView.id);
   const text = (document.querySelector('#aText').value || '').trim(), status = document.querySelector('#aStatus');
   if (!text) { status.textContent = R('emptyAnswer'); return; }
+  const consent = document.querySelector('#aConsent');
+  if (consent && !consent.checked) {
+    status.textContent = R('consentNeeded');
+    const box = consent.closest('label'); if (box) box.classList.add('recit-need');
+    consent.focus(); return;
+  }
   let q = d.questions[d.questions.length - 1];
   const qText = (document.querySelector('#qText').value || '').trim();
   if (!q || (qText && norm(qText) !== norm(q.text))) { q = { id: recitUid('q'), text: qText || RL('firstQuestion', d.analysisLang || lang), created: new Date().toISOString() }; d.questions.push(q); }
@@ -510,7 +570,8 @@ function recitSet(kind, id, field, value) {
   const box = document.querySelector('#recitIndicators'); if (box) box.innerHTML = recitIndicatorsHtml(d);
 }
 function recitIndicatorsHtml(d) {
-  return `<p><small>${R('indNote')}</small></p>` + recitIndicators(d).map((x) => `<div class="recit-ind"><strong>${R(x.key)}</strong> : ${x.den ? `${x.pct} % — ${x.num} / ${x.den}` : R(x.empty)}
+  const link = (k) => ` <a href="#" onclick="event.preventDefault();recitGoStep1()">${R(k)}</a>`;
+  return `<p><small>${R('indNote')}</small></p>` + recitIndicators(d).map((x) => `<div class="recit-ind"><strong>${R(x.key)}</strong> : ${x.den ? `${x.pct} % — ${x.num} / ${x.den}` : R(x.empty) + (x.empty === 'noCentral' ? link('markCentralLink') : x.empty === 'noVerifiable' ? link('markVerifiableLink') : '')}
     ${x.detail ? `<br><small>${x.detail.map(([k, n]) => R('s_' + k) + ' : ' + n).join(' · ')}</small>` : ''}</div>`).join('');
 }
 function sel(kind, id, field, values, cur, prefix) {
@@ -530,11 +591,11 @@ function recitAnalysisView(d) {
     <td>${sel('claim', c.id, 'status', STATUSES, c.status, 's_')}<select onchange="recitSet('claim','${c.id}','verifySource',this.value)"><option value="">${R('chooseSource')}</option>${pieces.map((p) => `<option value="${p.id}" ${p.id === c.verifySource ? 'selected' : ''}>${esc(p.title)}</option>`).join('')}</select>${txt('claim', c.id, 'verifyNote', c.verifyNote, 'verifyNote')}</td></tr>`;
   return `<section class="card"><h2>${R('analysisTitle')}</h2><p>${R('analysisIntro')}</p>
     <div class="actions">${btn(R('reanalyse'), "recitTab('analysis')", true)}${btn(R('conclusion'), "recitTab('conclusion')")}${recitAiButton()}</div><div id="recitAi"></div></section>
-  <section><h2>1 · ${R('step1')}</h2><p><small>${R('step1Help')}</small></p>
+  <section id="recitStep1"><h2>1 · ${R('step1')}</h2><p><small>${R('step1Help')}</small></p>
     ${d.claims.length ? `<div class="recit-table"><table><thead><tr><th>#</th><th>${R('claim')}</th><th>${R('qualify')}</th><th>${R('step3')}</th></tr></thead><tbody>${d.claims.map(claimRow).join('')}</tbody></table></div>` : `<p>${R('noData')}</p>`}</section>
   <section><h2>2 · ${R('step2')}</h2>${d.ambiguities.length ? d.ambiguities.map((a) => `<article class="card recit-amb"><p><strong>${a.claim}</strong> · ${R('amb_' + a.kind)} « ${esc(a.term)} »</p>${quote(a.text)}<p>${R('suggestedQ')} : <em>${esc(a.question)}</em></p>${chk('amb', a.key, 'resolved', a.resolved, 'resolved')}${txt('amb', a.key, 'resolution', a.resolution, 'resolutionPh')}</article>`).join('') : `<p>${R('noAmbiguity')}</p>`}</section>
   <section><h2>3 · ${R('step3')}</h2><p><small>${R('step3Help')}</small></p></section>
-  <section><h2>4 · ${R('step4')}</h2>${d.gaps.length ? d.gaps.map((g) => `<article class="card"><p><strong>${g.id}</strong> · ${esc(g.what || '')}</p><p>${esc(g.aLabel)} : ${quote(g.aText)}${esc(g.bLabel)} : ${quote(g.bText)}</p>
+  <section><h2>4 · ${R('step4')}</h2>${d.gaps.length ? d.gaps.map((g) => `<article class="card"><p><strong>${g.id}</strong> · ${R('sameEvent')} · ${esc(g.what || '')}</p><p>${esc(g.aLabel)} : ${quote(g.aText)}${esc(g.bLabel)} : ${quote(g.bText)}</p>
       <p>${R('suggestedQ')} : <em>${esc(RL('qGap', d.analysisLang || lang).replace('{a}', bare(g.aText)).replace('{b}', bare(g.bText)))}</em></p>
       ${sel('gap', g.key, 'kind', GAP_KINDS, g.kind, 'g_')}${sel('gap', g.key, 'state', GAP_STATES, g.state, 'st_')}${chk('gap', g.key, 'evidence', g.evidence, 'evidence')}${txt('gap', g.key, 'explanation', g.explanation, 'explanationPh')}</article>`).join('') : `<p>${R('noGap')}</p>`}
     <p><small>${R('gapNote')}</small></p></section>
@@ -543,6 +604,10 @@ function recitAnalysisView(d) {
     <p><small>${R('noIntrusion')}</small></p></section>
   <section><h2>${R('suggestedTitle')}</h2>${sugg.length ? sugg.map((q, i) => `<article class="card"><p><strong>${esc(q.text)}</strong></p><p><small>${R('point')} : ${esc(q.point)} · ${R('why')} : ${esc(q.why)} · ${R('target')} : ${esc(q.target)}</small></p><div class="actions">${btn(R('useQuestion'), `recitUseQuestion(${i})`)}</div></article>`).join('') : `<p>${R('noSuggestion')}</p>`}</section>
   <section class="card"><h2>${R('indicatorsTitle')}</h2><div id="recitIndicators">${recitIndicatorsHtml(d)}</div></section>`;
+}
+function recitGoStep1() {
+  if (recitView.tab !== 'analysis') recitTab('analysis');
+  const s = document.querySelector('#recitStep1'); if (s) s.scrollIntoView({ behavior: 'smooth' });
 }
 function recitLeads(d) {
   const L = d.analysisLang || lang;
@@ -601,34 +666,104 @@ function recitExport(kind) {
   const url = URL.createObjectURL(blob), a = document.createElement('a'); a.href = url; a.download = name + '.' + kind; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-/* ---------- Suggestion IA optionnelle (WebLLM, dans le navigateur, sur ordinateur compatible) ---------- */
-const RECIT_AI_MODEL = 'Qwen2.5-1.5B-Instruct-q4f16_1-MLC';
-let recitAi = null;
-function recitAiButton() { return (typeof navigator !== 'undefined' && navigator.gpu) ? btn('✦ ' + R('aiButton'), 'recitAiRun()') : `<small>${R('aiUnavailable')}</small>`; }
+/* ---------- Suggestion IA optionnelle (WebLLM, dans le navigateur, sur ordinateur compatible) ----------
+   P6: one shared loading promise, progress kept across re-renders, button disabled while loading.
+   P2: strict prompt + JSON output + temperature 0, computed discrepancies given to the model,
+       and an anti-invention check on everything it returns. Nothing is added without the user. */
+const RECIT_AI_MODELS = { big: 'Qwen2.5-3B-Instruct-q4f16_1-MLC', small: 'Qwen2.5-1.5B-Instruct-q4f16_1-MLC' };
+let recitAi = null, recitAiLoading = null, recitAiModel = null, recitAiLast = '', recitAiQuestions = [];
+let recitAiProgress = { pct: 0, text: '' };
+const ROLE_WORDS = {
+  fr: ['voisin', 'voisine', 'collègue', 'ami', 'amie', 'frère', 'sœur', 'soeur', 'mère', 'père', 'patron', 'patronne', 'cousin', 'cousine', 'mari', 'femme', 'copain', 'copine', 'chef', 'amant', 'maîtresse', 'ex'],
+  en: ['neighbor', 'neighbour', 'colleague', 'friend', 'brother', 'sister', 'mother', 'father', 'boss', 'cousin', 'husband', 'wife', 'boyfriend', 'girlfriend', 'lover', 'ex'],
+  es: ['vecino', 'vecina', 'colega', 'compañero', 'compañera', 'amigo', 'amiga', 'hermano', 'hermana', 'madre', 'padre', 'jefe', 'jefa', 'primo', 'prima', 'esposo', 'esposa', 'novio', 'novia', 'amante'],
+  ht: ['vwazen', 'vwazin', 'kolèg', 'zanmi', 'frè', 'sè', 'manman', 'papa', 'patwon', 'kouzen', 'kouzin', 'mari', 'madanm', 'mennaj', 'chèf'],
+};
+const LEADING = /^\s*(pourquoi|why|por ?qu[eé]|poukisa)\b|\b(si tard|so late|tan tarde|ta konsa|pourquoi ne|why didn'?t|why don'?t)\b/i;
+
+function recitAiPick() { return (navigator.deviceMemory || 4) >= 8 ? 'big' : 'small'; }
+function recitAiButton() {
+  if (typeof navigator === 'undefined' || !navigator.gpu) return `<small>${R('aiUnavailable')}</small>`;
+  const busy = recitAiLoading && !recitAi;
+  return `<button ${busy ? 'disabled' : ''} onclick="recitAiRun()">✦ ${R('aiButton')}</button>`;
+}
+function recitAiRenderProgress() {
+  const box = document.querySelector('#recitAi'); if (!box) return;
+  if (recitAiLoading && !recitAi) box.innerHTML = `<p>${R('aiLoading')} <strong>${recitAiProgress.pct} %</strong><br><small>${esc(recitAiProgress.text)}</small></p>`;
+  else box.innerHTML = recitAiLast;
+}
+function recitAiEngine() {
+  recitAiLoading ??= (async () => {
+    const webllm = await import('https://esm.run/@mlc-ai/web-llm');
+    const cb = { initProgressCallback: (p) => { recitAiProgress = { pct: Math.round((p.progress || 0) * 100), text: p.text || '' }; recitAiRenderProgress(); } };
+    const pick = recitAiPick();
+    try { recitAiModel = RECIT_AI_MODELS[pick]; return await webllm.CreateMLCEngine(recitAiModel, cb); } catch (e) {
+      if (pick !== 'big') throw e;
+      recitAiModel = RECIT_AI_MODELS.small; return await webllm.CreateMLCEngine(recitAiModel, cb);
+    }
+  })();
+  return recitAiLoading;
+}
 async function recitAiRun() {
-  const box = document.querySelector('#recitAi');
-  if (!confirm(R('aiConfirm'))) return;
+  if (recitAiLoading && !recitAi) return; // already loading: never start a second download
+  if (!recitAi && !confirm(R('aiConfirm').replace('{size}', R(recitAiPick() === 'big' ? 'aiSizeBig' : 'aiSizeSmall')))) return;
   const db = recitLoad(), d = recitGet(db, recitView.id), L = d.analysisLang || lang;
   try {
-    if (!recitAi) {
-      box.innerHTML = `<p>${R('aiLoading')}</p>`;
-      const webllm = await import('https://esm.run/@mlc-ai/web-llm');
-      recitAi = await webllm.CreateMLCEngine(RECIT_AI_MODEL, { initProgressCallback: (p) => { box.innerHTML = `<p>${R('aiLoading')} ${Math.round((p.progress || 0) * 100)} %</p>`; } });
-    }
-    box.innerHTML = `<p>${R('aiThinking')}</p>`;
-    const material = recitSources(d).map((s) => `[${s.label}] ${s.text}`).join('\n').slice(0, 6000);
-    const sys = RL('aiSystem', L);
-    const res = await recitAi.chat.completions.create({ messages: [{ role: 'system', content: sys }, { role: 'user', content: material }], temperature: 0.2, max_tokens: 700 });
-    const out = res.choices[0].message.content || '';
-    box.innerHTML = `<article class="card recit-ai"><p><strong>${R('aiTitle')}</strong> <small>${R('aiWarning')}</small></p><pre>${esc(out)}</pre>
-      <div class="actions">${btn(R('aiCopyQuestion'), 'recitAiToQuestion()')}</div></article>`;
-    recitAi.lastText = out;
-  } catch (e) { box.innerHTML = `<p>${R('aiError')}</p>`; }
+    if (!recitAi) { const p = recitAiEngine(); recitWork(); recitAi = await p; }
+    recitAiLast = `<p>${R('aiThinking')}</p>`; recitWork();
+    recitAnalyse(d); recitSave(db);
+    const material = [RL('aiTextLabel', L) + ':', ...recitSources(d).map((s) => `[${s.label}] ${s.text}`), '',
+      RL('aiGapsLabel', L) + ':', ...(d.gaps.length ? d.gaps.map((g) => `- ${g.id}: « ${g.aText} » / « ${g.bText} » (${g.what})`) : ['- ' + RL('aiNoneLabel', L)]), '',
+      RL('aiAmbLabel', L) + ':', ...(d.ambiguities.length ? d.ambiguities.map((a) => `- « ${a.term} » (${a.claim})`) : ['- ' + RL('aiNoneLabel', L)])].join('\n').slice(0, 7000);
+    const res = await recitAi.chat.completions.create({
+      messages: [{ role: 'system', content: RL('aiSystem', L) }, { role: 'user', content: material }],
+      temperature: 0, max_tokens: 900, response_format: { type: 'json_object' } });
+    recitAiShow(res.choices[0].message.content || '', d);
+  } catch (e) {
+    if (!recitAi) recitAiLoading = null; // a failed download can be retried
+    recitAiLast = `<p>${R('aiError')}</p>`;
+  }
+  recitWork();
 }
-function recitAiToQuestion() {
-  if (!recitAi || !recitAi.lastText) return;
-  const q = (recitAi.lastText.split('\n').find((l) => /\?\s*$/.test(l.trim())) || '').replace(/^[-*\d.\s]+/, '').trim();
-  if (!q) { alert(R('aiNoQuestion')); return; }
+/** Words or numbers in an AI sentence that do not appear anywhere in the case (anti-invention, P2). */
+function recitAiUnknown(text, d, L) {
+  const srcText = recitSources(d).map((s) => s.text).join(' ') + ' ' + (d.persons || '');
+  const nSrc = norm(srcText), out = [];
+  for (const w of (ROLE_WORDS[L] || []).concat(ROLE_WORDS.fr)) if (hasTerm(text, w) && !hasTerm(srcText, w)) out.push(w);
+  for (const m of String(text).matchAll(/(?:^|[^\p{L}])(\p{Lu}[\p{Ll}]{2,})/gu)) {
+    const w = norm(m[1]);
+    if (!nSrc.includes(w) && !norm(R('refDescription') + ' ' + R('refAnswer') + ' ' + R('refInitial') + ' ' + R('refPiece')).includes(w) && !norm(text).startsWith(w)) out.push(m[1]);
+  }
+  const f = facts(text, L, true), fs = facts(srcText, L, true);
+  f.times.filter((x) => !fs.times.includes(x)).forEach((x) => out.push(x.replace(':', ' h ')));
+  f.days.filter((x) => !fs.days.includes(x)).forEach((x) => out.push(x));
+  return [...new Set(out)];
+}
+function recitAiShow(raw, d) {
+  const L = d.analysisLang || lang;
+  let obj = null;
+  try { obj = JSON.parse(raw); } catch { const m = raw.match(/\{[\s\S]*\}/); try { obj = m && JSON.parse(m[0]); } catch { obj = null; } }
+  const keys = ['centrales', 'ambiguites', 'ecarts', 'questions'];
+  if (!obj || typeof obj !== 'object' || !keys.some((k) => Array.isArray(obj[k]))) {
+    recitAiLast = `<article class="card recit-ai"><p><strong>${R('aiBadJson')}</strong></p><details><summary>${R('aiRaw')}</summary><pre>${esc(raw)}</pre></details></article>`;
+    return;
+  }
+  recitAiQuestions = [];
+  const item = (txt, isQuestion) => {
+    const t = String(typeof txt === 'object' ? (txt.texte || txt.text || txt.question || JSON.stringify(txt)) : txt);
+    const unknown = recitAiUnknown(t, d, L), leading = isQuestion && LEADING.test(t);
+    const warn = (unknown.length ? `<span class="recit-warn">⚠ ${R('aiAbsent')} : ${esc(unknown.join(', '))}</span>` : '') + (leading ? `<span class="recit-warn">⚠ ${R('aiLeading')}</span>` : '');
+    const ok = !unknown.length && !leading;
+    let use = '';
+    if (isQuestion && ok) { recitAiQuestions.push(t); use = ` <button onclick="recitAiUse(${recitAiQuestions.length - 1})">${R('useQuestion')}</button>`; }
+    return `<li>${ok ? esc(t) : `<del>${esc(t)}</del>`} ${warn}${use}</li>`;
+  };
+  const sect = (k, title, q) => `<h4>${R(title)}</h4>${Array.isArray(obj[k]) && obj[k].length ? `<ul>${obj[k].slice(0, q ? 3 : 12).map((x) => item(x, q)).join('')}</ul>` : `<p><small>${R('none')}</small></p>`}`;
+  recitAiLast = `<article class="card recit-ai"><p><strong>${R('aiTitle')}</strong> <small>(${esc(recitAiModel || '')}) ${R('aiWarning')}</small></p>
+    ${sect('centrales', 'aiCentral')}${sect('ambiguites', 'aiAmbiguities')}${sect('ecarts', 'aiGaps')}${sect('questions', 'aiQuestions', true)}</article>`;
+}
+function recitAiUse(i) {
+  const q = recitAiQuestions[i]; if (!q) return;
   recitView.tab = 'interview'; recitWork();
   const ta = document.querySelector('#qText'); if (ta) { ta.value = q; ta.focus(); }
 }

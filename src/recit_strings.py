@@ -371,6 +371,60 @@ HT = {
  "aiSystem": "Ou ede egzamine yon istwa san ou pa janm jije. Reponn an kreyòl ayisyen. Bay: 1) afimasyon santral yo (ak sous yo ant kwochè), 2) sa ki pa klè (moman, moun, sa yo rapòte), 3) diferans ant repons yo, 4) twa kesyon pou pi plis, ki net, ki pa akize, ki fini ak yon pwen entèwogasyon. Pa envante okenn fè. Pa janm di si yon moun ap bay manti.",
 }
 
+# --- Corrections (rapport de test) : P1–P7
+FR.update({
+ "refDescription": "Description initiale", "amb_thing": "Objet ou action vague", "amb_approx": "Approximation",
+ "qVagueThing": "Peux-tu préciser ce que recouvre « {x} » ?", "qApprox": "Tu dis « {x} » : peux-tu préciser, ou dire ce qui permettrait de le situer ?",
+ "sameEvent": "À vérifier : s'agit-il du même événement ?",
+ "markCentralLink": "→ Marquez les points centraux dans l'étape 1", "markVerifiableLink": "→ Indiquez les affirmations vérifiables dans l'étape 1",
+ "consentNeeded": "Cochez d'abord le consentement de la personne pour enregistrer sa réponse.",
+ "aiSizeBig": "environ 2 Go", "aiSizeSmall": "environ 1 Go",
+ "aiConfirm": "La suggestion IA fonctionne entièrement dans ce navigateur, sans envoyer le dossier. Téléchargement de {size} la première fois (plusieurs minutes), puis gardé en cache. Continuer ?",
+ "aiTextLabel": "TEXTE DU DOSSIER", "aiGapsLabel": "ÉCARTS DÉJÀ RELEVÉS (n'en invente pas d'autres)", "aiAmbLabel": "AMBIGUÏTÉS DÉJÀ RELEVÉES", "aiNoneLabel": "aucun",
+ "aiBadJson": "La réponse de l'IA n'était pas dans le format attendu : elle n'est pas utilisée.", "aiRaw": "Voir la réponse brute",
+ "aiAbsent": "absent du dossier", "aiLeading": "question orientée : à reformuler", "aiCentral": "Affirmations centrales", "aiAmbiguities": "Ambiguïtés", "aiGaps": "Écarts", "aiQuestions": "Questions neutres proposées",
+ "aiSystem": "Tu aides à examiner un récit sans jamais juger. N'utilise QUE les informations présentes dans le texte fourni. Recopie les heures et les chiffres exactement. Si une information manque, écris \"non précisé\". N'invente aucune personne, aucun lieu, aucun fait. Ne signale que les écarts déjà relevés. Les questions doivent être ouvertes et neutres : commence par \"Peux-tu préciser…\", \"Que s'est-il passé…\" ou \"Comment…\". Interdits : \"Pourquoi\", \"si tard\", \"pourquoi ne… pas\", tout adjectif de jugement. Ne dis jamais si quelqu'un ment. Réponds en français, UNIQUEMENT avec ce JSON : {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (au plus 3 questions).",
+})
+EN.update({
+ "refDescription": "Initial description", "amb_thing": "Vague object or action", "amb_approx": "Approximation",
+ "qVagueThing": "Can you specify what \"{x}\" covers?", "qApprox": "You say \"{x}\": can you be more precise, or say what would help place it?",
+ "sameEvent": "To check: is it the same event?",
+ "markCentralLink": "→ Mark the central points in step 1", "markVerifiableLink": "→ Mark the verifiable claims in step 1",
+ "consentNeeded": "First tick the person's consent to record their answer.",
+ "aiSizeBig": "about 2 GB", "aiSizeSmall": "about 1 GB",
+ "aiConfirm": "The AI suggestion runs entirely in this browser, without sending the case anywhere. Download of {size} the first time (several minutes), then kept in cache. Continue?",
+ "aiTextLabel": "CASE TEXT", "aiGapsLabel": "DISCREPANCIES ALREADY FOUND (do not invent others)", "aiAmbLabel": "AMBIGUITIES ALREADY FOUND", "aiNoneLabel": "none",
+ "aiBadJson": "The AI answer was not in the expected format: it is not used.", "aiRaw": "See the raw answer",
+ "aiAbsent": "not in the case", "aiLeading": "leading question: rephrase", "aiCentral": "Central claims", "aiAmbiguities": "Ambiguities", "aiGaps": "Discrepancies", "aiQuestions": "Suggested neutral questions",
+ "aiSystem": "You help examine an account without ever judging. Use ONLY information present in the text provided. Copy times and numbers exactly. If information is missing, write \"not specified\". Invent no person, place or fact. Only report the discrepancies already found. Questions must be open and neutral: start with \"Can you specify…\", \"What happened…\" or \"How…\". Forbidden: \"Why\", \"so late\", \"why didn't\", any judgemental adjective. Never say whether someone is lying. Answer in English, ONLY with this JSON: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (at most 3 questions).",
+})
+ES.update({
+ "refDescription": "Descripción inicial", "amb_thing": "Objeto o acción vaga", "amb_approx": "Aproximación",
+ "qVagueThing": "¿Puedes precisar qué abarca «{x}»?", "qApprox": "Dices «{x}»: ¿puedes precisarlo o decir qué permitiría situarlo?",
+ "sameEvent": "Por verificar: ¿se trata del mismo hecho?",
+ "markCentralLink": "→ Marque los puntos centrales en el paso 1", "markVerifiableLink": "→ Indique las afirmaciones verificables en el paso 1",
+ "consentNeeded": "Marque primero el consentimiento de la persona para guardar su respuesta.",
+ "aiSizeBig": "unos 2 GB", "aiSizeSmall": "cerca de 1 GB",
+ "aiConfirm": "La sugerencia IA funciona por completo en este navegador, sin enviar el expediente. Descarga de {size} la primera vez (varios minutos); luego queda en caché. ¿Continuar?",
+ "aiTextLabel": "TEXTO DEL EXPEDIENTE", "aiGapsLabel": "DISCREPANCIAS YA DETECTADAS (no inventes otras)", "aiAmbLabel": "AMBIGÜEDADES YA DETECTADAS", "aiNoneLabel": "ninguna",
+ "aiBadJson": "La respuesta de la IA no tenía el formato esperado: no se utiliza.", "aiRaw": "Ver la respuesta bruta",
+ "aiAbsent": "ausente del expediente", "aiLeading": "pregunta tendenciosa: reformular", "aiCentral": "Afirmaciones centrales", "aiAmbiguities": "Ambigüedades", "aiGaps": "Discrepancias", "aiQuestions": "Preguntas neutrales propuestas",
+ "aiSystem": "Ayudas a examinar un relato sin juzgar nunca. Usa SOLO la información presente en el texto. Copia las horas y las cifras exactamente. Si falta información, escribe \"no precisado\". No inventes personas, lugares ni hechos. Señala solo las discrepancias ya detectadas. Las preguntas deben ser abiertas y neutrales: empieza con \"¿Puedes precisar…\", \"¿Qué pasó…\" o \"¿Cómo…\". Prohibido: \"Por qué\", \"tan tarde\", \"por qué no\", cualquier adjetivo de juicio. Nunca digas si alguien miente. Responde en español, SOLO con este JSON: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (como máximo 3 preguntas).",
+})
+HT.update({
+ "refDescription": "Premye deskripsyon an", "amb_thing": "Bagay oswa aksyon ki pa klè", "amb_approx": "Apeprè",
+ "qVagueThing": "Èske w ka presize sa « {x} » vle di?", "qApprox": "Ou di « {x} »: èske w ka pi presi, oswa di sa ki ta ede situye l?",
+ "sameEvent": "Pou verifye: èske se menm evènman an?",
+ "markCentralLink": "→ Make pwen santral yo nan etap 1", "markVerifiableLink": "→ Make afimasyon ki ka verifye yo nan etap 1",
+ "consentNeeded": "Tcheke akò moun nan anvan pou w ka anrejistre repons li.",
+ "aiSizeBig": "anviwon 2 Go", "aiSizeSmall": "anviwon 1 Go",
+ "aiConfirm": "Sijesyon IA a mache nèt nan navigatè sa a, san li pa voye dosye a ale. Li telechaje {size} premye fwa a (plizyè minit), apre sa li rete nan kach la. Kontinye?",
+ "aiTextLabel": "TÈKS DOSYE A", "aiGapsLabel": "DIFERANS NOU DEJA JWENN (pa envante lòt)", "aiAmbLabel": "SA KI PA KLÈ NOU DEJA JWENN", "aiNoneLabel": "okenn",
+ "aiBadJson": "Repons IA a pa t nan fòma yo te tann nan: yo p ap sèvi avè l.", "aiRaw": "Wè repons brit la",
+ "aiAbsent": "pa nan dosye a", "aiLeading": "kesyon ki pouse yon repons: refòmile l", "aiCentral": "Afimasyon santral", "aiAmbiguities": "Sa ki pa klè", "aiGaps": "Diferans", "aiQuestions": "Kesyon net yo pwopoze",
+ "aiSystem": "Ou ede egzamine yon istwa san ou pa janm jije. Sèvi SÈLMAN ak enfòmasyon ki nan tèks yo ba ou a. Kopye lè yo ak chif yo egzakteman. Si yon enfòmasyon manke, ekri \"pa presize\". Pa envante okenn moun, okenn kote, okenn fè. Site sèlman diferans nou deja jwenn yo. Kesyon yo dwe louvri epi net: kòmanse ak \"Èske w ka presize…\", \"Kisa k te pase…\" oswa \"Kijan…\". Entèdi: \"Poukisa\", \"ta konsa\", nenpòt mo ki jije. Pa janm di si yon moun ap bay manti. Reponn an kreyòl ayisyen, SÈLMAN ak JSON sa a: {\"centrales\":[],\"ambiguites\":[],\"ecarts\":[],\"questions\":[]} (twa kesyon pou pi plis).",
+})
+
 data = {"fr": FR, "en": EN, "es": ES, "ht": HT}
 keys = set(FR)
 for code, d in data.items():
