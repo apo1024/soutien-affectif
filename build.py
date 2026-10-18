@@ -7,6 +7,8 @@ ui=json.loads((source/'ui.json').read_text(encoding='utf-8'))
 css=(source/'styles.css').read_text(encoding='utf-8')
 app=(source/'app.js').read_text(encoding='utf-8')
 presence=(source/'presence.js').read_text(encoding='utf-8')
-html='<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Soutien Affectif</title><meta name="description" content="Un espace de dialogue pour les couples."><style>'+css+'</style></head><body><header></header><main id="app"></main><footer></footer><script>const CONTENT='+json.dumps(content,ensure_ascii=False)+'; const UI='+json.dumps(ui,ensure_ascii=False)+';\n'+app+'\n'+presence+'</script></body></html>'
+recit=json.loads((source/'recit.json').read_text(encoding='utf-8'))
+recit_js=(source/'recit.js').read_text(encoding='utf-8')
+html='<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Soutien Affectif</title><meta name="description" content="Un espace de dialogue pour les couples."><style>'+css+'</style></head><body><header></header><main id="app"></main><footer></footer><script>const CONTENT='+json.dumps(content,ensure_ascii=False)+'; const UI='+json.dumps(ui,ensure_ascii=False)+'; const RECIT='+json.dumps(recit,ensure_ascii=False)+';\n'+app+'\n'+recit_js+'\n'+presence+'</script></body></html>'
 (root/'index.html').write_text(html,encoding='utf-8')
 print('Site generated: index.html')
