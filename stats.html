@@ -36,12 +36,13 @@ svg{width:100%;height:70px;margin-top:18px}
 [hidden]{display:none!important}
 #panel{width:100%;max-width:520px;display:flex;flex-direction:column;gap:16px;align-items:center}
 #panel .card{padding:24px 22px}
+#sites{display:flex;flex-direction:column;gap:16px;width:100%}
 #panel .count{font-size:4.5rem}
 </style>
 </head>
 <body>
 <div class="card" id="login">
-  <h1>Statistiques — Soutien Affectif et CNA Prep</h1>
+  <h1>Statistiques — applications CompumasterHaiti</h1>
   <form class="lock" id="lockForm">
     <input type="password" id="pw" placeholder="Mot de passe" autocomplete="current-password" autofocus>
     <button type="submit">Entrer</button>
@@ -49,40 +50,25 @@ svg{width:100%;height:70px;margin-top:18px}
   </form>
 </div>
 <div id="panel" hidden>
-<div class="card site" data-site="sa">
-  <h1>Soutien Affectif — personnes connectées maintenant</h1>
-  <div class="count" data-f="count">–</div>
-  <div class="sub" data-f="sub">connexion…</div>
-  <svg data-f="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
-  <div class="row">
-    <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
-    <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
-  </div>
-  <div class="pays" data-f="plive"></div>
-  <div class="row total">
-    <div><b data-f="tvis">…</b><span>visites au total</span></div>
-    <div><b data-f="tdev">…</b><span>appareils différents au total</span></div>
-  </div>
-  <details class="ptot"><summary>Visites par pays (total)</summary><div data-f="ptot">…</div></details>
-</div>
-<div class="card site" data-site="cna">
-  <h1>CNA Prep — personnes connectées maintenant</h1>
-  <div class="count" data-f="count">–</div>
-  <div class="sub" data-f="sub">connexion…</div>
-  <svg data-f="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
-  <div class="row">
-    <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
-    <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
-  </div>
-  <div class="pays" data-f="plive"></div>
-  <div class="row total">
-    <div><b data-f="tvis">…</b><span>visites au total</span></div>
-    <div><b data-f="tdev">…</b><span>appareils différents au total</span></div>
-  </div>
-  <details class="ptot"><summary>Visites par pays (total)</summary><div data-f="ptot">…</div></details>
-</div>
+<div id="sites"></div>
 <div class="status"><span class="dot" id="dot"></span><span id="state">connexion au relais…</span></div>
 </div>
+<template id="cardTpl"><div class="card site" data-site="__K__">
+  <h1>__NAME__ — personnes connectées maintenant</h1>
+  <div class="count" data-f="count">–</div>
+  <div class="sub" data-f="sub">connexion…</div>
+  <svg data-f="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div class="row">
+    <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
+    <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
+  </div>
+  <div class="pays" data-f="plive"></div>
+  <div class="row total">
+    <div><b data-f="tvis">…</b><span>visites au total</span></div>
+    <div><b data-f="tdev">…</b><span>appareils différents au total</span></div>
+  </div>
+  <details class="ptot"><summary>Visites par pays (total)</summary><div data-f="ptot">…</div></details>
+</div></template>
 <script>
 var SALT = 'acf4d8ad1dd9d4a8edaa7a9b22f7e091';
 var HASH = '9dc7103cd8e518028ead11f5e6534c9180600dcfaaf6e4d937b1988609975ebb';
@@ -112,9 +98,14 @@ try { if (sessionStorage.getItem('sa-stats') === HASH) unlock(); } catch (e) {}
 
 function start() {
 var SITES = {
-  sa:  { topic: 'soutien-affectif-5b20042376e5/presence/', ns: 'apo1024-soutien-5b2004' },
-  cna: { topic: 'cna-prep-8c9bf415b53b/presence/', ns: 'apo1024-cna-8c9bf4' }
+  sa:  { name: 'Soutien Affectif', topic: 'soutien-affectif-5b20042376e5/presence/', ns: 'apo1024-soutien-5b2004' },
+  cna: { name: 'CNA Prep', topic: 'cna-prep-8c9bf415b53b/presence/', ns: 'apo1024-cna-8c9bf4' },
+  'jaden-dokte': { name: 'Jaden Doktè', topic: 'cc-jaden-dokte-feabe02a/presence/', ns: 'apo1024-jaden-dokte-feabe02a' },
+  'asyet': { name: 'Asyèt', topic: 'cc-asyet-d22823ed/presence/', ns: 'apo1024-asyet-d22823ed' },
+  'foulobs': { name: 'FoulObs', topic: 'cc-foulobs-8085f701/presence/', ns: 'apo1024-foulobs-8085f701' },
+  'measles': { name: 'Rougeole Afrique', topic: 'cc-measles-b4a80ca1/presence/', ns: 'apo1024-measles-b4a80ca1' },
 };
+document.getElementById('sites').innerHTML = Object.keys(SITES).map(function (k) { return document.getElementById('cardTpl').innerHTML.replace(/__K__/g, k).replace(/__NAME__/g, SITES[k].name); }).join('');
 /*PAYS*/var PAYS_TZ = {"America/New_York":"US","America/Detroit":"US","America/Chicago":"US","America/Denver":"US","America/Phoenix":"US","America/Los_Angeles":"US","America/Anchorage":"US","America/Boise":"US","America/Juneau":"US","America/Sitka":"US","America/Adak":"US","America/Nome":"US","America/Yakutat":"US","America/Menominee":"US","Pacific/Honolulu":"US","America/Toronto":"CA","America/Montreal":"CA","America/Vancouver":"CA","America/Edmonton":"CA","America/Winnipeg":"CA","America/Halifax":"CA","America/St_Johns":"CA","America/Regina":"CA","America/Moncton":"CA","America/Whitehorse":"CA","America/Yellowknife":"CA","America/Iqaluit":"CA","America/Glace_Bay":"CA","America/Goose_Bay":"CA","America/Swift_Current":"CA","America/Dawson_Creek":"CA","America/Atikokan":"CA","America/Port-au-Prince":"HT","America/Santo_Domingo":"DO","America/Puerto_Rico":"PR","America/Havana":"CU","America/Jamaica":"JM","America/Nassau":"BS","America/Grand_Turk":"TC","America/Guadeloupe":"GP","America/Martinique":"MQ","America/Cayenne":"GF","America/Mexico_City":"MX","America/Cancun":"MX","America/Monterrey":"MX","America/Tijuana":"MX","America/Merida":"MX","America/Chihuahua":"MX","America/Hermosillo":"MX","America/Mazatlan":"MX","America/Sao_Paulo":"BR","America/Fortaleza":"BR","America/Recife":"BR","America/Bahia":"BR","America/Belem":"BR","America/Manaus":"BR","America/Cuiaba":"BR","America/Maceio":"BR","America/Campo_Grande":"BR","America/Santiago":"CL","America/Punta_Arenas":"CL","Europe/Paris":"FR","Europe/Brussels":"BE","Europe/Zurich":"CH","Europe/London":"GB","Europe/Madrid":"ES","Africa/Dakar":"SN","Africa/Kinshasa":"CD","Africa/Lubumbashi":"CD","Africa/Abidjan":"CI","Africa/Douala":"CM","Asia/Dhaka":"BD"};
 var PAYS_CODES = ["US", "CA", "HT", "DO", "PR", "CU", "JM", "BS", "TC", "GP", "MQ", "GF", "MX", "BR", "CL", "FR", "BE", "CH", "GB", "ES", "SN", "CD", "CI", "CM", "BD", "ZZ"];
 function paysDuFuseau() { try { var z = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; return PAYS_TZ[z] || (/^America\/(Indiana|Kentucky|North_Dakota)\//.test(z) ? "US" : "ZZ"); } catch (e) { return "ZZ"; } }/*FINPAYS*/
@@ -168,17 +159,17 @@ client.on('message', function (topic, payload) {
   else { var parts = msg.split('|'); S.visitors[id] = { t: Date.now(), v: parts[0] === 'on', c: /^[A-Z]{2}$/.test(parts[1] || '') ? parts[1] : 'ZZ' }; S.allIds[id] = 1; }
   render();
 });
-function totals() {
-  Object.keys(SITES).forEach(function (k) {
+async function totals() {
+  for (var k of Object.keys(SITES)) {
     var S = SITES[k];
-    [['visites', 'tvis'], ['appareils', 'tdev']].forEach(function (a) {
-      fetch('https://abacus.jasoncameron.dev/get/' + S.ns + '/' + a[0]).then(function (r) { return r.json(); })
-        .then(function (j) { S.f(a[1]).textContent = typeof j.value === 'number' ? j.value.toLocaleString('fr-FR') : '0'; })
-        .catch(function () { S.f(a[1]).textContent = '?'; });
-    });
-  });
+    for (var a of [['visites', 'tvis'], ['appareils', 'tdev']]) {
+      var v = await getCount(S.ns, a[0]);            // réessaie si le service est occupé ; garde l'ancien chiffre en cas d'échec
+      if (v !== null) S.f(a[1]).textContent = v.toLocaleString('fr-FR');
+      await wait(400);
+    }
+  }
 }
-totals(); setInterval(totals, 60000);
+setTimeout(totals, 500); setInterval(totals, 120000);
 // Le service gratuit limite les requêtes : une à la fois, espacées, et un rafraîchissement toutes les 15 minutes.
 async function getCount(ns, key) {
   for (var essai = 0; essai < 4; essai++) {
@@ -208,7 +199,7 @@ async function totalsPays() {
       + (missed ? '<p style="text-align:center;color:var(--muted);font-size:.8rem">' + missed + ' pays non chargés (service occupé), nouvel essai dans 15 min.</p>' : '');
   }
 }
-setTimeout(totalsPays, 3000); setInterval(totalsPays, 900000);
+setTimeout(totalsPays, 12000); setInterval(totalsPays, 900000);
 setInterval(render, 5000);
 }
 </script>

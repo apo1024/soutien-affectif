@@ -42,7 +42,7 @@ JS = ('/*PAYS*/var PAYS_TZ = ' + json.dumps(TZ, separators=(',', ':')) + ';\n'
       ' return PAYS_TZ[z] || (/^America\\/(Indiana|Kentucky|North_Dakota)\\//.test(z) ? "US" : "ZZ"); }'
       ' catch (e) { return "ZZ"; } }/*FINPAYS*/')
 
-for f in [Path(__file__).parent / 'presence.js', Path(__file__).parent.parent / 'stats.html', Path(r'C:/Projets/cna_prive/presence_cna.js')]:
+for f in [Path(__file__).parent / 'presence.js', Path(__file__).parent.parent / 'stats.html', Path(r'C:/Projets/cna_prive/presence_cna.js'), Path(r'C:/Projets/prive/presence_site.js')]:
     s = f.read_text(encoding='utf-8')
     s, n = re.subn(r'/\*PAYS\*/.*?/\*FINPAYS\*/', lambda m: JS, s, flags=re.S)
     if n != 1: raise SystemExit(f'marqueur /*PAYS*/ absent ou multiple dans {f}')
