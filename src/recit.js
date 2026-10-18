@@ -99,9 +99,10 @@ function hasTerm(text, term) {
   return new RegExp('(^|[^a-z0-9])' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^a-z0-9])').test(t);
 }
 function findTerms(text, list) {
-  const found = (list || []).filter((w) => hasTerm(text, w));
-  // keep the longest expression only (« plus tard » makes « tard » redundant)
-  return found.filter((w) => !found.some((o) => o !== w && hasTerm(o, w)));
+  const seen = new Set();
+  const found = (list || []).filter((w) => hasTerm(text, w) && !seen.has(norm(w)) && seen.add(norm(w)));
+  // keep the longest expression only (« plus tard » makes « tard » redundant); spelling variants were merged above
+  return found.filter((w) => !found.some((o) => norm(o).length > norm(w).length && hasTerm(o, w)));
 }
 
 /** Détection simple de langue (mots fréquents) — toujours confirmée par l'utilisateur. */
