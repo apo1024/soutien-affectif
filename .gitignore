@@ -4,3 +4,4 @@ SCRIPT COMPLET*.txt
 __pycache__/
 .access_code
 _test_full.html
+.compteurs_admin.txt

@@ -20,6 +20,7 @@ h1{font-size:1rem;font-weight:600;margin:0 0 8px;color:var(--muted);letter-spaci
 @keyframes p{50%{opacity:.4}}
 .row{display:flex;justify-content:space-around;margin-top:24px;border-top:1px solid var(--line);padding-top:18px}
 .row b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums}
+.row.total{margin-top:12px;padding-top:14px}
 .row span{font-size:.8rem;color:var(--muted)}
 svg{width:100%;height:70px;margin-top:18px}
 .lock{display:flex;flex-direction:column;gap:12px;margin-top:8px}
@@ -51,6 +52,10 @@ svg{width:100%;height:70px;margin-top:18px}
     <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
     <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
   </div>
+  <div class="row total">
+    <div><b data-f="tvis">…</b><span>visites au total</span></div>
+    <div><b data-f="tdev">…</b><span>appareils différents au total</span></div>
+  </div>
 </div>
 <div class="card site" data-site="cna">
   <h1>CNA Prep — personnes connectées maintenant</h1>
@@ -60,6 +65,10 @@ svg{width:100%;height:70px;margin-top:18px}
   <div class="row">
     <div><b data-f="peak">0</b><span>pic depuis l'ouverture</span></div>
     <div><b data-f="seen">0</b><span>visites vues depuis l'ouverture</span></div>
+  </div>
+  <div class="row total">
+    <div><b data-f="tvis">…</b><span>visites au total</span></div>
+    <div><b data-f="tdev">…</b><span>appareils différents au total</span></div>
   </div>
 </div>
 <div class="status"><span class="dot" id="dot"></span><span id="state">connexion au relais…</span></div>
@@ -93,8 +102,8 @@ try { if (sessionStorage.getItem('sa-stats') === HASH) unlock(); } catch (e) {}
 
 function start() {
 var SITES = {
-  sa:  { topic: 'soutien-affectif-5b20042376e5/presence/' },
-  cna: { topic: 'cna-prep-8c9bf415b53b/presence/' }
+  sa:  { topic: 'soutien-affectif-5b20042376e5/presence/', ns: 'apo1024-soutien-5b2004' },
+  cna: { topic: 'cna-prep-8c9bf415b53b/presence/', ns: 'apo1024-cna-8c9bf4' }
 };
 var TTL = 40000;              // un visiteur est compté s'il a donné signe de vie dans les 40 dernières secondes
 Object.keys(SITES).forEach(function (k) {
@@ -139,6 +148,17 @@ client.on('message', function (topic, payload) {
   else { S.visitors[id] = { t: Date.now(), v: msg === 'on' }; S.allIds[id] = 1; }
   render();
 });
+function totals() {
+  Object.keys(SITES).forEach(function (k) {
+    var S = SITES[k];
+    [['visites', 'tvis'], ['appareils', 'tdev']].forEach(function (a) {
+      fetch('https://abacus.jasoncameron.dev/get/' + S.ns + '/' + a[0]).then(function (r) { return r.json(); })
+        .then(function (j) { S.f(a[1]).textContent = typeof j.value === 'number' ? j.value.toLocaleString('fr-FR') : '0'; })
+        .catch(function () { S.f(a[1]).textContent = '?'; });
+    });
+  });
+}
+totals(); setInterval(totals, 30000);
 setInterval(render, 5000);
 }
 </script>

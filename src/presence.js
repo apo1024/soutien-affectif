@@ -7,6 +7,13 @@
   var HEARTBEAT_MS = 15000;
   if (typeof location === 'undefined' || !document.head || location.protocol === 'file:' || /[?&]nopresence\b/.test(location.search)) return;
   var id = Math.random().toString(36).slice(2, 12);
+  // Total des visites (une par session de navigation) et des appareils (un par navigateur) :
+  // compteurs gratuits Abacus, aucune donnée personnelle envoyée.
+  var COUNT = 'https://abacus.jasoncameron.dev/hit/apo1024-soutien-5b2004/';
+  try {
+    if (!sessionStorage.getItem('sa-visit')) { sessionStorage.setItem('sa-visit', '1'); fetch(COUNT + 'visites').catch(function () {}); }
+    if (!localStorage.getItem('sa-device')) { localStorage.setItem('sa-device', '1'); fetch(COUNT + 'appareils').catch(function () {}); }
+  } catch (e) {}
   var s = document.createElement('script');
   s.src = 'https://cdn.jsdelivr.net/npm/mqtt@5/dist/mqtt.min.js';
   s.async = true;
