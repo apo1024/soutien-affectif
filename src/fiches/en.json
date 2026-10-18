@@ -553,7 +553,7 @@
     "followUp": "Thank you for telling me. What could help you right now, and how can I be there for you?"
    },
    {
-    "label": "Irritation (“Do you suspect me?”)",
+    "label": "Irritation or anger (“Do you suspect me?”)",
     "advice": "Acknowledge that your question may have sounded suspicious. If voices rise, suggest a pause rather than justifying yourself at length.",
     "followUp": "I didn't mean to suspect you. I just felt a bit worried, that's all."
    },
@@ -1461,7 +1461,7 @@
   "badge": "acknowledged",
   "title": "Your partner acknowledges using a dating app",
   "subtitle": "Current use, status and intention",
-  "conclude": "The fact is acknowledged. What it means still needs clarifying: an inactive profile, exchanges, meetings? Above all, did it fit your agreement as a couple or not? The answer does not depend on the app, but on what you had promised each other.",
+  "conclude": "The fact is acknowledged. What it covers still needs clarifying: an inactive profile, exchanges or meetings. Above all, did it respect your couple agreement? The answer depends on what you had promised each other, not on the app.",
   "explanations": [
    "An old profile that was never deleted.",
    "Curiosity or a need to feel reassured about being attractive, without meeting anyone.",
@@ -1504,6 +1504,11 @@
     "label": "“For me, it wasn't cheating”",
     "advice": "You may not share the same agreement on exclusivity. Name your limit without trying to convince. See situation 15.",
     "followUp": "For me, it was. Clearly we don't have the same agreement: we need to talk about it openly."
+   },
+   {
+    "label": "Anger, voices rising",
+    "advice": "You don't have to argue in anger. Suggest a pause and come back to it later, calmly. If you feel threatened, see “Warning signs”.",
+    "followUp": "I don't want us to hurt each other. Let's take a break and talk later."
    },
    {
     "label": "Refusal to give details",

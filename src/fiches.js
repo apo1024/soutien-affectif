@@ -62,7 +62,7 @@ function fichePath(s, f) {
     ${ficheStudies(f)}
   </section>`;
   const right = `<section class="card"><div class="step">${t('step')} ${step + 1} / 3</div>${
-    step === 0 ? `<h2>${t('chooseMoment')}</h2>${quote(t('opening'))}<div class="actions">${btn(t('yesContinue'), 'next()', true)}${btn(t('notNow'), "answer('later')")}${btn(t('rising'), "navigate('calm')")}</div>`
+    step === 0 ? `<h2>${t('chooseMoment')}</h2>${quote(t(aveu ? 'openingAveu' : 'opening'))}<div class="actions">${btn(t('yesContinue'), 'next()', true)}${btn(t('notNow'), "answer('later')")}${btn(t('rising'), "navigate('calm')")}</div>`
     : step === 1 ? `<h2>${t('askTitle')}</h2>${quote(f.question || s[2])}<p>${t('listen')}</p><div class="actions">${f.answers.map((a, k) => btn(a.label, `ficheAnswer(${k})`)).join('')}</div>`
     : `<h2>${t(aveu ? 'decideTitle' : 'nextTitle')}</h2>${aveu ? ficheList(f.decide) : ''}${f.next && f.next.length ? `<h3>${t('nextIdeas')}</h3>${ficheList(f.next)}` : ''}<p>${t('freeAgreement')}</p>
       <div class="actions">${btn(t('writeFeelings'), `openJournal(${JSON.stringify(f.title || s[0]).replace(/"/g, '&quot;')})`)}${btn(t('navCalm'), "navigate('calm')")}${btn(t('finish'), "navigate('home')")}</div>`

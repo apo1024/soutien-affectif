@@ -553,7 +553,7 @@
     "followUp": "Gracias por decírmelo. ¿Qué podría ayudarte ahora, y cómo puedo estar a tu lado?"
    },
    {
-    "label": "Molestia («¿Sospechas de mí?»)",
+    "label": "Molestia o enojo («¿Sospechas de mí?»)",
     "advice": "Reconozca que su pregunta pudo sonar a sospecha. Si el tono sube, proponga una pausa en lugar de justificarse largamente.",
     "followUp": "No quería sospechar de ti. Me sentí un poco preocupado/a, nada más."
    },
@@ -1461,7 +1461,7 @@
   "badge": "acknowledged",
   "title": "Tu pareja reconoce usar una aplicación de citas",
   "subtitle": "Uso actual, estado e intención",
-  "conclude": "El hecho está reconocido. Lo que significa está por precisar: ¿un perfil inactivo, conversaciones, encuentros? Y sobre todo, ¿correspondía o no a su acuerdo de pareja? La respuesta no depende de la aplicación, sino de lo que se habían prometido.",
+  "conclude": "El hecho está reconocido. Falta precisar qué abarca: un perfil inactivo, conversaciones o encuentros. Sobre todo, ¿respetaba su acuerdo de pareja? La respuesta depende de lo que se habían prometido, no de la aplicación.",
   "explanations": [
    "Un perfil antiguo que nunca se borró.",
    "Curiosidad o necesidad de sentirse seguro/a de su capacidad de seducción, sin encuentros.",
@@ -1504,6 +1504,11 @@
     "label": "«Para mí, eso no era engañar»",
     "advice": "Quizás no tengan el mismo acuerdo sobre la exclusividad. Nombre su límite sin intentar convencer. Consulte la situación 15.",
     "followUp": "Para mí, sí lo era. Está claro que no tenemos el mismo acuerdo: tenemos que hablarlo con claridad."
+   },
+   {
+    "label": "Enojo, el tono sube",
+    "advice": "No tiene que discutir en medio del enojo. Proponga una pausa y retome el tema más tarde, con calma. Si se siente amenazado(a), consulte «Señales de peligro».",
+    "followUp": "No quiero que nos hagamos daño. Hagamos una pausa y hablemos más tarde."
    },
    {
     "label": "Rechazo a dar detalles",

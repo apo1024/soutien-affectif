@@ -22,7 +22,8 @@ NEGATION = re.compile(r"\b(sans|ne|n'|jamais|pas|interdit|évitez|eviter|never|d
 
 
 def sentences(text):
-    return [s for s in re.split(r'(?<=[.!?…])\s+', str(text or '')) if s.strip()]
+    # split at full stops only: a « … ? » quoted inside a sentence does not end it (how a reader counts it)
+    return [s for s in re.split(r'(?<=[.…])\s+', str(text or '')) if s.strip()]
 
 
 def check(f, lang, errors):
@@ -37,7 +38,7 @@ def check(f, lang, errors):
     def count(k, lo, hi):
         v = f.get(k)
         if not isinstance(v, list) or not (lo <= len(v) <= hi): err(f'« {k} » doit contenir {lo} à {hi} éléments (a {len(v) if isinstance(v, list) else 0})')
-    count('explanations', 3, 5); count('clarify', 1, 5); count('avoid', 2, 3); count('firstHours', 2, 4); count('answers', 3, 5); count('next', 2, 4)
+    count('explanations', 3, 5); count('clarify', 1, 5); count('avoid', 2, 3); count('firstHours', 2, 4); count('answers', 3, 6 if n == 20 else 5)  # fiche 20 : réponse « colère » ajoutée (règle 8); count('next', 2, 4)
     answers = f.get('answers') or []
     for a in answers:
         for k in ['label', 'advice', 'followUp']:

@@ -23,6 +23,10 @@ assert(!app().includes(T('shockLabel')), 'fiche 02 : rubrique d’aveu affichée
 run('start(19)');
 for (const k of ['shockLabel', 'healthLabel', 'decideLabel', 'supportLabel', 'safetyBanner', 'researchSays']) assert(app().includes(T(k)), 'fiche 20 sans ' + k);
 assert(app().includes('McDaniel'), 'fiche 20 : étude McDaniel absente');
+// Étape 1 du parcours : ouverture adaptée aux aveux (le partenaire vient d'avouer), ouverture d'origine pour les doutes
+run('start(19)'); assert(decode(app()).includes(T('openingAveu')) && !decode(app()).includes(T('opening')), 'fiche 20 : ouverture « aveu » attendue');
+run('start(1)'); assert(decode(app()).includes(T('opening')), 'fiche 02 : ouverture d’origine attendue');
+for (const n of [8, 20]) assert(run(`fiche(${n - 1}).answers.some((a) => /colère/.test(a.label))`), `fiche ${n} : réponse « colère » attendue`);
 // Étape 2 — réponses propres : « De la colère » dans 02 (conseil sur la surveillance), absente de 20
 run('start(1);next()');
 assert(/De la colère/.test(decode(app())), 'fiche 02 : réponse « De la colère » absente');

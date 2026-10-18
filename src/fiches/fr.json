@@ -23,7 +23,7 @@
   "avoid": [
    "Entrer dans le restaurant pour interpeller votre partenaire ou l’autre personne, ou les suivre à la sortie.",
    "Chercher à identifier la personne en fouillant le téléphone ou les comptes de votre partenaire.",
-   "Tendre un piège (« Tu as mangé où à midi ? ») alors que vous savez déjà : cela abîme la confiance, quelle que soit la réponse."
+   "Tendre un piège (« Tu as mangé où à midi ? ») alors que vous savez déjà. Cela abîme la confiance, quelle que soit la réponse."
   ],
   "firstHours": [
    "Laissez retomber l’émotion avant d’en parler. Quelques heures suffisent souvent.",
@@ -95,7 +95,7 @@
   "avoid": [
    "Interpeller votre partenaire ou l'autre personne sur place, ou les suivre.",
    "Fouiller le téléphone, l'agenda ou les reçus pour « vérifier » avant d'en parler.",
-   "Tendre un piège (« Tu étais où cet après-midi ? ») alors que vous savez déjà : cela abîme la confiance, quelle que soit la réponse."
+   "Tendre un piège (« Tu étais où cet après-midi ? ») alors que vous savez déjà. Cela abîme la confiance, quelle que soit la réponse."
   ],
   "firstHours": [
    "Laissez passer le pic d'émotion avant d'en parler. Quelques heures suffisent souvent.",
@@ -553,7 +553,7 @@
     "followUp": "Merci de me le dire. Qu’est-ce qui pourrait t’aider en ce moment, et comment je peux être là ?"
    },
    {
-    "label": "De l’agacement (« Tu me soupçonnes ? »)",
+    "label": "De l’agacement ou de la colère (« Tu me soupçonnes ? »)",
     "advice": "Reconnaissez que votre question a pu sembler suspicieuse. Si le ton monte, proposez une pause plutôt que de vous justifier longuement.",
     "followUp": "Je ne voulais pas te soupçonner. Je me suis senti(e) un peu inquiet ou inquiète, c’est tout."
    },
@@ -1461,7 +1461,7 @@
   "badge": "acknowledged",
   "title": "Votre partenaire reconnaît utiliser une application de rencontres",
   "subtitle": "Un fait reconnu, des limites à clarifier",
-  "conclude": "Le fait est reconnu. Ce qu'il signifie reste à préciser : un profil inactif, des échanges, des rencontres ? Et surtout, cela correspondait-il ou non à votre accord de couple ? La réponse ne dépend pas de l'application, mais de ce que vous vous étiez promis.",
+  "conclude": "Le fait est reconnu. Il reste à préciser ce qu'il recouvre : un profil inactif, des échanges ou des rencontres. Surtout, cela respectait-il votre accord de couple ? La réponse dépend de ce que vous vous étiez promis, pas de l'application.",
   "explanations": [
    "Un ancien profil jamais supprimé.",
    "Une curiosité ou un besoin d'être rassuré(e) sur son pouvoir de séduction, sans rencontre.",
@@ -1504,6 +1504,11 @@
     "label": "« Pour moi, ce n'était pas tromper »",
     "advice": "Vous n'avez peut-être pas le même accord sur l'exclusivité. Nommez votre limite sans chercher à convaincre. Voir la fiche 15.",
     "followUp": "Pour moi, c'en était. On n'a visiblement pas le même accord : il faut qu'on en parle clairement."
+   },
+   {
+    "label": "De la colère, le ton monte",
+    "advice": "Vous n'avez pas à argumenter sous la colère. Proposez une pause et reprenez plus tard, au calme. Si vous vous sentez menacé(e), voyez « Signaux de danger ».",
+    "followUp": "Je ne veux pas qu'on se blesse. On fait une pause et on en reparle plus tard."
    },
    {
     "label": "Refus de détailler",

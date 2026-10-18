@@ -560,7 +560,7 @@
     "followUp": "Mèsi paske ou di m sa. Kisa ki ta ka ede w kounye a, e kijan m ka la pou ou?"
    },
    {
-    "label": "Iritasyon («Ou sispèk mwen?»)",
+    "label": "Iritasyon oswa kolè («Ou sispèk mwen?»)",
     "advice": "Rekonèt kesyon ou a ka te sanble sispèk. Si ton an monte, pwopoze yon poz olye ou pase anpil tan ap jistifye w.",
     "followUp": "Mwen pa t vle sispèk ou. Mwen te santi m yon ti jan enkyete, se tout."
    },
@@ -1480,7 +1480,7 @@
   "badge": "acknowledged",
   "title": "Patnè w rekonèt li sèvi ak yon aplikasyon pou rankont damou",
   "subtitle": "Itilizasyon aktyèl, estati ak entansyon",
-  "conclude": "Fè a rekonèt. Sa li vle di rete pou presize: yon pwofil ki pa aktif, echanj, rankont? Sitou, èske sa te mache ak antant koup la oswa non? Repons lan pa depann de aplikasyon an, men de sa ou menm ak patnè w te pwomèt youn lòt.",
+  "conclude": "Fè a rekonèt. Li rete pou presize sa li kouvri: yon pwofil ki pa aktif, echanj oswa rankont. Sitou, èske sa te respekte antant koup la? Repons lan depann de sa nou te pwomèt youn lòt, pa de aplikasyon an.",
   "explanations": [
    "Yon ansyen pwofil li pa t janm efase.",
    "Kiryozite oswa yon bezwen pou l santi l rasire sou kapasite l pou l sedui, san rankont.",
@@ -1523,6 +1523,11 @@
     "label": "«Pou mwen, sa pa t twonpe w»",
     "advice": "Petèt ou pa gen menm antant sou eksklizivite. Nonmen limit ou san ou pa chèche konvenk. Gade sitiyasyon 15.",
     "followUp": "Pou mwen, se te sa. Li klè nou pa gen menm antant: fòk nou pale de sa klèman."
+   },
+   {
+    "label": "Kolè, ton an monte",
+    "advice": "Ou pa oblije diskite pandan kolè a. Pwopoze yon poz epi reprann pita, ak kalm. Si w santi w menase, gade « Siy danje ».",
+    "followUp": "Mwen pa vle nou blese youn lòt. Ann fè yon poz, n a pale pita."
    },
    {
     "label": "Li refize bay detay",
