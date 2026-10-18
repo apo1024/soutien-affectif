@@ -1,0 +1,1906 @@
+[
+ {
+  "n": 1,
+  "id": "restaurant",
+  "type": "doute",
+  "badge": "context",
+  "title": "You see your partner at a restaurant with someone",
+  "subtitle": "A meal together",
+  "conclude": "Restaurants host meals between friends, colleagues, relatives or business partners. What you saw shows that two people were sharing a moment in the same place. The place and the person's gender are not enough to draw a conclusion.",
+  "explanations": [
+   "A work meal: a client, a colleague, an interview or an informal meeting.",
+   "A friend, a family member or an old acquaintance you had not heard about yet.",
+   "Planning a surprise, a gift or an event that involves you.",
+   "A relationship your partner has not told you about, as a friend or romantic.",
+   "A group meal where you only saw some of the people."
+  ],
+  "clarify": [
+   "Write down what you actually saw: the time, the place, how long, how the two people behaved. Keep it separate from what you thought about it.",
+   "Remember what your partner had told you about their day, without drawing conclusions.",
+   "Ask yourself whether you already know this person or whether it is the first time you have seen them.",
+   "Ask the question directly, describing the fact without interpreting it."
+  ],
+  "avoid": [
+   "Walking into the restaurant to confront your partner or the other person, or following them when they leave.",
+   "Trying to identify the person by searching your partner's phone or accounts.",
+   "Setting a trap (“Where did you have lunch?”) when you already know: it damages trust, whatever the answer."
+  ],
+  "firstHours": [
+   "Let the emotion settle before you talk about it. A few hours are often enough.",
+   "Write what you saw in “My journal”, with the time and place, so it does not get distorted over time.",
+   "If you need to talk about it, choose a discreet person you trust who does not know the other person."
+  ],
+  "question": "I saw you at the restaurant [name/place] around [time] with someone. I'd rather talk to you about it directly: how do you two know each other?",
+  "answers": [
+   {
+    "label": "A clear explanation (colleague, friend, relative…)",
+    "advice": "Say it back in your own words to show you understood. Also say how you felt when you saw them, without blaming.",
+    "followUp": "If I understand correctly, it was a meal with [person] for [reason]. In the moment it worried me, so I wanted to talk to you."
+   },
+   {
+    "label": "A vague explanation (“just someone”, “an acquaintance”)",
+    "advice": "Vagueness is not proof. Ask for one detail, calmly, then let your partner answer.",
+    "followUp": "I'm not accusing you of anything. I just need to know who this person is to you."
+   },
+   {
+    "label": "Anger (“Are you spying on me?”)",
+    "advice": "Explain how you saw them, if it was by chance. If voices rise, stop and use “Take a pause”.",
+    "followUp": "I don't want to watch over you. That's exactly why I'm talking to you, so I don't keep ideas in my head."
+   },
+   {
+    "label": "Refusal to answer",
+    "advice": "Respect the refusal for now: it is not a confession. Say the question still matters to you and suggest another time.",
+    "followUp": "Okay, not now. Can we talk about it again tomorrow evening?"
+   },
+   {
+    "label": "Acknowledging a hidden relationship",
+    "advice": "Take time to absorb it. You do not have to decide anything now. Go to the “acknowledgment” path (situation 12).",
+    "followUp": "I need time to think. We'll talk again when I'm ready."
+   }
+  ],
+  "next": [
+   "Agree on what each of you likes to know about the other's meals and outings, without required reports.",
+   "If you wish, offer to meet your partner's important friends or colleagues.",
+   "If the explanation works for you, say clearly that the matter is closed for you.",
+   "If doubt remains, open a file in “Story analysis” to separate facts from assumptions."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "id": "hotel",
+  "type": "doute",
+  "badge": "context",
+  "title": "You see your partner leaving a hotel with someone",
+  "subtitle": "Clarify the context",
+  "conclude": "Hotels also host meetings, meals, visiting relatives and business stays. What you saw shows that two people were in the same place at the same time. On its own, this says nothing about their relationship or what happened inside.",
+  "explanations": [
+   "A work appointment (meeting, seminar, client, interview) in the hotel lounges or restaurant.",
+   "Someone visiting the city (family, friend, colleague) who is staying at the hotel.",
+   "A meal, a drink or an event (wedding, conference) held there.",
+   "A relationship your partner has not told you about, as a friend or intimate.",
+   "A chance meeting on the way out."
+  ],
+  "clarify": [
+   "Write down what you actually saw: the time, the exact spot (lobby, parking lot, restaurant), how the two people behaved. Keep it separate from what you thought about it.",
+   "Remember what your partner had told you about their day, without drawing conclusions.",
+   "Ask the question directly, describing the fact without interpreting it."
+  ],
+  "avoid": [
+   "Confronting your partner or the other person on the spot, or following them.",
+   "Searching the phone, calendar or receipts to “check” before talking about it.",
+   "Setting a trap (“Where were you this afternoon?”) when you already know: it damages trust, whatever the answer."
+  ],
+  "firstHours": [
+   "Let the peak of emotion pass before you talk about it. A few hours are often enough.",
+   "Write what you saw in “My journal” so it does not get distorted over time.",
+   "If you need to talk right away, choose a person you trust who does not know the other person, to avoid rumors."
+  ],
+  "question": "I saw you leaving the hotel [name/place] around [time] with someone. I'd rather talk to you about it directly: what were you doing there?",
+  "answers": [
+   {
+    "label": "A clear explanation (meeting, visiting relative…)",
+    "advice": "Say it back to show you understood: “If I understand correctly, you had a meeting with…”. Also say how you felt when you saw it, without blaming.",
+    "followUp": "Are there moments like this one you'd rather tell me about ahead of time, to avoid this kind of misunderstanding?"
+   },
+   {
+    "label": "A vague explanation (“nothing special”, “a work thing”)",
+    "advice": "Vagueness is not proof. Ask for one detail, calmly, then let your partner answer.",
+    "followUp": "I'm not accusing you of anything, I just need to understand: who is this person to you?"
+   },
+   {
+    "label": "Anger (“Are you watching me?”)",
+    "advice": "Explain that you were there by chance (if that is true) and that you prefer to talk rather than keep the doubt. If voices rise, suggest a pause.",
+    "followUp": "I don't want to watch over you. That's exactly why I'm talking to you, so I don't keep ideas in my head."
+   },
+   {
+    "label": "Refusal to answer",
+    "advice": "Respect the refusal for now: it is not a confession. Say the question still matters to you and suggest another time.",
+    "followUp": "Okay, not now. Can we talk about it again tomorrow evening?"
+   },
+   {
+    "label": "Acknowledging a hidden relationship",
+    "advice": "Take time to absorb it. You do not have to decide anything now. Switch to the “acknowledgment” path (situation 12).",
+    "followUp": "I need time to think. We'll talk again when I'm ready."
+   }
+  ],
+  "next": [
+   "Agree on what each of you wants to know about the other's outings (no control, no required reports).",
+   "If the explanation works for you, say clearly that the matter is closed for you.",
+   "If doubt remains, open a file in “Story analysis” to separate facts from assumptions."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause"
+  ],
+  "safety": false,
+  "n": 2
+ },
+ {
+  "n": 3,
+  "id": "raccompagne",
+  "type": "doute",
+  "badge": "context",
+  "title": "Someone has just driven your partner home",
+  "subtitle": "Someone drives your partner",
+  "conclude": "Giving someone a ride is a common favor between colleagues, friends, neighbors or relatives. What you saw shows that someone dropped your partner off. On its own, a shared ride says nothing about an intimate relationship.",
+  "explanations": [
+   "A colleague, friend or neighbor who was heading the same way.",
+   "A carpool, a taxi or a ride-hailing driver.",
+   "A helping hand: running late, rain, a breakdown, a late hour or no public transport.",
+   "Someone from the group your partner went out with, who offered to drop everyone off.",
+   "A relationship your partner has not told you about, as a friend or romantic."
+  ],
+  "clarify": [
+   "Write down what you saw: the time, how long the car stopped, the gestures when they said goodbye. Keep it separate from what you imagined.",
+   "Remember how your partner was supposed to get home and what they had told you about their outing.",
+   "Ask yourself what worried you: the person, the time, a gesture, or an older worry.",
+   "Ask an open question about the evening, without turning the talk into an interrogation."
+  ],
+  "avoid": [
+   "Going outside to confront the driver or noting down their license plate.",
+   "Trying to find out who was driving by searching your partner's phone or messages.",
+   "Greeting your partner with an accusation as soon as they walk in."
+  ],
+  "firstHours": [
+   "If you are angry, wait before bringing it up. A simple “Did you have a good evening?” is enough for now.",
+   "Write what you saw in “My journal” so you can talk about it calmly later.",
+   "If worry keeps you from sleeping, use “Take a pause” to calm down."
+  ],
+  "question": "I saw you getting out of a car earlier. Who drove you home, and how was your evening?",
+  "answers": [
+   {
+    "label": "A simple explanation (colleague, friend, carpool…)",
+    "advice": "Thank your partner for the answer and, if you wish, say how you felt. Avoid a string of checking questions.",
+    "followUp": "Okay, thanks. In the moment it worried me a bit, so I wanted to talk to you about it."
+   },
+   {
+    "label": "A vague explanation (“someone from work”)",
+    "advice": "Vagueness is not proof. Ask one specific question, then leave room for the answer.",
+    "followUp": "I'm not trying to control you. Is it someone you've told me about before?"
+   },
+   {
+    "label": "Irritation or anger (“Were you watching out for me?”)",
+    "advice": "Explain that you were there by chance, if that is true. If voices rise, stop and use “Take a pause”.",
+    "followUp": "I wasn't watching out for you. That's exactly why I'm telling you, so I don't stay stuck with a doubt."
+   },
+   {
+    "label": "Refusal to answer",
+    "advice": "Respect the refusal for now: it is not a confession. Suggest talking again at a calmer time.",
+    "followUp": "Okay. Can we talk about it again tomorrow, with clear heads?"
+   },
+   {
+    "label": "Acknowledging a hidden relationship",
+    "advice": "Take time to absorb it. You do not have to decide anything now. Go to the “acknowledgment” path (situation 12).",
+    "followUp": "I need time to think. We'll talk again when I'm ready."
+   }
+  ],
+  "next": [
+   "If you both want to, agree to let each other know when one of you gets home later or differently than planned (situation 06).",
+   "Introduce each other to the colleagues or friends you see often, without making it an obligation.",
+   "If doubt remains, open a file in “Story analysis” to separate facts from assumptions."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 4,
+  "id": "baiser",
+  "type": "doute",
+  "badge": "context",
+  "title": "You see your partner kissing someone",
+  "subtitle": "Check what you saw",
+  "conclude": "From far away or in motion, a kiss can look like a peck on the cheek, a hug or a whisper. What you saw first needs to be made clear. A confirmed romantic kiss may cross an agreed limit, without proving sexual contact.",
+  "explanations": [
+   "A peck on the cheek, a hug or a goodbye gesture seen from a misleading angle.",
+   "A usual gesture in this person's culture or circle, like a warm kiss on the cheek.",
+   "An unwanted kiss forced on your partner, which may have made them uncomfortable.",
+   "Someone who looked like your partner from a distance.",
+   "A romantic kiss with someone else."
+  ],
+  "clarify": [
+   "Write down exactly what you saw: the distance, the angle, the light, how long it lasted, and whether you could see their faces.",
+   "Ask yourself honestly: a kiss on the cheek, a quick gesture, or clearly a kiss on the mouth?",
+   "Separate what your eyes saw from what your fear may have filled in.",
+   "Describe the scene to your partner as you saw it, leaving room for another reading."
+  ],
+  "avoid": [
+   "Confronting your partner or the other person on the spot, in front of other people.",
+   "Searching the phone or contacting the other person to “get the truth”.",
+   "Presenting your impression as a certainty (“I saw you kissing…”) if you are not sure."
+  ],
+  "firstHours": [
+   "Write down in “My journal” right away exactly what you saw, before your memory changes it.",
+   "Let the peak of emotion pass. A very brief image can take up a lot of space in your mind.",
+   "If you need to talk, choose a person you trust who does not know the other person.",
+   "If the emotion is too strong, use “Take a pause” before any discussion."
+  ],
+  "question": "Earlier, at [place], I saw what looked to me like a kiss between you and someone. I was far away and I may be wrong: what happened?",
+  "answers": [
+   {
+    "label": "“You saw it wrong, it was a peck on the cheek / a hug”",
+    "advice": "That is possible: things seen from a distance can be misleading. Say what you saw and felt, without demanding proof.",
+    "followUp": "Okay. From where I was, it looked like something else. It shook me, and I needed to talk to you about it."
+   },
+   {
+    "label": "“That person kissed me, I didn't want it”",
+    "advice": "First listen to how your partner experienced it. A forced gesture is not a choice: they may need support.",
+    "followUp": "How do you feel about what happened? Do you need anything?"
+   },
+   {
+    "label": "Anger (“Are you spying on me?”)",
+    "advice": "Explain that you were there by chance, if that is true. If voices rise, stop and use “Take a pause”.",
+    "followUp": "I'm not spying on you. I'd rather talk to you about it than keep this image to myself."
+   },
+   {
+    "label": "Refusal to answer",
+    "advice": "Respect the refusal for now: it is not a confession. Say the question matters to you and suggest another time.",
+    "followUp": "Okay, not tonight. I'd like us to talk about it again tomorrow, calmly."
+   },
+   {
+    "label": "Acknowledging a romantic kiss",
+    "advice": "An acknowledged kiss may cross a limit in your relationship, without proving anything else. Take time to absorb it, then see situation 12.",
+    "followUp": "Thank you for telling me. I need time before talking about it more."
+   }
+  ],
+  "next": [
+   "Clarify what each of you sees as a friendly gesture or a romantic one (situation 15).",
+   "If the explanation works for you, say clearly that the matter is closed for you.",
+   "If doubt remains, open a file in “Story analysis” to separate what you saw from your assumptions."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 5,
+  "id": "conversations",
+  "type": "doute",
+  "badge": "context",
+  "title": "Your partner refuses to show private conversations",
+  "subtitle": "Privacy and trust",
+  "conclude": "Refusing to show conversations does not prove infidelity. Everyone has a right to privacy, and messages also involve other people. Access to a phone must be freely given, never forced.",
+  "explanations": [
+   "A need for personal privacy, even with nothing to hide.",
+   "Conversations that involve other people: friends' confidences, family worries, work information.",
+   "Feeling suspected, which makes someone want to protect themselves.",
+   "Discomfort about topics unrelated to you: health, money, personal searches, a planned surprise.",
+   "Exchanges your partner does not want to show you, friendly or romantic."
+  ],
+  "clarify": [
+   "Ask yourself what you are really looking for: reassurance, understanding a specific fact, or setting shared limits.",
+   "If a specific fact worries you, talk about that fact rather than the phone.",
+   "Focus the discussion on your agreement as a couple: which exchanges with others are acceptable, for each of you?",
+   "Keep in mind that going through someone's phone is illegal in many countries and damages trust for a long time."
+  ],
+  "avoid": [
+   "Secretly going through the phone, guessing the passcode or installing spyware: it is often illegal and it destroys trust.",
+   "Making phone access a proof of love (“If you loved me, you'd show me”).",
+   "Treating every phone-related gesture, like a screen turned over or a notification, as a clue."
+  ],
+  "firstHours": [
+   "If the conversation got tense, let a few hours pass before coming back to it.",
+   "Write in “My journal” what triggered your request: a specific fact or a general worry?",
+   "If you feel the urge to look at the phone, step away and use “Take a pause”."
+  ],
+  "question": "I respect your privacy and I don't want to look at your phone. What worries me is [fact]. How could we talk about our limits in conversations with other people?",
+  "answers": [
+   {
+    "label": "Openness to talking about the couple's limits",
+    "advice": "Use this openness to talk about your agreement, not the phone. Each of you says what feels acceptable or not.",
+    "followUp": "For you, what would be out of line in a conversation with someone else? I'll tell you what I think too."
+   },
+   {
+    "label": "An offer to show a message, unprompted",
+    "advice": "This choice belongs to your partner. You can accept or say it is not necessary. Avoid making it a habit or a demand.",
+    "followUp": "Thank you for trusting me. What matters most to me is that we agree on our limits."
+   },
+   {
+    "label": "Anger (“You don't trust me!”)",
+    "advice": "Acknowledge that the request can hurt. Bring the focus back to your worry, not the phone. If voices rise, use “Take a pause”.",
+    "followUp": "I understand it hurts you. I'm not asking for your phone, I'm telling you how I feel."
+   },
+   {
+    "label": "Refusal to talk about it",
+    "advice": "Refusal is not a confession: privacy is a right. Suggest talking about your agreements later, without putting the phone at the center.",
+    "followUp": "Okay. I'd still like us to talk soon about what's acceptable for both of us."
+   }
+  ],
+  "next": [
+   "Define together what each of you accepts in exchanges with others: friendly, romantic, sexual (situation 15).",
+   "Agree on what each of you keeps private, and respect it on both sides.",
+   "If your worries come back often without new facts, see situation 13 and “My context”."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger",
+   "contexte"
+  ],
+  "safety": false
+ },
+ {
+  "n": 6,
+  "id": "sorties",
+  "type": "doute",
+  "badge": "context",
+  "title": "Your partner goes out without explaining their plans",
+  "subtitle": "Communicate without monitoring",
+  "conclude": "Going out without detailing plans says nothing, on its own, about what your partner is doing. Every couple has its own habits for keeping each other informed. Look for a shared rule that respects each person's independence.",
+  "explanations": [
+   "A habit of independence, from their family or past relationships.",
+   "An ordinary outing (sport, shopping, friends) that seems too routine to explain.",
+   "A need for time alone, to breathe or think.",
+   "A surprise, a gift or a project your partner prefers to keep secret for now.",
+   "An activity or meeting your partner does not want to tell you about, friendly or romantic."
+  ],
+  "clarify": [
+   "Ask yourself whether this behavior is new or has always been part of your relationship.",
+   "Separate your need (being told, knowing when to expect them) from controlling their schedule.",
+   "Ask yourself whether you let your partner know when you go out.",
+   "Talk about this need at a calm moment, not as your partner walks in the door."
+  ],
+  "avoid": [
+   "Following your partner, tracking their location, or asking people close to you to watch them.",
+   "Demanding a detailed report of every outing, or calling again and again while they are out.",
+   "Imposing a rule you would not follow yourself."
+  ],
+  "firstHours": [
+   "While they are away, keep busy: call someone, go out, do something that relaxes you.",
+   "Write in “My journal” what you feel and what is feeding your worry.",
+   "When they come back, greet your partner normally. The discussion can wait for a calm moment."
+  ],
+  "question": "When you go out without telling me where you're going or when you'll be back, I worry. Could we agree to let each other know and give a rough time to be back?",
+  "answers": [
+   {
+    "label": "“Yes, that's fine”",
+    "advice": "Set a simple rule that applies to both of you. Say thank you, and avoid asking for more than what was agreed.",
+    "followUp": "Thank you. I'll do the same: a quick message to say roughly when I'll be home."
+   },
+   {
+    "label": "“I don't have to tell you everything”",
+    "advice": "That is true: this is not about telling everything. Make clear you only mean a practical, shared reference point.",
+    "followUp": "I'm not asking where you're going or who with. Just a rough time, so I don't worry."
+   },
+   {
+    "label": "Anger (“You want to control me”)",
+    "advice": "Acknowledge that the request may feel intrusive. Bring the focus back to your feelings. If voices rise, stop and use “Take a pause”.",
+    "followUp": "It's not control, it's my worry. We can talk about it again later, calmly."
+   },
+   {
+    "label": "Refusal to talk about it",
+    "advice": "Refusal is not a confession. Respect it for now, say what you need and suggest another time.",
+    "followUp": "Okay. This matters to me, and I'd like us to talk about it again this week."
+   },
+   {
+    "label": "Acknowledging a hidden relationship",
+    "advice": "Take time to absorb it. You do not have to decide anything now. Go to the “acknowledgment” path (situation 12).",
+    "followUp": "I need time to think. We'll talk again when I'm ready."
+   }
+  ],
+  "next": [
+   "Write a simple, shared rule together: say when you go out, give a rough time to be back.",
+   "Check in after a few weeks to see if the rule works for both of you.",
+   "If your worry stays strong despite the agreement, see situation 13 and “My context”."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger",
+   "contexte"
+  ],
+  "safety": false
+ },
+ {
+  "n": 7,
+  "id": "nervosite",
+  "type": "doute",
+  "badge": "context",
+  "title": "Your partner becomes nervous during your conversation",
+  "subtitle": "Make room for discomfort",
+  "conclude": "Nervousness cannot detect a lie. A sincere person can be tense when they feel suspected. A pause and a gentler tone often make the conversation easier.",
+  "explanations": [
+   "Feeling accused, which creates stress even with nothing to hide.",
+   "Stress or tiredness from worries unrelated to you: work, money, family.",
+   "A health issue: anxiety, depression, sleep problems or a side effect of medication.",
+   "Memories of past arguments, in this relationship or elsewhere, that this topic brings back.",
+   "Discomfort about something your partner has not told you, friendly or romantic."
+  ],
+  "clarify": [
+   "Notice your own tone: are you asking questions one after another, like an interrogation?",
+   "Ask your partner how they are doing at the moment, outside of this conversation.",
+   "Ask yourself whether this nervousness is new or usual in difficult conversations.",
+   "Come back to the specific fact that worried you, rather than your partner's reactions."
+  ],
+  "avoid": [
+   "Taking nervousness, avoided eye contact or hesitation as proof of a lie.",
+   "Pushing harder to make your partner “crack”.",
+   "Secretly recording the conversation to analyze their reactions later."
+  ],
+  "firstHours": [
+   "If tension rises, stop the conversation and use “Take a pause”.",
+   "Write in “My journal” what was said, not only the reactions you noticed.",
+   "Later, check in on your partner without bringing the topic back right away."
+  ],
+  "question": "I get the feeling this conversation makes you uncomfortable. Is it my tone, the topic, or something else?",
+  "answers": [
+   {
+    "label": "“It's the way you talk to me”",
+    "advice": "Listen without defending yourself. Offer to start again more gently, talking about yourself rather than your partner.",
+    "followUp": "Okay, I'll try a different way. I'll start by telling you how I feel, without accusing you."
+   },
+   {
+    "label": "“I'm stressed, things aren't good right now”",
+    "advice": "Set the topic aside and make room for what your partner is going through. Offer your support, and outside help if needed.",
+    "followUp": "Thank you for telling me. What would help you right now?"
+   },
+   {
+    "label": "“I feel suspected”",
+    "advice": "Acknowledge this feeling. Explain your worry starting from a specific fact, without interpreting it.",
+    "followUp": "I understand. I don't want to accuse you: it's this specific fact that worried me."
+   },
+   {
+    "label": "Anger, voices rise",
+    "advice": "Stop the conversation and use “Take a pause”. If you are afraid, see “Warning signs”.",
+    "followUp": "I'd rather we stop here for now. We'll pick it up again when we're both calmer."
+   },
+   {
+    "label": "Refusal to continue",
+    "advice": "Refusal is not a confession. Respect it and suggest a time to pick it up later.",
+    "followUp": "Okay, let's stop. Can we talk about it again this weekend?"
+   }
+  ],
+  "next": [
+   "Agree on rules for difficult conversations: a chosen time, a word to ask for a pause.",
+   "Check in on your partner's well-being and encourage them to see someone if something is wrong.",
+   "If conversations about fidelity often go badly, see situation 14."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 8,
+  "id": "appearance",
+  "type": "doute",
+  "badge": "context",
+  "title": "Your partner dresses up for an ordinary outing",
+  "subtitle": "Appearance and assumptions",
+  "conclude": "Taking care of one's appearance can meet many needs: feeling good, regaining confidence, marking an occasion. On its own, this change says nothing about who it is meant for. It is not proof of infidelity.",
+  "explanations": [
+   "The simple pleasure of feeling good in their clothes, with no one in particular in mind.",
+   "A need to regain self-confidence after a hard time: illness, weight gain or loss, low mood, tiredness.",
+   "A specific occasion: an important meeting, a photo, an interview, seeing relatives again.",
+   "A wish to be attractive in general, or to you, without having said so.",
+   "A wish to be attractive to a specific person your partner has not mentioned to you."
+  ],
+  "clarify": [
+   "Write down what has actually changed: clothes, perfume, hairstyle, how often. Keep it separate from what you imagined.",
+   "Ask yourself whether your partner is going through a particular period: a new job, a health concern, low spirits.",
+   "Check in on their well-being: “How are you feeling these days, in yourself and in your life?”",
+   "Start with a sincere compliment, then your question, without hidden meaning."
+  ],
+  "avoid": [
+   "Commenting in an ironic or suspicious tone (“Who are you dressing up for?”).",
+   "Following your partner or checking their calendar to find out who they are meeting.",
+   "Criticizing their appearance to push them to take less care with how they dress."
+  ],
+  "firstHours": [
+   "Let the worry settle before talking about it: a compliment is better than an interrogation as they leave.",
+   "Write your feelings in “My journal”, separating what you saw from what you fear.",
+   "Ask yourself whether this worry connects with older doubts. If so, situation 13 can help."
+  ],
+  "question": "You picked a nice outfit today, it really suits you. Is there a special occasion?",
+  "answers": [
+   {
+    "label": "A specific occasion (meeting, work appointment, relatives…)",
+    "advice": "Accept the explanation simply. You can say you like seeing them like this, without adding any condition.",
+    "followUp": "It really suits you. I'd love for the two of us to go out one of these evenings too."
+   },
+   {
+    "label": "“Nothing special, I just wanted to feel good”",
+    "advice": "That answer is enough. Take the chance to ask how their mood and self-confidence are.",
+    "followUp": "I'm glad you feel good. How are things for you these days, in general?"
+   },
+   {
+    "label": "A need to regain confidence (health, body, mood)",
+    "advice": "Listen without minimizing. Offer your support and, if the difficulty lasts, help from a doctor or a psychologist.",
+    "followUp": "Thank you for telling me. What could help you right now, and how can I be there for you?"
+   },
+   {
+    "label": "Irritation (“Do you suspect me?”)",
+    "advice": "Acknowledge that your question may have sounded suspicious. If voices rise, suggest a pause rather than justifying yourself at length.",
+    "followUp": "I didn't mean to suspect you. I just felt a bit worried, that's all."
+   },
+   {
+    "label": "Refusal to answer",
+    "advice": "Refusal is not a confession. Everyone can choose their clothes without explaining. Note your feelings and talk again if the worry continues.",
+    "followUp": "Okay, you don't have to explain. If something ever weighs on you, I'm here."
+   }
+  ],
+  "next": [
+   "Suggest time together where each of you enjoys dressing up for the other.",
+   "If the worry often comes back without new facts, explore what feeds it (situation 13).",
+   "If a well-being concern has come up, talk about it again calmly and consider suitable help."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 9,
+  "id": "contradiction",
+  "type": "doute",
+  "badge": "context",
+  "title": "Your partner’s account contains a contradiction",
+  "subtitle": "Clarify without trapping",
+  "conclude": "Two different versions of the same moment show that one point still needs clearing up. Memory, a misunderstanding or a change of plan often explain it. An omission or a lie is possible, but nothing says what it would be about.",
+  "explanations": [
+   "A memory slip about a time, a place or the order of events.",
+   "A change of plan during the day that your partner did not think to mention.",
+   "A misunderstanding: you understood something different from what was said.",
+   "An omission to avoid discomfort or an argument, about something that does not necessarily involve another person.",
+   "A lie to hide an outing, a purchase or a relationship."
+  ],
+  "clarify": [
+   "Write down both versions word for word, with the time each one was said. Check you are not mixing it up with another day.",
+   "Choose one specific point to clear up, rather than going over the whole account.",
+   "Ask yourself whether the gap matters to you, or whether it is a detail with no consequence.",
+   "Ask the question openly, saying you want to understand, not to catch your partner out."
+  ],
+  "avoid": [
+   "Asking the same question several times to “see if the answer changes”: it is a trap that damages trust.",
+   "Checking with friends, colleagues or through location tracking before talking about it.",
+   "Turning the conversation into an interrogation, with a list of prepared questions."
+  ],
+  "firstHours": [
+   "Write both versions in “My journal” while they are fresh.",
+   "Wait until you are calm to talk about it: an accusing tone tends to bring defense rather than explanation.",
+   "If doubt overwhelms you, open a file in “Story analysis” to separate facts from assumptions."
+  ],
+  "question": "Earlier you told me [version 1], and now [version 2]. Maybe I got mixed up: can you help me understand?",
+  "answers": [
+   {
+    "label": "A memory slip or a change of plan",
+    "advice": "Say it back to check you understood. If the explanation works for you, say clearly that the matter is closed.",
+    "followUp": "Okay, I understand better now. It helps me when you let me know if plans change."
+   },
+   {
+    "label": "“You misunderstood what I said”",
+    "advice": "That is possible. Calmly compare what each of you remembers saying or hearing, without trying to be right.",
+    "followUp": "I may have misunderstood. Can you tell me again what you meant?"
+   },
+   {
+    "label": "Acknowledging an omission or a small lie",
+    "advice": "Thank your partner for correcting it. Ask what led them not to say it, without blaming. If the lie is about a relationship, see situation 21.",
+    "followUp": "Thank you for telling me. What made you not want to tell me at first?"
+   },
+   {
+    "label": "Anger (“Are you calling me a liar?”)",
+    "advice": "Make clear you are talking about one specific point, not about them as a person. If voices rise, suggest a pause and continue later.",
+    "followUp": "I'm not calling you a liar. I'm just trying to understand that one point."
+   },
+   {
+    "label": "Refusal to answer",
+    "advice": "Refusal is not a confession. Say this point matters to you and suggest talking about it another time.",
+    "followUp": "Okay, not now. I'd like us to talk about it again when you feel ready."
+   }
+  ],
+  "next": [
+   "Agree to let each other know when plans change, without required reports (see situation 06).",
+   "If the explanation works for you, do not come back to this gap.",
+   "If doubt continues, open a file in “Story analysis” to take stock with a cool head."
+  ],
+  "studies": [
+   "mazzini2025"
+  ],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 10,
+  "id": "less-intimacy",
+  "type": "doute",
+  "badge": "context",
+  "title": "Your partner wants less intimate contact",
+  "subtitle": "Listen to needs",
+  "conclude": "Desire and the need for closeness change over a lifetime, for many different reasons. On its own, a decrease does not say what is causing it. Anyone can say no to contact without having to prove their faithfulness.",
+  "explanations": [
+   "Tiredness, stress or a busy period (work, children, family worries).",
+   "A health issue, a treatment, pain or hormonal changes.",
+   "Low mood, anxiety, depression or discomfort with their own body.",
+   "Unspoken tension in the relationship: resentment, feeling unheard.",
+   "An attraction to or a relationship with someone else."
+  ],
+  "clarify": [
+   "Notice how long this change has been going on and what happened around it: work, health, grief, an argument.",
+   "Check in on their well-being in general, not only intimacy: “How are you feeling these days?”",
+   "Express your own needs by talking about yourself (“I need closeness”), without asking them to account for themselves.",
+   "Think about other kinds of closeness: affection, time together, conversations."
+  ],
+  "avoid": [
+   "Insisting, bargaining or pressuring for intimate contact: everyone has the right to say no.",
+   "Reading every no as proof or turning it into a reproach.",
+   "Comparing with the start of the relationship or with other couples."
+  ],
+  "firstHours": [
+   "After a no, avoid talking about it in the heat of the moment: disappointment can make words hurtful.",
+   "Write in “My journal” what you feel: missing them, worry, feeling rejected.",
+   "Choose a calm moment, outside the bedroom, to bring up the topic."
+  ],
+  "question": "I feel like we've had fewer intimate moments lately. How are you feeling these days, and about our intimacy?",
+  "answers": [
+   {
+    "label": "“I'm exhausted, stressed”",
+    "advice": "Accept this answer without arguing. Ask what could lighten their load, and look for other moments of closeness.",
+    "followUp": "I understand. What would help you breathe a bit? We could just spend time together, with no expectations."
+   },
+   {
+    "label": "A health, body or mood concern",
+    "advice": "Listen without minimizing. Offer your support and, if your partner wishes, a visit to a doctor, a sex therapist or a psychologist.",
+    "followUp": "Thank you for telling me. I don't want to put pressure on you. How can I help?"
+   },
+   {
+    "label": "“Something isn't right between us”",
+    "advice": "This is an important opening. Listen all the way through before answering, and ask what would help.",
+    "followUp": "I want to understand. What's weighing on you between us, and what could change?"
+   },
+   {
+    "label": "Anger (“Do you think I'm cheating on you?”)",
+    "advice": "Say you are talking about your needs, not a suspicion. If voices rise, suggest a pause and continue later.",
+    "followUp": "I'm not accusing you of anything. I need closeness, and I wanted to know how you're doing."
+   },
+   {
+    "label": "Refusal to talk about it",
+    "advice": "Refusal is not a confession. Intimacy is a sensitive topic. Say you are still available and suggest talking about it later.",
+    "followUp": "Okay. I don't want to force you. We can talk about it again when you feel comfortable."
+   }
+  ],
+  "next": [
+   "Plan time together with no expectation of physical intimacy, to rebuild closeness.",
+   "If a health or mood concern has come up, encourage seeing a professional, without forcing it.",
+   "If the topic stays stuck, consider a couples therapist or a sex therapist."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 11,
+  "id": "many-messages",
+  "type": "doute",
+  "badge": "context",
+  "title": "Your partner exchanges many messages with someone",
+  "subtitle": "Agree on boundaries",
+  "conclude": "How often they message shows that a connection exists, not what kind. What matters is what you have agreed together about exchanges with other people. The question is about this agreement, not about access to the phone.",
+  "explanations": [
+   "A friend, a family member or a colleague your partner talks with a lot.",
+   "A project, an organization or a group that needs many messages.",
+   "Support during a hard time, on one side or the other.",
+   "A growing emotional closeness that could go beyond the limits you had in mind.",
+   "Romantic or sexual exchanges."
+  ],
+  "clarify": [
+   "Write down what you actually notice: how often, at what times. You do not know the content, and that is normal.",
+   "Ask yourself what you are hoping for: knowing who this person is, or agreeing on limits for the future?",
+   "Talk about your agreements on friendly, romantic or sexual exchanges with others (see situation 15).",
+   "Simply ask who this person is, as you would for anyone close to them."
+  ],
+  "avoid": [
+   "Going through the phone or accounts: it is illegal in many countries and damages trust for a long time.",
+   "Demanding passcodes or to read conversations as “proof”.",
+   "Contacting the person or looking through their social media to investigate."
+  ],
+  "firstHours": [
+   "Resist the urge to look at the screen or pick up the phone: it would prevent a calm conversation.",
+   "Write your worry in “My journal”, with what you actually noticed.",
+   "Prepare a question about your agreement as a couple, not about the content of the messages."
+  ],
+  "question": "I notice you message [name] a lot. Who is this person to you? And what limits do we want for our exchanges with other people?",
+  "answers": [
+   {
+    "label": "A friend, a relative or a colleague",
+    "advice": "Accept the explanation. Say how you felt, without blaming, and suggest talking about your shared limits.",
+    "followUp": "Thank you. I felt a bit left out. Can we talk about what works for both of us?"
+   },
+   {
+    "label": "“Do you want to read my messages?”",
+    "advice": "Make clear you are not asking for access to the phone. You are trying to agree on your limits.",
+    "followUp": "No, I don't want to read your messages. I'd like us to agree on what's okay for us."
+   },
+   {
+    "label": "Acknowledging an emotional or romantic bond",
+    "advice": "Take time to absorb it. You do not have to decide anything now. See situations 19 and 22.",
+    "followUp": "Thank you for telling me. I need time to think. We'll talk again when I'm ready."
+   },
+   {
+    "label": "Anger (“Are you watching me?”)",
+    "advice": "Say that you are talking about it precisely so you don't watch over them. If voices rise, suggest a pause.",
+    "followUp": "I don't want to watch over you. I'd rather talk to you about it than keep it to myself."
+   },
+   {
+    "label": "Refusal to answer",
+    "advice": "Refusal is not a confession. Respect it for now and say the question of limits still matters to you.",
+    "followUp": "Okay, not now. But I'd like us to talk about our limits another day."
+   }
+  ],
+  "next": [
+   "Write down together what each of you sees as acceptable in exchanges with others (situation 15).",
+   "Agree on what each of you wants to share freely, without checking phones.",
+   "If doubt continues, open a file in “Story analysis” to separate facts from assumptions."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 12,
+  "id": "relation-reconnue",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner acknowledges a relationship with another person",
+  "subtitle": "Choose what comes next",
+  "conclude": "The fact is acknowledged: a relationship existed. Its nature still needs clarifying: emotional or sexual, one-time or ongoing, over or not. What it means for you depends on your agreement as a couple and on how you feel.",
+  "explanations": [
+   "A brief relationship, presented as a one-time mistake that is already over.",
+   "A lasting relationship, with feelings, that may still be going on.",
+   "A mostly emotional relationship, without physical contact.",
+   "A relationship your partner believed fit within your agreement as a couple (see situation 15).",
+   "A personal or relationship difficulty your partner did not express. This can help you understand, without excusing anything."
+  ],
+  "clarify": [
+   "Ask about what directly concerns you: how long, whether it is over, whether there was sex and whether it was protected.",
+   "You do not have to know everything. Ask yourself which details would help you decide, and which would hurt you more than help.",
+   "You can ask your questions in several steps, over several days."
+  ],
+  "avoid": [
+   "Contacting the other person, threatening them or exposing them publicly.",
+   "Searching your partner's phone or accounts to get “the whole truth”.",
+   "Making a final decision in the first hour, or announcing the news to everyone around you."
+  ],
+  "firstHours": [
+   "Shock, anger, sadness or numbness are normal reactions.",
+   "You can ask for time: “I need to be alone tonight.”",
+   "Eat, sleep if you can, call someone you trust.",
+   "Use “Take a pause” if the emotion becomes too strong."
+  ],
+  "question": "You told me you had a relationship with someone. I need to understand what happened: since when, and where do things stand today?",
+  "answers": [
+   {
+    "label": "“It's over, it was a mistake”",
+    "advice": "You may believe it or not: both are legitimate. Say what you would need to rebuild trust, without imposed monitoring.",
+    "followUp": "I hear that it's over. For me, trust doesn't come back all at once. We'll talk about it again."
+   },
+   {
+    "label": "“It's still going on” or hesitation",
+    "advice": "This is important information for your decision. You do not have to wait for your partner's choice: you can set your own limits.",
+    "followUp": "I need to know what you plan to do. And I'm also going to think about what I want."
+   },
+   {
+    "label": "There was sexual contact",
+    "advice": "For your health, you can ask whether it was protected. Think about getting tested, whatever you decide.",
+    "followUp": "I need to know, for my health: was it protected?"
+   },
+   {
+    "label": "Anger, or voices rise",
+    "advice": "Stop the conversation and use “Take a pause”. If you feel threatened or prevented from leaving, see “Warning signs”.",
+    "followUp": "I'm stopping here for tonight. We'll pick it up again when we can talk without shouting."
+   },
+   {
+    "label": "Refusal to give details",
+    "advice": "Respect it for tonight: this refusal is not a further confession. Say what you will need to decide (health, end of the relationship, therapy).",
+    "followUp": "Okay for tonight. But to decide what comes next, I'll need us to talk about it again."
+   }
+  ],
+  "shock": [
+   "What you feel is legitimate, whatever the nature of this relationship.",
+   "You may have contradictory reactions: wanting to leave and to stay, to know everything and to know nothing.",
+   "Just avoid actions you would regret: threats, violence, sharing messages."
+  ],
+  "decide": [
+   "Taking time before deciding, possibly sleeping apart for a few days.",
+   "Considering repair with clear conditions: ending the other relationship, chosen transparency, couples therapy.",
+   "Ending the relationship.",
+   "Forgiveness cannot be forced. No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": "If there was sex with the other person, testing for sexually transmitted infections is recommended for both of you, whatever you decide. A health center or a doctor can do it confidentially.",
+  "support": [
+   "Someone you trust, ideally outside the other person's circle.",
+   "A psychologist for you alone, and a couples therapist if you are thinking of continuing.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Write in “My journal” what is non-negotiable for you.",
+   "Set a time to talk again, when the shock is less raw.",
+   "Clarify your agreement on exclusivity going forward (situation 15)."
+  ],
+  "studies": [
+   "apostolou2022"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ },
+ {
+  "n": 13,
+  "id": "recurring-doubts",
+  "type": "communication",
+  "badge": "communication",
+  "title": "You often suspect cheating without new facts",
+  "subtitle": "Understand your worry",
+  "conclude": "Doubts that come back without new facts say more about your worry and the relationship. On their own, they say nothing about what your partner is doing. Understanding them is work on yourself, which individual support can make easier.",
+  "explanations": [
+   "A past wound: infidelity you went through, a sudden breakup, a childhood marked by abandonment.",
+   "A period of stress, tiredness or isolation that makes the worry stronger.",
+   "Anxiety that feeds itself: each check brings relief for a moment, then the doubt comes back.",
+   "A lack of time together or signs of attention, which leaves room for fears.",
+   "A real distance in the relationship, or a secret, that you sense without being able to name it."
+  ],
+  "clarify": [
+   "In “My journal”, note each doubt: the date, what triggered it, and whether there was a new fact.",
+   "In “My context”, look for past experiences that could feed this fear.",
+   "Separate three things: what you observe, what you feel, what you imagine.",
+   "Ask yourself what really reassures you, and how long that relief lasts."
+  ],
+  "avoid": [
+   "Asking your partner to reassure you again and again: the relief is short and the relationship wears out.",
+   "Checking their phone, social media or whereabouts to calm the anxiety.",
+   "Presenting your fears as accusations (“I know you're hiding something from me”)."
+  ],
+  "firstHours": [
+   "When doubt rises, wait before acting: breathe, walk, let the peak of anxiety pass.",
+   "Write down the thought that worries you, then ask yourself: “What new fact have I observed?”",
+   "If the anxiety is very strong, use “Take a pause” or call someone you trust."
+  ],
+  "question": "I notice my worries come back often, even without a specific reason. I'd like to talk to you about it, not to accuse you, but so we can understand together. How is this for you?",
+  "answers": [
+   {
+    "label": "Kind, caring listening",
+    "advice": "Thank your partner. Talk about what you feel and what you plan to do, rather than asking for proof.",
+    "followUp": "Thank you for listening. I'm going to work on my fears. It would help me if we spent more time together."
+   },
+   {
+    "label": "Weariness (“This topic again?”)",
+    "advice": "Acknowledge that these doubts also weigh on your partner. Show you are looking for a solution, not more reassurance.",
+    "followUp": "I understand it wears you out. That's exactly why I want to handle it differently, for both of us."
+   },
+   {
+    "label": "Voices rise",
+    "advice": "Do not try to convince at all costs. Suggest a pause and pick it up again when you are both calm.",
+    "followUp": "I can feel things heating up. Let's take a pause and talk again later, okay?"
+   },
+   {
+    "label": "Refusal to talk about it",
+    "advice": "Refusal is not a confession. Your partner may be weary or hurt. Move forward on your side with individual support.",
+    "followUp": "Okay, I respect that. I'm going to talk to someone so I can move forward on my side."
+   }
+  ],
+  "next": [
+   "See a psychologist or therapist to work on anxiety and past wounds.",
+   "Fill in “My context” to better understand what awakens your fears.",
+   "Agree with your partner on regular times to talk about the relationship, without interrogation.",
+   "If a new fact comes up, use the matching situation rather than questioning everything."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 14,
+  "id": "argument",
+  "type": "communication",
+  "badge": "communication",
+  "title": "Your conversation about fidelity turns into an argument",
+  "subtitle": "Take a step back",
+  "conclude": "An argument shows that the topic touches something sensitive in one of you, or in both. It does not say who is right, or what happened. The priority is to protect the conversation, and first of all your safety.",
+  "explanations": [
+   "A badly chosen moment: tiredness, alcohol, running late, children present.",
+   "Words felt as an accusation, which push someone to defend themselves.",
+   "Old wounds, in one of you or the other, awakened by the topic of fidelity.",
+   "Doubts or reproaches built up over a long time, coming out all at once.",
+   "A power struggle where one person tries to silence the other with shouting, threats or intimidation."
+  ],
+  "clarify": [
+   "Notice the signs that the conversation is going off track: rising voices, a racing heart, wanting the last word.",
+   "Afterwards, write in “My journal” what triggered the argument and what each of you said.",
+   "In “My context”, look at whether this topic brings back past experiences for you.",
+   "Ask yourself whether you felt afraid during the argument. If so, see “Warning signs”."
+  ],
+  "avoid": [
+   "Carrying on at all costs to “sort it out tonight”.",
+   "Blocking the door, holding your partner back, or accepting being held back.",
+   "Taking your partner's phone or bringing up old messages during the argument."
+  ],
+  "firstHours": [
+   "Put physical distance between you: another room, a walk outside. Use “Take a pause”.",
+   "If you are afraid, threatened or prevented from leaving, get to safety and contact someone you trust or emergency services.",
+   "Do not restart the conversation that same evening if you are still angry.",
+   "Write down what you feel, without sending it to your partner."
+  ],
+  "question": "I can feel we're both getting upset. I suggest a one-hour pause. We'll pick it up after, when we can talk without shouting, okay?",
+  "answers": [
+   {
+    "label": "Accepting the pause",
+    "advice": "Set a time to pick it up again. During the pause, do something that calms you, without preparing your arguments.",
+    "followUp": "Thank you. Let's meet again in an hour, or tomorrow if we need more time."
+   },
+   {
+    "label": "Voices rise even more",
+    "advice": "Do not answer in the same tone. Use “Take a pause” and leave the room calmly.",
+    "followUp": "I don't want to go on like this. I'm stepping out for a while, we'll talk about it later."
+   },
+   {
+    "label": "Your partner prevents you from leaving or threatens you",
+    "advice": "Your safety comes first. Leave if you can, and contact someone you trust or emergency services. See “Warning signs”.",
+    "followUp": "I need to go out now. Please let me through."
+   },
+   {
+    "label": "Refusal to come back to the topic",
+    "advice": "Refusal is not a confession. Your partner may need time. Suggest talking about it later, possibly with a therapist.",
+    "followUp": "Okay, let's stop for today. I'd like us to talk about it again, maybe with someone's help."
+   },
+   {
+    "label": "An apology and a wish to continue calmly",
+    "advice": "Accept the apology and offer your own if needed. Start again with a single question, talking about yourself.",
+    "followUp": "I'm sorry too. I'd just like to tell you how I feel, without accusing you."
+   }
+  ],
+  "next": [
+   "Agree on a shared signal to ask for a pause during difficult conversations.",
+   "Work on your own anxiety with individual support, and fill in “My context”.",
+   "If arguments keep happening, consider couples therapy, except where there is violence.",
+   "If there is fear, threats or violence, see “Warning signs” first."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "pause",
+   "danger",
+   "journal"
+  ],
+  "safety": true
+ },
+ {
+  "n": 15,
+  "id": "accord-exclusivite",
+  "type": "communication",
+  "badge": "communication",
+  "title": "You do not share the same agreement on exclusivity",
+  "subtitle": "Clarify exclusivity",
+  "conclude": "Every couple sets its own limits, often without saying them out loud. What is a betrayal for one person can seem harmless to the other. Disagreeing about the agreement does not prove infidelity: it shows the agreement needs to be made explicit.",
+  "explanations": [
+   "You have never talked clearly about your limits: each of you assumed the other thought the same way.",
+   "Your history, your culture or the people around you give each of you a different idea of fidelity.",
+   "The needs of one of you or the other have changed since the start of the relationship.",
+   "Online exchanges, close friendships or apps are not seen the same way by each of you.",
+   "Your partner raises a disagreement after the fact, to justify behavior they knew would hurt you."
+  ],
+  "clarify": [
+   "Before talking about it, write down for yourself what is acceptable, what bothers you and what is non-negotiable.",
+   "Talk about concrete behaviors rather than general words: a dinner alone with someone, flirty messages, an app, a kiss.",
+   "Invite your partner to do the same exercise, without trying to decide who is right.",
+   "Separate the past agreement, what each of you believed, from the future agreement, what you want now.",
+   "Individual support can help you understand where your own expectations come from."
+  ],
+  "avoid": [
+   "Imposing your definition as the only “normal” one or trying to win the debate.",
+   "Secretly checking whether your partner respects your limits: phone, accounts, whereabouts.",
+   "Accepting an agreement that does not suit you out of fear of losing the relationship."
+  ],
+  "firstHours": [
+   "Finding out you did not think the same way can be unsettling. Take time to absorb it.",
+   "Write your limits in “My journal” while you are thinking about them clearly.",
+   "If the disagreement comes from a specific fact that hurt you, also see the matching situation."
+  ],
+  "question": "I'm realizing we may not mean the same thing by our commitment. What does it mean to you today?",
+  "answers": [
+   {
+    "label": "A definition close to yours",
+    "advice": "Name what you share and the few differences. A clear agreement is built on concrete examples.",
+    "followUp": "We agree on the main things. Can we list together what's acceptable and what isn't?"
+   },
+   {
+    "label": "A definition very different from yours",
+    "advice": "Listen all the way through before answering. No one is wrong by default: the question is whether a shared agreement is possible.",
+    "followUp": "I hadn't understood that. Let me think about it. Tell me what really matters to you."
+   },
+   {
+    "label": "“No need to talk about it, it's obvious”",
+    "advice": "What seems obvious to one person is not always obvious to the other. Explain that you are talking about it to avoid hurt, not to accuse.",
+    "followUp": "For me, it's not that obvious. I'd rather we say it, so we don't hurt each other without meaning to."
+   },
+   {
+    "label": "Anger, or voices rise",
+    "advice": "This topic touches emotional security: it is normal for it to be sensitive. Suggest “Take a pause”. If you feel threatened, see “Warning signs”.",
+    "followUp": "I'm not accusing you of anything. Can we take a pause and talk about it more calmly tomorrow?"
+   },
+   {
+    "label": "Refusal to talk about it",
+    "advice": "Refusal is not a confession. It may come from discomfort or fear of conflict. Say this topic matters to you and suggest another time (situation 16).",
+    "followUp": "Okay, not now. But it matters to me: can we talk about it again this weekend?"
+   }
+  ],
+  "next": [
+   "Write down a few concrete examples together: what is accepted, what raises questions, what is ruled out.",
+   "Plan to review this agreement from time to time, because needs change.",
+   "If no shared agreement seems possible, talk about it with a couples therapist, or alone with a psychologist.",
+   "Reread “My context” to spot what, in your history, feeds your expectations."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 16,
+  "id": "refus-discussion",
+  "type": "communication",
+  "badge": "communication",
+  "title": "Your partner refuses to discuss your doubts",
+  "subtitle": "Respect and personal needs",
+  "conclude": "A refusal is not a confession. Not wanting to talk can come from tiredness, discomfort, fear of conflict or painful past conversations. You can express your needs and decide whether the relationship works for you.",
+  "explanations": [
+   "Your partner feels accused and fears the conversation will turn into a trial.",
+   "Tiredness, stress or a hard period leave them little energy for a heavy topic.",
+   "Previous conversations on this topic went badly, and they prefer to avoid them.",
+   "Your partner generally finds it hard to talk about emotions, whatever the topic.",
+   "Your partner avoids the topic because it touches something they do not want to say."
+  ],
+  "clarify": [
+   "Ask yourself what exactly worries you: a recent fact, or an older worry that keeps coming back (situation 13)?",
+   "Think about how you bring up the topic: timing, tone, how often. Changing the approach can open the door.",
+   "Ask your partner what would make the conversation easier for them.",
+   "Individual support can help you carry your doubts without depending only on the other person's answer."
+  ],
+  "avoid": [
+   "Insisting, following your partner from room to room or stopping them from leaving to get an answer.",
+   "Taking silence as proof, or looking for the answer by searching their belongings.",
+   "Threatening to break up to force the conversation, if it is not a real decision."
+  ],
+  "firstHours": [
+   "A refusal can hurt or worry you. Let the emotion settle before trying again.",
+   "Write in “My journal” what is on your mind, to clarify your needs.",
+   "Talk to someone you trust rather than going over it alone."
+  ],
+  "question": "I respect that you don't want to talk about it now. It matters to me: when and how could we come back to this conversation?",
+  "answers": [
+   {
+    "label": "Suggesting a time",
+    "advice": "Accept the suggested time and stick to it. Prepare one or two sentences about what you feel, rather than a list of questions.",
+    "followUp": "Thank you. So let's talk about it on Saturday morning, calmly."
+   },
+   {
+    "label": "“I refuse to talk about it, period”",
+    "advice": "This is a refusal, not a confession. You cannot make your partner talk. You can say what this silence does to you.",
+    "followUp": "I won't force you. But this silence leaves me alone with my worry, and I needed you to know that."
+   },
+   {
+    "label": "“We've already talked about it a hundred times”",
+    "advice": "This criticism may be fair. Ask yourself whether another conversation would help, or whether your doubts need other support (situation 13).",
+    "followUp": "Maybe you're right. Is there a way of talking about it that would feel less heavy for you?"
+   },
+   {
+    "label": "Anger, or voices rise",
+    "advice": "Stop the conversation and use “Take a pause”. If you are afraid, threatened or prevented from leaving, see “Warning signs”.",
+    "followUp": "I'm stopping here for tonight. We'll talk about it again when we're both calmer."
+   },
+   {
+    "label": "A request to first understand what worries you",
+    "advice": "This is an opening. Describe a specific fact and how you feel, without accusing or bringing everything up.",
+    "followUp": "What worries me most is [fact]. I'm not accusing you, I need to talk about it with you."
+   }
+  ],
+  "next": [
+   "Say clearly what you need to feel secure in the relationship.",
+   "If the refusal lasts, see a psychologist or counselor on your own to see things more clearly.",
+   "Suggest couples therapy, as an invitation and not as a punishment.",
+   "Ask yourself, at your own pace, whether the relationship works for you as it is. Rereading “My context” can help."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false
+ },
+ {
+  "n": 17,
+  "id": "messages-effaces",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner acknowledges deleting messages to hide them from you",
+  "subtitle": "Acknowledged deletion, content to clarify",
+  "conclude": "What is acknowledged is the intention to hide messages from you. Their content is still unknown. An acknowledged cover-up can hurt without proving an affair.",
+  "explanations": [
+   "Flirty, romantic or sexual exchanges with someone.",
+   "An awkward conversation unrelated to a relationship: debts, health, a family conflict, a problem at work.",
+   "A surprise, a gift or a plan your partner wanted to keep for later.",
+   "Confidences about you or the relationship, shared with a friend, that your partner feared you would read.",
+   "Fear of your reaction, even to harmless messages, after past tensions."
+  ],
+  "clarify": [
+   "Ask what the messages were about and which agreement, according to your partner, they touched on.",
+   "Separate two topics: the act of hiding, and what was hidden. Both deserve to be discussed.",
+   "You do not need to read the messages to talk about them. What matters is what your partner agrees to say."
+  ],
+  "avoid": [
+   "Trying to recover the deleted messages, on the phone or from an online account.",
+   "Contacting the people in the conversation to find out what it said.",
+   "Demanding permanent access to the phone as an immediate condition."
+  ],
+  "firstHours": [
+   "Feeling betrayed by a cover-up is normal, even without knowing the content.",
+   "Write in “My journal” exactly what was said, without adding guesses.",
+   "If the emotion is too strong, use “Take a pause” before asking more questions."
+  ],
+  "question": "You told me you deleted messages so I wouldn't see them. Can you explain what they were about?",
+  "answers": [
+   {
+    "label": "A topic unrelated to a relationship (money, family, work…)",
+    "advice": "Say it back to check you understood. Then talk about the hiding itself: what made this topic impossible to share?",
+    "followUp": "I understand better now. What made it feel like you couldn't talk to me about it?"
+   },
+   {
+    "label": "Flirty or intimate exchanges",
+    "advice": "The acknowledged fact changes in nature. Ask whether these exchanges are over and whether you two ever met. See also situation 12.",
+    "followUp": "I need to know: is it over, and did you two meet?"
+   },
+   {
+    "label": "“I was afraid of how you'd react”",
+    "advice": "This fear deserves to be heard, without blaming yourself. Ask what fed it and what would help you talk more freely.",
+    "followUp": "I don't want you to be afraid to talk to me. What made you fear my reaction?"
+   },
+   {
+    "label": "Refusal to say what they contained",
+    "advice": "This refusal is not a confession of an affair. Say that the hiding affects you, and what you would need to rebuild trust.",
+    "followUp": "I won't force you. But knowing you hid something from me weighs on me. I'll need us to talk about it again."
+   },
+   {
+    "label": "Anger, or voices rise",
+    "advice": "Stop the conversation and use “Take a pause”. If you feel threatened, see “Warning signs”.",
+    "followUp": "Let's stop for tonight. We'll talk about it again more calmly."
+   }
+  ],
+  "shock": [
+   "What you feel is legitimate: a cover-up can hurt as much as what was hidden.",
+   "Do not fill the gap with the worst scenario. Stay with what was said.",
+   "Avoid actions you would regret: threats, violence, recovering or sharing messages."
+  ],
+  "decide": [
+   "Taking time before deciding anything.",
+   "Continuing the relationship and agreeing on a way to talk about difficult topics.",
+   "Seeking support, as a couple or alone, to rebuild trust.",
+   "Ending the relationship if trust no longer seems possible to you.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": null,
+  "support": [
+   "Someone you trust.",
+   "A couples therapist or a psychologist, together or separately.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Clarify together what each of you sees as an acceptable secret or not.",
+   "Write in “My journal” what you need to rebuild trust.",
+   "If romantic exchanges are acknowledged, go to situation 12. If your agreement is unclear, see situation 15."
+  ],
+  "studies": [
+   "apostolou2022",
+   "mazzini2025"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ },
+ {
+  "n": 18,
+  "id": "compte-non-declare",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner tells you about an undisclosed messaging account",
+  "subtitle": "A separate account, usage to clarify",
+  "conclude": "Your partner acknowledges an account you did not know existed. A separate account can be used for work, private life or romantic exchanges. What matters is the acknowledged use and your agreement as a couple.",
+  "explanations": [
+   "A work or volunteer account, kept separate for practical reasons.",
+   "A private space for friends, a group or a hobby, with nothing romantic involved.",
+   "An account kept out of a need for discretion: health, family, a past relationship.",
+   "An account used for flirty, romantic or sexual exchanges.",
+   "An account created so you would not see it, whatever it is used for."
+  ],
+  "clarify": [
+   "Ask what this account is for and since when, starting from what your partner told you.",
+   "Separate “having a private space”, which can be legitimate, from “using it against your agreement”.",
+   "Respect for privacy applies to both of you: the question is about your agreement, not access to the account."
+  ],
+  "avoid": [
+   "Trying to log in to the account, guessing the password or installing a monitoring app.",
+   "Creating a fake profile to message your partner on this account.",
+   "Demanding that it be deleted or opened on the spot, before talking about it."
+  ],
+  "firstHours": [
+   "Learning about an unknown account can feel like a betrayal, even before you know what it is used for.",
+   "Write in “My journal” what was said, word for word if possible.",
+   "Let the peak of emotion pass before asking your questions."
+  ],
+  "question": "You told me about an account I didn't know about. Can you explain what it's for, and what made you keep it to yourself?",
+  "answers": [
+   {
+    "label": "A work or practical use",
+    "advice": "Say it back to show you understood. Also say how the news made you feel, without blaming.",
+    "followUp": "Okay, I understand better now. Next time, I'd like you to just tell me about it."
+   },
+   {
+    "label": "A private space for friends or a hobby",
+    "advice": "Having a space of one's own can be legitimate. Talk about what each of you wants to know about the other, without control.",
+    "followUp": "I respect that you have a space of your own. What do we tell each other, or not, about our exchanges with others?"
+   },
+   {
+    "label": "Romantic or sexual exchanges",
+    "advice": "The acknowledged fact changes in nature. Ask whether these exchanges are over and whether there were meetings. See situations 12 and 22.",
+    "followUp": "I need to know: is it over, and did you meet anyone?"
+   },
+   {
+    "label": "Refusal to explain the use",
+    "advice": "This refusal is not a confession. Do not try to access the account. Say what you need to feel trust.",
+    "followUp": "I'm not going to try to get into it. But I need us to talk about what each of us allows ourselves."
+   },
+   {
+    "label": "Anger (“You don't need to know”)",
+    "advice": "Point out that your partner is the one who brought it up, and that you prefer to discuss it. If voices rise, use “Take a pause”.",
+    "followUp": "I'm not asking for your passwords. I'd just like to understand what this means for us."
+   }
+  ],
+  "shock": [
+   "What you feel is legitimate, even if the use turns out to be harmless.",
+   "A digital discovery can set off many guesses. Stay with what was said.",
+   "Avoid actions you would regret: breaking into the account, threats, sharing messages."
+  ],
+  "decide": [
+   "Taking time before deciding, once the use is clear.",
+   "Agreeing together on what is acceptable in online exchanges with other people.",
+   "Seeking support, as a couple or alone, if trust has been damaged.",
+   "Ending the relationship if the acknowledged use crosses a limit that is essential to you.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": null,
+  "support": [
+   "Someone you trust.",
+   "A couples therapist or a psychologist, together or separately.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Define together your limits for friendly, romantic or sexual exchanges online (situation 15).",
+   "Write your needs and limits in “My journal” to reread them with a cool head.",
+   "If online sexual exchanges are acknowledged, see situation 22."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ },
+ {
+  "n": 19,
+  "id": "emotional-intimacy",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner acknowledges hidden emotional intimacy with someone",
+  "subtitle": "An emotional bond and relationship boundaries",
+  "conclude": "The acknowledged fact is a close emotional bond, kept secret. A close friendship is not automatically infidelity. What still needs clarifying: whether this bond is romantic, the secret itself, and what you had agreed.",
+  "explanations": [
+   "A very close friendship, hidden out of fear of your reaction.",
+   "A need to be listened to or supported that your partner no longer found in the relationship, without saying so.",
+   "A romantic attachment, shared or not, without physical contact.",
+   "An emotional relationship that also included intimate gestures.",
+   "An agreement about emotional bonds that each of you understood differently (see situation 15)."
+  ],
+  "clarify": [
+   "Ask what this bond means to your partner, how long it has existed and whether it is continuing.",
+   "Ask whether there was physical contact. This directly concerns you, for your health and for your agreement as a couple.",
+   "You do not have to know every detail. Ask yourself what you need to decide, and what would hurt you more than help."
+  ],
+  "avoid": [
+   "Contacting the other person to demand explanations, threaten them or humiliate them.",
+   "Secretly reading their exchanges or showing them to others: it violates privacy and is sometimes illegal.",
+   "Making a final decision in the first hour."
+  ],
+  "firstHours": [
+   "Sadness, jealousy, feeling replaced or wanting to know everything are normal reactions.",
+   "You can ask for time: “I need to be alone tonight.”",
+   "Eat, sleep if you can, call someone you trust. Use “Take a pause” if the emotion is too strong."
+  ],
+  "question": "You told me you had a very close bond with this person, without telling me about it. What place does this relationship have for you, and what had we agreed about romantic bonds with others?",
+  "answers": [
+   {
+    "label": "“It's a friendship, nothing more”",
+    "advice": "You may believe it or not: both are legitimate. Talk about the secret, which affects you whatever the nature of the bond.",
+    "followUp": "Even if it's a friendship, the fact that you hid it from me hurts. What kept you from telling me?"
+   },
+   {
+    "label": "Romantic feelings, without physical contact",
+    "advice": "Ask whether this bond is continuing and what your partner wants to do about it. Say what it means to you, without minimizing it.",
+    "followUp": "Is this bond still going on today? What do you want to do about it, for you and for us?"
+   },
+   {
+    "label": "Physical contact",
+    "advice": "This is important information for your health: you can ask whether there was sex and whether it was protected. See also situation 12.",
+    "followUp": "I need to know, for my health: was there sex, and was it protected?"
+   },
+   {
+    "label": "Anger (“You're exaggerating, it's nothing”)",
+    "advice": "Do not try to convince. Name what you feel. If voices rise, suggest “Take a pause”.",
+    "followUp": "I'm not accusing you, I'm telling you how it makes me feel. Let's take a pause and pick it up later."
+   },
+   {
+    "label": "Refusal to give details",
+    "advice": "Respect it for tonight: this refusal is not a further confession. Say what you will need to move forward.",
+    "followUp": "Okay for tonight. But to decide what comes next, I'll need us to talk about it again."
+   }
+  ],
+  "shock": [
+   "What you feel is legitimate, whether or not there were intimate gestures.",
+   "A hidden emotional bond can hurt as much as a physical affair. You do not have to justify your pain.",
+   "Just avoid actions you would regret: threats, violence, sharing messages."
+  ],
+  "decide": [
+   "Taking time before deciding, possibly sleeping apart for a few days.",
+   "Continuing the relationship with clear conditions (distance from this person, agreed transparency, couples therapy).",
+   "Ending the relationship.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": "If there was intimate physical contact with this person, testing for sexually transmitted infections is recommended for both of you. A health center or a doctor can do it confidentially.",
+  "support": [
+   "Someone you trust, preferably someone who does not know the other person.",
+   "A couples therapist or a psychologist, together or separately.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Define together what each of you accepts in close friendships and confidences with others.",
+   "Write what is non-negotiable for you in “My journal”, to reread it with a cool head.",
+   "Clarify your agreement on exclusivity, emotional as well as physical (situation 15)."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ },
+ {
+  "id": "dating-app",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner acknowledges using a dating app",
+  "subtitle": "Current use, status and intention",
+  "conclude": "The fact is acknowledged. What it means still needs clarifying: an inactive profile, exchanges, meetings? Above all, did it fit your agreement as a couple or not? The answer does not depend on the app, but on what you had promised each other.",
+  "explanations": [
+   "An old profile that was never deleted.",
+   "Curiosity or a need to feel reassured about being attractive, without meeting anyone.",
+   "Ongoing exchanges with one or more people.",
+   "Actual meetings.",
+   "An agreement as a couple that each of you understood differently (see situation 15)."
+  ],
+  "clarify": [
+   "Ask what happened, over what period, and whether there were meetings. You have the right to know what directly concerns you (your health, your safety, your agreement).",
+   "You do not have to know every detail. Ask yourself what you need to decide, and what would hurt you more than help."
+  ],
+  "avoid": [
+   "Creating a fake profile to trap your partner, or contacting the people they exchanged with.",
+   "Posting or sharing screenshots: it violates privacy and is sometimes illegal.",
+   "Making a final decision in the first hour."
+  ],
+  "firstHours": [
+   "Shock, anger, wanting to know everything or, on the contrary, nothing at all are normal reactions.",
+   "You can ask for time: “I need to be alone tonight.”",
+   "Eat, sleep if you can, call someone you trust. Use “Take a pause” if the emotion is too strong."
+  ],
+  "question": "You told me you use a dating app. I need to understand: since when, and what actually happened?",
+  "answers": [
+   {
+    "label": "“I was just looking, I didn't meet anyone”",
+    "advice": "You may believe it or not: both are legitimate. Say what it means to you, even without a meeting.",
+    "followUp": "Even without meeting anyone, it affects me. What were you looking for when you went on it?"
+   },
+   {
+    "label": "Exchanges, but no meeting",
+    "advice": "Ask whether these exchanges are over and what, in your partner's view, did or did not cross a limit.",
+    "followUp": "Are these exchanges over? What do you plan to do with the profile?"
+   },
+   {
+    "label": "Meetings",
+    "advice": "This is important information for your health: you can ask whether there was sex and whether it was protected. Your decision is yours.",
+    "followUp": "I need to know, for my health: was there sex, and was it protected?"
+   },
+   {
+    "label": "“For me, it wasn't cheating”",
+    "advice": "You may not share the same agreement on exclusivity. Name your limit without trying to convince. See situation 15.",
+    "followUp": "For me, it was. Clearly we don't have the same agreement: we need to talk about it openly."
+   },
+   {
+    "label": "Refusal to give details",
+    "advice": "Respect it for tonight. Say what you will need to move forward (the truth about health, the end of the exchanges, therapy…).",
+    "followUp": "Okay for tonight. But to decide what comes next, I'll need us to talk about it again."
+   }
+  ],
+  "shock": [
+   "What you feel is legitimate, whether or not there were meetings.",
+   "You do not owe anyone a “measured” reaction: you only need to avoid actions you would regret (threats, violence, sharing messages)."
+  ],
+  "decide": [
+   "Taking time before deciding, possibly sleeping apart for a few days.",
+   "Continuing the relationship with clear conditions (deleting the profile, transparency for a period, couples therapy).",
+   "Ending the relationship.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": "If there was sex with other people, testing for sexually transmitted infections is recommended for both of you, whatever you decide. A health center or a doctor can do it confidentially.",
+  "support": [
+   "Someone you trust.",
+   "A couples therapist or a psychologist, together or separately.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Decide together (or alone) what is non-negotiable for you.",
+   "Write your decision and your conditions in “My journal” to reread them with a cool head.",
+   "Clarify your agreement on exclusivity (situation 15)."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "n": 20
+ },
+ {
+  "n": 21,
+  "id": "invented-outing",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner acknowledges inventing an outing or trip",
+  "subtitle": "An acknowledged false account",
+  "conclude": "The lie is acknowledged. It concerns this specific account. On its own, it does not prove sex or another affair. What really happened still needs to be heard.",
+  "explanations": [
+   "Time alone or with friends, hidden out of fear of criticism or conflict.",
+   "An activity that is hard to admit: debt, gambling, alcohol, a medical or psychological appointment.",
+   "Help given to someone close that your partner wanted to keep discreet.",
+   "A meeting with someone your partner has a hidden relationship with.",
+   "A habit of small lies to avoid difficult conversations."
+  ],
+  "clarify": [
+   "Ask what happened instead, and whether other accounts were made up.",
+   "Separate two questions: what happened, and the fact of lying to you. Both matter, separately.",
+   "Write down what is acknowledged in “My journal”, without adding your assumptions."
+  ],
+  "avoid": [
+   "Checking all their past trips and outings: statements, location tracking, calls to your partner's friends or colleagues.",
+   "Setting traps to test future accounts: it damages trust, whatever the answer.",
+   "Concluding there must be an affair, or on the contrary minimizing the lie to avoid conflict."
+  ],
+  "firstHours": [
+   "Feeling that your trust was betrayed is legitimate, even if the reason turns out to be minor.",
+   "You can ask for time before hearing the rest: “I need a breather before we talk about it.”",
+   "Call someone you trust if needed. Use “Take a pause” if the emotion is too strong."
+  ],
+  "question": "You admit that explanation was made up. Can you tell me what happened instead? I need it to think about what comes next.",
+  "answers": [
+   {
+    "label": "A reason unrelated to another person (debt, health, needing space…)",
+    "advice": "Take in the information. The lie remains a separate topic: say what it does to you, without blaming the reason itself.",
+    "followUp": "Thank you for telling me. What hurts me is that you chose to make something up. What made the truth so hard?"
+   },
+   {
+    "label": "A meeting with someone",
+    "advice": "Ask who this person is to your partner, without demanding every detail. If a relationship is acknowledged, see situation 12.",
+    "followUp": "Who is this person to you, and what happened between you?"
+   },
+   {
+    "label": "“It's no big deal, it was a small lie”",
+    "advice": "For you, it may be a big deal. Name your need for accounts you can rely on, without trying to win the argument.",
+    "followUp": "For me, it's not a small thing. I need to be able to believe what you tell me."
+   },
+   {
+    "label": "Anger, or voices rise",
+    "advice": "Do not continue under tension. Suggest “Take a pause”. If you feel threatened, see “Warning signs”.",
+    "followUp": "I don't want us to hurt each other. Let's take a pause and pick it up when we're calmer."
+   },
+   {
+    "label": "Refusal to say what happened",
+    "advice": "This refusal is not a confession of anything else. Respect it for now, and say you will need this answer to decide.",
+    "followUp": "Okay, not now. But to know where I stand, I'll need us to talk about it again."
+   }
+  ],
+  "shock": [
+   "Discovering a lie can shake your trust in everything said before. That is a normal reaction.",
+   "You can be hurt by the lie, even if what it hid is minor.",
+   "Just avoid actions you would regret: threats, violence, investigating the people close to them."
+  ],
+  "decide": [
+   "Taking time before deciding, long enough to hear what happened.",
+   "Continuing the relationship with clear commitments (reliable accounts, talking about difficult topics, support if needed).",
+   "Ending the relationship, if trust no longer seems possible to you.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": null,
+  "support": [
+   "Someone you trust.",
+   "A couples therapist or a psychologist, together or separately.",
+   "If the lie was hiding debt, gambling or substance use: a support organization or a specialized professional.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Agree on what each of you needs to know about the other's absences, without control or required reports.",
+   "Open a file in “Story analysis” to separate what is acknowledged from what you assume.",
+   "Write your decision and your conditions in “My journal” to reread them with a cool head."
+  ],
+  "studies": [
+   "apostolou2022",
+   "mazzini2025"
+  ],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ },
+ {
+  "n": 22,
+  "id": "online-sexual",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner admits online sexual exchanges but says “it’s only virtual”",
+  "subtitle": "Define digital infidelity together",
+  "conclude": "The exchanges are acknowledged. The lack of physical contact does not settle the question of limits. Some couples accept these exchanges, others do not. The limit depends on your agreement as a couple, not on a general rule (situation 15).",
+  "explanations": [
+   "Curiosity or a search for excitement, which your partner saw as having no consequences.",
+   "A way to make up for something missing in your intimacy, without talking about it.",
+   "Ongoing exchanges with one specific person, which became a bond.",
+   "Exchanges that led, or were meant to lead, to meetings.",
+   "An exclusivity agreement never discussed for digital life, understood differently by each of you (see situation 15)."
+  ],
+  "clarify": [
+   "Ask over what period, with one or several people, and whether these exchanges are continuing.",
+   "Ask whether there were meetings, or whether any were planned. This directly concerns your health.",
+   "Say where your limit is. You do not have to prove it is “reasonable”."
+  ],
+  "avoid": [
+   "Reading the conversations, recovering images or showing them to anyone: sharing intimate content can be illegal.",
+   "Contacting the people your partner exchanged with.",
+   "Getting stuck in a debate about the definition of cheating instead of talking about your agreements."
+  ],
+  "firstHours": [
+   "Shock, disgust, comparing yourself or doubting yourself are common and legitimate reactions.",
+   "You can ask for time: “I need to be alone tonight.”",
+   "Eat, sleep if you can, call someone you trust. Use “Take a pause” if the emotion is too strong."
+  ],
+  "question": "For me, these exchanges affect our commitment. What limits did we think we had, and what does each of us want now?",
+  "answers": [
+   {
+    "label": "“It's only virtual, it's not cheating”",
+    "advice": "You may not have the same limit. Do not try to decide who is right: name yours and clarify your agreement (situation 15).",
+    "followUp": "For you, it's not cheating. For me, it affects our commitment. We need to agree on our limits."
+   },
+   {
+    "label": "Exchanges that are over, with regrets",
+    "advice": "You may believe it or not: both are legitimate. Ask what your partner needed, and what would help you rebuild trust.",
+    "followUp": "What were you looking for in these exchanges? And how do you plan to make sure they're over?"
+   },
+   {
+    "label": "Meetings, or planned meetings",
+    "advice": "The situation changes in nature. You can ask whether there was sex and whether it was protected. See also situation 12.",
+    "followUp": "I need to know, for my health: did you meet, and was there sex?"
+   },
+   {
+    "label": "Shame or anger, voices rise",
+    "advice": "Shame can turn into defensiveness. Do not continue under tension: suggest “Take a pause”.",
+    "followUp": "I'm not trying to humiliate you. Let's take a pause and pick it up when we can talk calmly."
+   },
+   {
+    "label": "Refusal to talk about it",
+    "advice": "This refusal is not a further confession. Respect it for tonight, and say what you will need to decide.",
+    "followUp": "Okay for tonight. But our limits concern me too: I'll need us to talk about it again."
+   }
+  ],
+  "shock": [
+   "What you feel is legitimate, even without physical contact.",
+   "There is no “right” reaction to this kind of discovery. Just avoid actions you would regret: threats, violence, sharing content."
+  ],
+  "decide": [
+   "Taking time before deciding, possibly sleeping apart for a few days.",
+   "Continuing the relationship with a clear agreement about digital life (what is accepted, what is not), with or without therapy.",
+   "Ending the relationship.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": "If there were meetings with sexual contact, testing for sexually transmitted infections is recommended for both of you. A health center or a doctor can do it confidentially.",
+  "support": [
+   "Someone you trust.",
+   "A couples therapist or a sex therapist, together or separately.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Each write down, separately, what you accept online, then compare (situation 15).",
+   "Talk about your intimacy as a couple, without making it the cause of what happened.",
+   "Write your decision and your conditions in “My journal” to reread them with a cool head."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ },
+ {
+  "n": 23,
+  "id": "hidden-spending",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner acknowledges hiding a spending item involving someone",
+  "subtitle": "A financial secret, motive to understand",
+  "conclude": "The secret is about a spending item. It can create a real problem for money and trust, without proving an affair. Research (Dew et al., 2022) separates financial secrecy from infidelity: they are two different issues.",
+  "explanations": [
+   "Help for someone close (family, friend) that your partner did not dare mention.",
+   "A gift or a purchase seen as excessive, hidden out of fear of criticism.",
+   "Regular financial support for someone, with nothing romantic, but never discussed.",
+   "Gifts or outings paid for a person your partner has a hidden relationship with.",
+   "Unclear money rules in the couple, or rules each of you understood differently."
+  ],
+  "clarify": [
+   "Ask what the spending was for, for whom, and whether it was one-time or regular.",
+   "Separate two topics: managing shared money, and the nature of the relationship with this person.",
+   "Remember what you had agreed about shared money and gifts, if there was an agreement."
+  ],
+  "avoid": [
+   "Checking your partner's private accounts, statements or banking apps without their consent.",
+   "Contacting the person who received the money.",
+   "Concluding there is an affair from the spending alone."
+  ],
+  "firstHours": [
+   "Feeling betrayed, worried about the budget or humiliated are normal reactions.",
+   "If the shared budget is affected, note the acknowledged facts (amount, period) in “My journal”, without assumptions.",
+   "Wait until you are calmer to talk about it. Use “Take a pause” if the emotion is too strong."
+  ],
+  "question": "You admit you hid this spending from me. Can you tell me what it was for, and what agreement we have on shared money and gifts?",
+  "answers": [
+   {
+    "label": "Help for a relative or a friend",
+    "advice": "Accept the explanation. Talk about the secret and your shared money rules, without judging the person who was helped.",
+    "followUp": "I understand you wanted to help. Next time, how can we decide together on spending like this?"
+   },
+   {
+    "label": "Spending hidden out of embarrassment or fear of criticism",
+    "advice": "The secret affects trust and the budget. Look for a clear, shared rule for large purchases.",
+    "followUp": "I'd rather we could tell each other things, even awkward ones. Above what amount do we want to talk first?"
+   },
+   {
+    "label": "Gifts to someone they have a relationship with",
+    "advice": "This is a different question from money. Take time to absorb it; you do not have to decide anything now. See situation 12.",
+    "followUp": "I need time to think. We'll talk again when I'm ready."
+   },
+   {
+    "label": "Anger (“It's my money”)",
+    "advice": "Each person can keep some independence. Bring the focus back to what is shared and to the secret, not to control. If voices rise, take a pause.",
+    "followUp": "I don't want to control your money. I want us to be clear about what's shared. Can we talk about it calmly?"
+   },
+   {
+    "label": "Refusal to explain",
+    "advice": "This refusal is not a confession of an affair. Respect it for now, and say that shared finances will need a discussion.",
+    "followUp": "Okay, not now. But shared money concerns both of us: we'll need to talk about it again."
+   }
+  ],
+  "shock": [
+   "A financial secret can hurt as much as an emotional betrayal. Your reaction is legitimate.",
+   "Just avoid actions you would regret: threats, suddenly freezing shared accounts without talking, public accusations."
+  ],
+  "decide": [
+   "Taking time before deciding, long enough to understand the reason for the spending.",
+   "Continuing with clear, shared money rules (a shared budget, an amount above which you consult each other).",
+   "Separating your finances more, while staying together.",
+   "Ending the relationship.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": null,
+  "support": [
+   "Someone you trust.",
+   "A budget counselor or a family finance support organization, if the shared budget is affected.",
+   "A couples therapist, if the secret also affects the relationship.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Write down together your rules on shared money, gifts and helping people close to you.",
+   "Separate what is about money from what is about the relationship, and talk about them separately.",
+   "Write your decision and your conditions in “My journal” to reread them with a cool head."
+  ],
+  "studies": [
+   "dew2022"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ },
+ {
+  "n": 24,
+  "id": "claimed-single",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Your partner acknowledges telling someone they are single",
+  "subtitle": "Denying relationship status to another person",
+  "conclude": "The acknowledged fact is this lie about your relationship, told to someone. It does not confirm a sexual relationship. Still, it touches your commitment, and its consequences deserve to be discussed.",
+  "explanations": [
+   "A way to avoid questions in a specific setting (work, family, strangers).",
+   "A need to feel attractive or reassured, with no intention of going further.",
+   "A door left open to a meeting or a relationship.",
+   "A relationship already underway with the person this lie was told to.",
+   "Doubts about your relationship that your partner has not expressed."
+  ],
+  "clarify": [
+   "Ask to whom, in what setting and since when your partner has presented themselves this way.",
+   "Ask whether there were meetings or intimate contact. This directly concerns your health.",
+   "Ask what your partner feels today about your relationship."
+  ],
+  "avoid": [
+   "Contacting the person involved to set the record straight or warn them.",
+   "Pressuring your partner for public proof of your relationship (photos, online status).",
+   "Monitoring your partner's or this person's social media."
+  ],
+  "firstHours": [
+   "Feeling denied, erased or humiliated is a normal reaction.",
+   "You can ask for time: “I need to be alone tonight.”",
+   "Call someone you trust. Use “Take a pause” if the emotion is too strong."
+  ],
+  "question": "You admit you said you were single. In what context, and what does that mean for our commitment?",
+  "answers": [
+   {
+    "label": "“It was to be left alone, it didn't mean anything”",
+    "advice": "You may believe it or not: both are legitimate. Say what this lie does to you, even if nothing came of it.",
+    "followUp": "Even if it meant nothing to you, it hurt me. In what situations do you need not to talk about us?"
+   },
+   {
+    "label": "“I have doubts about our relationship”",
+    "advice": "This is important information, even if painful. Listen without justifying yourself, then take time to think about it.",
+    "followUp": "Thank you for telling me. What makes you doubt us?"
+   },
+   {
+    "label": "Meetings or a relationship with this person",
+    "advice": "You can ask whether there was sex and whether it was protected. Take time to absorb it and see situation 12.",
+    "followUp": "I need to know, for my health: was there sex, and was it protected?"
+   },
+   {
+    "label": "Anger, or voices rise",
+    "advice": "Do not continue under tension. Suggest “Take a pause”. If you feel threatened, see “Warning signs”.",
+    "followUp": "I don't want us to hurt each other. Let's take a pause and pick it up later."
+   },
+   {
+    "label": "Refusal to explain",
+    "advice": "This refusal is not a further confession. Respect it for tonight, and say what you will need to decide.",
+    "followUp": "Okay for tonight. But to know where we stand, I'll need us to talk about it again."
+   }
+  ],
+  "shock": [
+   "What you feel is legitimate, whether or not anything came of it.",
+   "Just avoid actions you would regret: threats, violence, messages to the person involved."
+  ],
+  "decide": [
+   "Taking time before deciding, possibly sleeping apart for a few days.",
+   "Continuing the relationship with clear conditions (ending ambiguous exchanges, openly owning your relationship, therapy).",
+   "Ending the relationship.",
+   "No option is better: it is your decision, and you can change your mind."
+  ],
+  "health": "If there was sex with other people, testing for sexually transmitted infections is recommended for both of you, whatever you decide. A health center or a doctor can do it confidentially.",
+  "support": [
+   "Someone you trust.",
+   "A couples therapist or a psychologist, together or separately.",
+   "If the conversation becomes threatening or violent: see “Warning signs”."
+  ],
+  "next": [
+   "Talk about the place each of you wants to give your relationship in front of others.",
+   "Clarify your agreement on exclusivity and what it means for meeting people (situation 15).",
+   "Write your decision and your conditions in “My journal” to reread them with a cool head."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true
+ }
+]

@@ -311,6 +311,15 @@ function recitNew() {
   db.dossiers.unshift(d); recitSave(db);
   recitView = { mode: 'edit', id: d.id, tab: 'interview' }; recitPage();
 }
+/** Opens « Analyser un récit » with a new case titled after a situation (first known fact empty, direct observation). */
+function recitNewFrom(title) {
+  const db = recitLoad();
+  const d = { id: recitUid('d'), title: title, desc: '', event: '', period: '', persons: '', sources: '', doubts: '', analysisLang: lang,
+    items: [{ id: recitUid('i'), text: '', nature: 'obs' }], questions: [], answers: [], pieces: [], claims: [], ambiguities: [], gaps: [], version: 0, created: new Date().toISOString() };
+  db.dossiers.unshift(d); recitSave(db);
+  recitView = { mode: 'edit', id: d.id, tab: 'interview' };
+  navigate('recit');
+}
 function recitOpen(id) { recitView = { mode: 'work', id, tab: 'interview' }; recitPage(); window.scrollTo(0, 0); }
 function recitBack() { recitStopRec(); recitView = { mode: 'list', id: null, tab: 'interview' }; recitPage(); }
 function recitDelete(id) {

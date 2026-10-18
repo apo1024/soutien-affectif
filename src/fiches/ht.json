@@ -1,0 +1,1930 @@
+[
+ {
+  "n": 1,
+  "id": "restaurant",
+  "type": "doute",
+  "badge": "context",
+  "title": "Ou wè patnè w nan restoran ak yon lòt moun",
+  "subtitle": "Yon manje ansanm",
+  "conclude": "Moun al nan restoran pou manje ak zanmi, kòlèg, fanmi oswa moun yo fè biznis avè yo. Sa ou wè a montre de moun t ap pase yon moman nan menm kote a. Kote a ak sèks moun nan pa ase pou fè yon konklizyon.",
+  "explanations": [
+   "Yon manje pou travay: yon kliyan, yon kòlèg, yon entèvyou oswa yon reyinyon san fòmalite.",
+   "Yon zanmi, yon moun nan fanmi an oswa yon ansyen konesans li jwenn ankò, ou poko t tande pale de li.",
+   "Li t ap prepare yon sipriz, yon kado oswa yon evènman ki gen rapò ak ou.",
+   "Yon relasyon patnè w pa t di w, kit se zanmitay kit se renmen.",
+   "Yon manje an gwoup, epi ou te wè sèlman kèk nan moun yo."
+  ],
+  "clarify": [
+   "Ekri sa ou te wè toutbon: lè a, kote a, konbyen tan, jan de moun yo te ye. Separe sa ak sa ou te panse.",
+   "Sonje sa patnè w te di w sou jounen li, san ou pa tire konklizyon.",
+   "Mande tèt ou si ou deja konnen moun sa a, oswa si se premye fwa ou wè l.",
+   "Poze kesyon an dirèkteman, epi dekri fè a san ou pa entèprete l."
+  ],
+  "avoid": [
+   "Antre nan restoran an pou rele patnè w oswa lòt moun nan, oswa swiv yo lè yo soti.",
+   "Chèche konnen kiyès moun nan ye lè w fouye telefòn oswa kont patnè w.",
+   "Pare yon pyèj («Ki kote ou te manje a midi?») pandan ou deja konnen: sa kraze konfyans, kèlkeswa repons lan."
+  ],
+  "firstHours": [
+   "Kite emosyon an desann anvan ou pale de sa. Souvan, kèk èdtan ase.",
+   "Ekri sa ou te wè nan «Jounal mwen», ak lè a ak kote a, pou ou pa defòme l ak tan.",
+   "Si ou bezwen pale ak yon moun, chwazi yon moun ou fè konfyans, ki konn kenbe sekrè e ki pa konnen lòt moun nan."
+  ],
+  "question": "Mwen te wè w nan restoran [non/kote] vè [lè] ak yon moun. Mwen pito pale avè w dirèkteman: kijan nou de a fè konnen youn lòt?",
+  "answers": [
+   {
+    "label": "Yon eksplikasyon klè (kòlèg, zanmi, fanmi…)",
+    "advice": "Repete sa ou konprann pou montre ou te koute. Di tou sa ou te santi lè ou te wè yo, san repwòch.",
+    "followUp": "Si m byen konprann, se te yon manje ak [moun] pou [rezon]. Sou moman an, sa te enkyete m, mwen te pito pale avè w."
+   },
+   {
+    "label": "Yon eksplikasyon ki pa klè («se yon moun konsa», «yon konesans»)",
+    "advice": "Yon repons ki pa klè pa yon prèv. Mande yon sèl detay, ak kalm, epi kite patnè w reponn.",
+    "followUp": "Mwen pa akize w de anyen. Mwen jis bezwen konnen kiyès moun sa a ye pou ou."
+   },
+   {
+    "label": "Kòlè («w ap espyone m?»)",
+    "advice": "Esplike kijan ou te wè yo, si se te pa aza. Si ton an monte, kanpe epi sèvi ak «Fè yon poz».",
+    "followUp": "Mwen pa vle siveye w. Se pou sa m ap pale avè w, pou m pa rete ak lide nan tèt mwen."
+   },
+   {
+    "label": "Li refize reponn",
+    "advice": "Respekte refi a pou kounye a: se pa yon konfesyon. Di kesyon an toujou enpòtan pou ou, epi pwopoze yon lòt moman.",
+    "followUp": "Dakò, pa kounye a. Èske nou ka pale de sa ankò demen swa?"
+   },
+   {
+    "label": "Li rekonèt yon relasyon kache",
+    "advice": "Pran tan pou ou absòbe sa. Ou pa gen anyen pou deside kounye a. Ale nan chemen «sa li rekonèt» (sitiyasyon 12).",
+    "followUp": "Mwen bezwen tan pou m reflechi. N a pale de sa ankò lè m pare."
+   }
+  ],
+  "next": [
+   "Dakò sou sa chak moun renmen konnen sou manje ak sòti lòt la, san okenn moun pa oblije bay rapò.",
+   "Pwopoze, si ou vle, pou ou rankontre zanmi oswa kòlèg ki enpòtan pou patnè w.",
+   "Si eksplikasyon an satisfè w, di klèman ke koze a fini pou ou.",
+   "Si dout la rete, louvri yon dosye nan «Analize yon istwa» pou separe fè yo ak sa ou sipoze."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "id": "hotel",
+  "type": "doute",
+  "badge": "context",
+  "title": "Ou wè patnè w soti nan otèl ak yon lòt moun",
+  "subtitle": "Klarifye sitiyasyon an",
+  "conclude": "Yon otèl resevwa tou reyinyon, manje, fanmi k ap vizite oswa moun k ap vwayaje pou travay. Sa ou wè a montre de moun te nan menm kote a, nan menm moman an. Pou kont li, sa pa di anyen sou relasyon yo, ni sou sa k te pase anndan an.",
+  "explanations": [
+   "Yon randevou travay (reyinyon, seminè, kliyan, entèvyou) nan salon oswa restoran otèl la.",
+   "Yon moun ki pase nan vil la (fanmi, zanmi, kòlèg) epi ki desann nan otèl la.",
+   "Yon manje, yon bwè oswa yon evènman (maryaj, konferans) ki te fèt la.",
+   "Yon relasyon patnè w pa t di w, kit se zanmitay kit se entimite.",
+   "Yon rankont pa aza lè li t ap soti."
+  ],
+  "clarify": [
+   "Ekri sa ou te wè toutbon: lè a, kote egzat la (lobi, pakin, restoran), jan de moun yo te ye. Separe sa ak sa ou te panse.",
+   "Sonje sa patnè w te di w sou jounen li, san ou pa tire konklizyon.",
+   "Poze kesyon an dirèkteman, epi dekri fè a san ou pa entèprete l."
+  ],
+  "avoid": [
+   "Rele patnè w oswa lòt moun nan sou plas, oswa swiv yo.",
+   "Fouye telefòn, ajanda oswa resi yo pou «verifye» anvan ou pale.",
+   "Pare yon pyèj («Ki kote ou te ye apremidi a?») pandan ou deja konnen: sa kraze konfyans, kèlkeswa repons lan."
+  ],
+  "firstHours": [
+   "Kite emosyon an bese anvan ou pale de sa. Souvan, kèk èdtan ase.",
+   "Ekri sa ou te wè nan «Jounal mwen» pou ou pa defòme l ak tan.",
+   "Si ou bezwen pale de sa touswit, chwazi yon moun ou fè konfyans ki pa konnen lòt moun nan, pou evite tripotay."
+  ],
+  "question": "Mwen te wè w soti nan otèl [non/kote] vè [lè] ak yon moun. Mwen pito pale avè w dirèkteman: kisa ou t ap fè la a?",
+  "answers": [
+   {
+    "label": "Yon eksplikasyon klè (reyinyon, fanmi ki t ap vizite…)",
+    "advice": "Repete sa ou konprann pou montre ou te koute: «Si m byen konprann, ou te gen yon reyinyon ak…». Di tou sa ou te santi, san repwòch.",
+    "followUp": "Èske gen moman konsa ou ta pito di m davans, pou nou evite kalite malantandi sa a?"
+   },
+   {
+    "label": "Yon eksplikasyon ki pa klè («anyen espesyal», «yon zafè travay»)",
+    "advice": "Yon repons ki pa klè pa yon prèv. Mande yon sèl detay, ak kalm, epi kite patnè w reponn.",
+    "followUp": "Mwen pa akize w de anyen, mwen jis bezwen konprann: kiyès moun sa a ye pou ou?"
+   },
+   {
+    "label": "Kòlè («w ap siveye m?»)",
+    "advice": "Esplike ou te la pa aza (si se sa), e ou pito pale pase ou rete ak dout la. Si ton an monte, pwopoze yon poz.",
+    "followUp": "Mwen pa vle siveye w. Se pou sa m ap pale avè w, pou m pa rete ak lide nan tèt mwen."
+   },
+   {
+    "label": "Li refize reponn",
+    "advice": "Respekte refi a pou kounye a: se pa yon konfesyon. Di kesyon an toujou enpòtan pou ou, epi pwopoze yon lòt moman.",
+    "followUp": "Dakò, pa kounye a. Èske nou ka pale de sa ankò demen swa?"
+   },
+   {
+    "label": "Li rekonèt yon relasyon kache",
+    "advice": "Pran tan pou ou absòbe sa. Ou pa gen anyen pou deside kounye a. Pase nan chemen «sa li rekonèt» (sitiyasyon 12).",
+    "followUp": "Mwen bezwen tan pou m reflechi. N a pale de sa ankò lè m pare."
+   }
+  ],
+  "next": [
+   "Dakò sou sa chak moun vle konnen sou sòti lòt la (san kontwòl, san okenn moun pa oblije bay rapò).",
+   "Si eksplikasyon an satisfè w, di klèman ke koze a fini pou ou.",
+   "Si dout la rete, louvri yon dosye nan «Analize yon istwa» pou separe fè yo ak sa ou sipoze."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause"
+  ],
+  "safety": false,
+  "n": 2,
+  "reviewed": false
+ },
+ {
+  "n": 3,
+  "id": "raccompagne",
+  "type": "doute",
+  "badge": "context",
+  "title": "Yon moun fèk depoze patnè w nan machin",
+  "subtitle": "Yon moun mennen patnè w",
+  "conclude": "Bay yon moun woulib se yon sèvis nòmal ant kòlèg, zanmi, vwazen oswa fanmi. Sa ou wè a montre yon moun te depoze patnè w. Pou kont li, yon woulib pa di anyen sou yon relasyon entim.",
+  "explanations": [
+   "Yon kòlèg, yon zanmi oswa yon vwazen ki t ap pran menm direksyon an.",
+   "Yon kovwaturaj, yon taksi oswa yon chofè sèvis transpò.",
+   "Yon moun ki rann li sèvis: reta, lapli, machin an pàn, li te ta oswa pa t gen transpò piblik.",
+   "Yon moun nan gwoup patnè w te soti avè l la, ki te ofri depoze tout moun.",
+   "Yon relasyon patnè w pa t di w, kit se zanmitay kit se renmen."
+  ],
+  "clarify": [
+   "Ekri sa ou te wè: lè a, konbyen tan machin nan te kanpe, jès yo lè yo t ap separe. Separe sa ak sa ou te imajine.",
+   "Sonje kijan patnè w te dwe tounen, ak sa li te di w sou sòti li a.",
+   "Mande tèt ou kisa ki te enkyete w: moun nan, lè a, yon jès, oswa yon enkyetid ki pi ansyen.",
+   "Poze yon kesyon ouvè sou sware a, san ou pa fè l tounen yon entèwogatwa."
+  ],
+  "avoid": [
+   "Soti pou rele chofè a oswa pou ekri nimewo plak machin nan.",
+   "Chèche konnen kiyès ki t ap kondui lè w fouye telefòn oswa mesaj patnè w.",
+   "Akize patnè w depi li antre nan pòt la."
+  ],
+  "firstHours": [
+   "Si ou fache, tann anvan ou pale de sa. Yon senp «Sware a te pase byen?» ase pou kounye a.",
+   "Ekri sa ou te wè nan «Jounal mwen» pou ou ka pale de sa ak kalm pita.",
+   "Si enkyetid la anpeche w dòmi, sèvi ak «Fè yon poz» pou kalme w."
+  ],
+  "question": "Mwen te wè w desann nan yon machin talè a. Kiyès ki te mennen w, e kijan sòti w la te pase?",
+  "answers": [
+   {
+    "label": "Yon eksplikasyon senp (kòlèg, zanmi, kovwaturaj…)",
+    "advice": "Di mèsi pou repons lan epi, si ou vle, di sa ou te santi. Evite poze kesyon kontwòl youn apre lòt.",
+    "followUp": "Dakò, mèsi. Sou moman an, sa te enkyete m yon ti jan, mwen te pito pale avè w."
+   },
+   {
+    "label": "Yon eksplikasyon ki pa klè («yon moun nan travay la»)",
+    "advice": "Yon repons ki pa klè pa yon prèv. Poze yon sèl kesyon presi, epi kite plas pou repons lan.",
+    "followUp": "Mwen pa ap chèche kontwole w. Èske se yon moun ou te deja pale m de li?"
+   },
+   {
+    "label": "Iritasyon oswa kòlè («ou t ap veye m?»)",
+    "advice": "Esplike ou te la pa aza, si se sa. Si ton an monte, kanpe epi sèvi ak «Fè yon poz».",
+    "followUp": "Mwen pa t ap veye w. Se pou sa m ap pale avè w, pou m pa rete ak yon dout."
+   },
+   {
+    "label": "Li refize reponn",
+    "advice": "Respekte refi a pou kounye a: se pa yon konfesyon. Pwopoze pou nou pale de sa ankò nan yon moman ki pi kalm.",
+    "followUp": "Dakò. Èske nou ka pale de sa ankò demen, ak tèt nou poze?"
+   },
+   {
+    "label": "Li rekonèt yon relasyon kache",
+    "advice": "Pran tan pou ou absòbe sa. Ou pa gen anyen pou deside kounye a. Ale nan chemen «sa li rekonèt» (sitiyasyon 12).",
+    "followUp": "Mwen bezwen tan pou m reflechi. N a pale de sa ankò lè m pare."
+   }
+  ],
+  "next": [
+   "Dakò, si nou tou de vle, pou nou avèti youn lòt lè youn rantre pi ta oswa yon lòt jan (sitiyasyon 06).",
+   "Prezante youn lòt kòlèg oswa zanmi nou wè souvan, san sa pa yon obligasyon.",
+   "Si dout la rete, louvri yon dosye nan «Analize yon istwa» pou separe fè yo ak sa ou sipoze."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 4,
+  "id": "baiser",
+  "type": "doute",
+  "badge": "context",
+  "title": "Ou wè patnè w ap bo yon lòt moun",
+  "subtitle": "Verifye sa ou wè",
+  "conclude": "De lwen oswa an mouvman, yon bo ka sanble ak yon bizou, yon akolad oswa yon mo nan zòrèy. Premye bagay, se presize sa ou te wè. Yon bo damou ki konfime ka depase yon limit koup la te fikse, san li pa pwouve yon relasyon seksyèl.",
+  "explanations": [
+   "Yon bizou, yon akolad oswa yon jès orevwa ou te wè nan yon ang ki twonpe w.",
+   "Yon jès ki nòmal nan kilti oswa nan antouraj moun sa a, tankou yon bizou ki long.",
+   "Yon bo patnè w pa t vle, yo te fòse l, e sa ka te mete l mal alèz.",
+   "Yon moun ki te sanble ak patnè w, de lwen.",
+   "Yon bo damou ak yon lòt moun."
+  ],
+  "clarify": [
+   "Ekri egzakteman sa ou te wè: distans lan, ang lan, limyè a, konbyen tan, epi si ou te wè figi yo.",
+   "Mande tèt ou onètman: yon bizou sou jou, yon jès rapid, oswa klèman yon bo sou bouch?",
+   "Separe sa je w te wè ak sa laperèz ou te ka ajoute.",
+   "Rakonte patnè w sèn nan jan ou te wè l, epi kite plas pou yon lòt fason pou konprann li."
+  ],
+  "avoid": [
+   "Rele patnè w oswa lòt moun nan sou plas, devan lòt moun.",
+   "Fouye telefòn nan oswa kontakte lòt moun nan pou «jwenn verite a».",
+   "Prezante sa ou panse kòm yon bagay ki sèten («Mwen te wè w ap bo…») si ou pa sèten."
+  ],
+  "firstHours": [
+   "Ekri touswit nan «Jounal mwen» egzakteman sa ou te wè, anvan memwa w chanje l.",
+   "Kite emosyon an bese. Yon imaj ki pase vit ka pran anpil plas nan tèt ou.",
+   "Si ou bezwen pale, chwazi yon moun ou fè konfyans ki pa konnen lòt moun nan.",
+   "Si emosyon an twò fò, sèvi ak «Fè yon poz» anvan nenpòt diskisyon."
+  ],
+  "question": "Talè a, nan [kote], mwen te wè sa ki te sanble ak yon bo ant ou menm ak yon moun. Mwen te lwen e m ka twonpe m: kisa k te pase?",
+  "answers": [
+   {
+    "label": "«Ou pa t byen wè, se te yon bizou / yon akolad»",
+    "advice": "Sa posib: lè ou gade de lwen, ou ka twonpe w. Di sa ou te wè ak sa ou te santi, san ou pa mande prèv.",
+    "followUp": "Dakò. Kote m te ye a, sa te sanble ak yon lòt bagay. Sa te souke m, mwen te bezwen pale avè w."
+   },
+   {
+    "label": "«Moun sa a bo m, mwen pa t vle»",
+    "advice": "Premye bagay, koute kijan patnè w te viv sa. Yon jès yo fòse sou yon moun pa yon chwa: li ka bezwen sipò.",
+    "followUp": "Kijan ou santi w apre sa k te pase a? Èske ou bezwen kichòy?"
+   },
+   {
+    "label": "Kòlè («w ap espyone m?»)",
+    "advice": "Esplike ou te la pa aza, si se sa. Si ton an monte, kanpe epi sèvi ak «Fè yon poz».",
+    "followUp": "Mwen pa espyone w. Mwen pito pale avè w pase m kenbe imaj sa a pou kont mwen."
+   },
+   {
+    "label": "Li refize reponn",
+    "advice": "Respekte refi a pou kounye a: se pa yon konfesyon. Di kesyon an enpòtan pou ou, epi pwopoze yon lòt moman.",
+    "followUp": "Dakò, pa aswè a. Mwen ta renmen nou pale de sa demen, ak kalm."
+   },
+   {
+    "label": "Li rekonèt yon bo damou",
+    "advice": "Yon bo li rekonèt ka depase yon limit nan koup ou, san li pa pwouve lòt bagay. Pran tan pou absòbe sa, epi gade sitiyasyon 12.",
+    "followUp": "Mèsi paske ou di m sa. Mwen bezwen tan anvan nou pale plis sou sa."
+   }
+  ],
+  "next": [
+   "Klarifye sa chak moun konsidere kòm yon jès zanmitay oswa yon jès damou (sitiyasyon 15).",
+   "Si eksplikasyon an satisfè w, di klèman ke koze a fini pou ou.",
+   "Si dout la rete, louvri yon dosye nan «Analize yon istwa» pou separe sa ou te wè ak sa ou sipoze."
+  ],
+  "studies": [],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 5,
+  "id": "conversations",
+  "type": "doute",
+  "badge": "context",
+  "title": "Patnè w refize montre konvèsasyon prive li yo",
+  "subtitle": "Vi prive ak konfyans",
+  "conclude": "Lè yon moun refize montre konvèsasyon li yo, sa pa pwouve enfidelite. Chak moun gen dwa a yon vi prive, e mesaj yo konsène lòt moun tou. Aksè nan telefòn dwe yon bagay moun nan bay lib, pa janm yon bagay yo enpoze.",
+  "explanations": [
+   "Yon bezwen entimite pèsonèl, menm lè li pa gen anyen pou l kache.",
+   "Konvèsasyon ki konsène lòt moun: konfidans zanmi, pwoblèm fanmi, enfòmasyon travay.",
+   "Li santi yo sispèk li, e sa ba l anvi pwoteje tèt li.",
+   "Yon jèn sou sijè ki pa gen rapò ak ou: sante, lajan, rechèch pèsonèl, yon sipriz li prepare.",
+   "Echanj patnè w pa vle montre w, kit se zanmitay kit se renmen."
+  ],
+  "clarify": [
+   "Mande tèt ou kisa ou vrèman ap chèche: santi w rasire, konprann yon fè presi, oswa fikse limit ansanm.",
+   "Si gen yon fè presi ki enkyete w, pale de fè sa a olye ou pale de telefòn nan.",
+   "Mennen diskisyon an sou antant koup la: ki echanj ak lòt moun ki akseptab, pou chak nan nou?",
+   "Sonje: fouye telefòn yon moun entèdi nan anpil peyi, e sa kraze konfyans pou lontan."
+  ],
+  "avoid": [
+   "Fouye telefòn nan an kachèt, devine kòd la oswa enstale yon aplikasyon espyonaj: souvan se ilegal, e sa detwi konfyans.",
+   "Fè aksè nan telefòn tounen yon prèv lanmou («Si ou te renmen m, ou ta montre m li»).",
+   "Entèprete chak jès ak telefòn nan, tankou yon ekran ki vire sou do oswa yon notifikasyon, kòm yon endis."
+  ],
+  "firstHours": [
+   "Si diskisyon an te vin tandu, kite kèk èdtan pase anvan ou tounen sou li.",
+   "Ekri nan «Jounal mwen» sa ki te pouse w fè demand lan: yon fè presi oswa yon enkyetid jeneral?",
+   "Si ou gen anvi gade telefòn nan, ale yon lòt kote epi sèvi ak «Fè yon poz»."
+  ],
+  "question": "Mwen respekte espas prive w, e m pa vle gade telefòn ou. Sa ki enkyete m, se [fè presi]. Kijan nou ta ka pale de limit nou nan echanj ak lòt moun?",
+  "answers": [
+   {
+    "label": "Li ouvè pou pale de limit koup la",
+    "advice": "Pwofite ouvèti sa a pou pale de antant koup la, pa de telefòn nan. Chak moun di sa li jwenn akseptab oswa non.",
+    "followUp": "Pou ou, kisa ki t ap depase limit nan yon konvèsasyon ak yon lòt moun? M ap di w sa m panse tou."
+   },
+   {
+    "label": "Li ofri pou kont li pou montre yon mesaj",
+    "advice": "Chwa sa a se pou patnè w. Ou ka aksepte oswa di sa pa nesesè. Evite fè sa tounen yon abitid oswa yon egzijans.",
+    "followUp": "Mèsi pou konfyans ou. Sa ki pi enpòtan pou mwen, se pou nou dakò sou limit nou."
+   },
+   {
+    "label": "Kòlè («ou pa fè m konfyans!»)",
+    "advice": "Rekonèt demand lan ka fè l mal. Retounen sou enkyetid ou, pa sou telefòn nan. Si ton an monte, sèvi ak «Fè yon poz».",
+    "followUp": "Mwen konprann sa fè w mal. Mwen pa mande w telefòn ou, m ap pale w de sa m santi."
+   },
+   {
+    "label": "Li refize pale de sa",
+    "advice": "Refi a pa yon konfesyon: vi prive se yon dwa. Pwopoze pou nou pale pita de antant koup la, san telefòn nan pa nan mitan.",
+    "followUp": "Dakò. Men mwen ta renmen nou pale byento de sa ki akseptab pou nou de a."
+   }
+  ],
+  "next": [
+   "Defini ansanm sa chak moun aksepte nan echanj ak lòt moun: zanmitay, renmen, seksyèl (sitiyasyon 15).",
+   "Dakò sou sa chak moun kenbe prive, epi respekte sa toude bò.",
+   "Si enkyetid ou yo tounen souvan san okenn nouvo fè, gade sitiyasyon 13 ak «Kontèks mwen»."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger",
+   "contexte"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 6,
+  "id": "sorties",
+  "type": "doute",
+  "badge": "context",
+  "title": "Patnè w soti san li pa esplike plan li yo",
+  "subtitle": "Kominike san siveye",
+  "conclude": "Soti san bay detay sou plan li pa di anyen, pou kont li, sou sa patnè w ap fè. Chak koup gen abitid pa l pou youn avèti lòt. Chèche yon règ pou nou de a, ki respekte libète chak moun.",
+  "explanations": [
+   "Yon abitid endepandans, ki soti nan fanmi li oswa nan ansyen relasyon li.",
+   "Yon sòti nòmal (espò, fè komisyon, zanmi) li jwenn twò senp pou l esplike.",
+   "Yon bezwen pou l pase tan pou kont li, pou l respire oswa reflechi.",
+   "Yon sipriz, yon kado oswa yon pwojè patnè w pito kenbe sekrè pou kounye a.",
+   "Yon aktivite oswa yon rankont patnè w pa vle di w, kit se zanmitay kit se renmen."
+  ],
+  "clarify": [
+   "Mande tèt ou si konpòtman sa a nouvo, oswa si li te toujou la nan koup nou.",
+   "Separe bezwen w (yo avèti w, konnen ki lè pou tann li) ak yon kontwòl sou orè li.",
+   "Mande tèt ou si ou menm, ou avèti patnè w lè ou soti.",
+   "Pale de bezwen sa a nan yon moman kalm, pa nan moman patnè w ap antre nan pòt la."
+  ],
+  "avoid": [
+   "Swiv patnè w, lokalize l ak telefòn, oswa mande fanmi oswa zanmi pou siveye l.",
+   "Egzije yon rapò detaye sou chak sòti, oswa rele san rete pandan li deyò.",
+   "Enpoze yon règ ou menm ou pa t ap respekte."
+  ],
+  "firstHours": [
+   "Pandan li pa la, okipe tèt ou: rele yon moun, soti, fè yon aktivite ki detann ou.",
+   "Ekri nan «Jounal mwen» sa ou santi ak sa k ap alimante enkyetid ou.",
+   "Lè li tounen, resevwa patnè w nòmalman. Diskisyon an ka tann yon moman kalm."
+  ],
+  "question": "Lè ou soti san ou pa di m ki kote ou prale ni ki lè w ap tounen, mwen enkyete. Èske nou ka dakò pou nou avèti youn lòt lè nou soti, epi bay yon lè apeprè pou tounen?",
+  "answers": [
+   {
+    "label": "«Wi, mwen dakò»",
+    "advice": "Fikse yon règ senp, ki valab pou ou ak patnè w. Di mèsi, epi evite mande plis pase sa nou te dakò.",
+    "followUp": "Mèsi. M ap fè menm jan an tou: yon ti mesaj pou di apeprè ki lè m ap rantre."
+   },
+   {
+    "label": "«Mwen pa oblije di w tout bagay»",
+    "advice": "Se vre: se pa koze di tout bagay. Presize ou ap pale sèlman de yon repè pratik, ki valab pou chak moun.",
+    "followUp": "Mwen pa mande w ki kote ou prale ni ak kiyès. Jis yon ide sou lè a, pou m pa enkyete."
+   },
+   {
+    "label": "Kòlè («ou vle kontwole m»)",
+    "advice": "Rekonèt demand lan ka sanble ou vle antre nan zafè l. Retounen sou sa ou santi. Si ton an monte, kanpe epi sèvi ak «Fè yon poz».",
+    "followUp": "Se pa kontwòl, se enkyetid mwen. Nou ka pale de sa ankò pita, ak kalm."
+   },
+   {
+    "label": "Li refize pale de sa",
+    "advice": "Refi a pa yon konfesyon. Respekte l pou kounye a, di sa ou bezwen, epi pwopoze yon lòt moman.",
+    "followUp": "Dakò. Sa enpòtan pou mwen, mwen ta renmen nou pale de sa ankò semèn sa a."
+   },
+   {
+    "label": "Li rekonèt yon relasyon kache",
+    "advice": "Pran tan pou ou absòbe sa. Ou pa gen anyen pou deside kounye a. Ale nan chemen «sa li rekonèt» (sitiyasyon 12).",
+    "followUp": "Mwen bezwen tan pou m reflechi. N a pale de sa ankò lè m pare."
+   }
+  ],
+  "next": [
+   "Ekri ansanm yon règ senp pou nou de a: avèti lè nou soti, bay yon lè apeprè pou tounen.",
+   "Fè yon pwen nan kèk semèn pou wè si règ la bon pou chak moun.",
+   "Si enkyetid ou rete fò malgre antant lan, gade sitiyasyon 13 ak «Kontèks mwen»."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger",
+   "contexte"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 7,
+  "id": "nervosite",
+  "type": "doute",
+  "badge": "context",
+  "title": "Patnè w vin nève pandan konvèsasyon an",
+  "subtitle": "Bay malèz la plas",
+  "conclude": "Lè yon moun nève, sa pa pèmèt ou detekte yon manti. Yon moun ki sensè ka tandu lè li santi yo sispèk li. Yon poz ak yon ton ki pi dous souvan fasilite echanj lan.",
+  "explanations": [
+   "Li santi yo akize l, e sa ba l estrès menm lè li pa gen anyen pou l kache.",
+   "Estrès oswa fatig ki soti nan pwoblèm ki pa gen rapò ak ou: travay, lajan, fanmi.",
+   "Yon pwoblèm sante: anksyete, depresyon, pwoblèm dòmi oswa efè yon medikaman.",
+   "Sijè a fè l sonje ansyen diskisyon, nan koup sa a oswa yon lòt kote.",
+   "Yon jèn ki gen rapò ak yon bagay patnè w pa di w, kit se zanmitay kit se renmen."
+  ],
+  "clarify": [
+   "Obsève pwòp ton pa w: èske w ap poze kesyon youn dèyè lòt, tankou nan yon entèwogatwa?",
+   "Mande patnè w kijan li ye nan moman sa a, an deyò diskisyon sa a.",
+   "Mande tèt ou si nève sa a nouvo, oswa si se abitid li nan diskisyon difisil.",
+   "Retounen sou fè presi ki te enkyete w la, olye ou konsantre sou reyaksyon patnè w."
+  ],
+  "avoid": [
+   "Pran nève, yon je ki evite w oswa ezitasyon kòm yon prèv manti.",
+   "Ensiste pi fò pou «fè patnè w kraze».",
+   "Anrejistre diskisyon an an kachèt pou analize reyaksyon li apre."
+  ],
+  "firstHours": [
+   "Si tansyon an monte, kanpe diskisyon an epi sèvi ak «Fè yon poz».",
+   "Ekri nan «Jounal mwen» sa ki te di, pa sèlman reyaksyon ou te obsève yo.",
+   "Pita, mande kijan patnè w ye, san ou pa reprann sijè a touswit."
+  ],
+  "question": "Mwen gen enpresyon diskisyon sa a mete w mal alèz. Èske se ton mwen, sijè a oswa yon lòt bagay?",
+  "answers": [
+   {
+    "label": "«Se fason ou pale avè m»",
+    "advice": "Koute san ou pa defann tèt ou. Pwopoze pou nou reprann pi dousman, pandan w ap pale de tèt ou olye de patnè w.",
+    "followUp": "Dakò, m ap eseye yon lòt jan. M ap kòmanse di w sa m santi, san m pa akize w."
+   },
+   {
+    "label": "«Mwen estrese, bagay yo pa bon kounye a»",
+    "advice": "Mete sijè a sou kote epi resevwa sa patnè w ap viv. Pwopoze sipò w, ak yon èd deyò si sa nesesè.",
+    "followUp": "Mèsi paske ou di m sa. Kisa ki ta ka ede w kounye a?"
+   },
+   {
+    "label": "«Mwen santi w ap sispèk mwen»",
+    "advice": "Rekonèt santiman sa a. Esplike enkyetid ou apati yon fè presi, san ou pa entèprete l.",
+    "followUp": "Mwen konprann. Mwen pa vle akize w: se fè presi sa a ki te enkyete m."
+   },
+   {
+    "label": "Kòlè, ton an ap monte",
+    "advice": "Kanpe diskisyon an epi sèvi ak «Fè yon poz». Si ou pè, gade «Siy danje».",
+    "followUp": "Mwen pito nou kanpe la pou kounye a. N a reprann lè nou tou de pi kalm."
+   },
+   {
+    "label": "Li refize kontinye",
+    "advice": "Refi a pa yon konfesyon. Respekte l epi pwopoze yon moman pou nou reprann pita.",
+    "followUp": "Dakò, nou kanpe. Èske nou ka pale de sa ankò wikenn sa a?"
+   }
+  ],
+  "next": [
+   "Dakò sou règ pou diskisyon difisil: yon moman nou chwazi, yon mo pou mande yon poz.",
+   "Mande kijan patnè w ap viv, epi ankouraje l al konsilte si yon bagay pa bon.",
+   "Si diskisyon sou fidelite yo souvan tounen mal, gade sitiyasyon 14."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 8,
+  "id": "appearance",
+  "type": "doute",
+  "badge": "context",
+  "title": "Patnè w abiye byen pou yon sòti òdinè",
+  "subtitle": "Aparans ak entèpretasyon",
+  "conclude": "Pran swen aparans li ka reponn a anpil bezwen: santi l byen, reprann konfyans, make yon okazyon. Chanjman sa a pa di anyen, pou kont li, sou moun li vize a. Se pa yon prèv enfidelite.",
+  "explanations": [
+   "Senp plezi pou santi l byen nan rad li, san li pa panse a okenn moun an patikilye.",
+   "Yon bezwen pou l reprann konfyans nan tèt li apre yon peryòd difisil: maladi, pran oswa pèdi pwa, moral ba, fatig.",
+   "Yon okazyon presi: reyinyon enpòtan, foto, entèvyou, retwouvay ak fanmi oswa zanmi.",
+   "Yon anvi pou l plè an jeneral, oswa pou l plè w, san li pa di sa.",
+   "Yon anvi pou l plè yon moun presi, patnè w pa t pale w de li."
+  ],
+  "clarify": [
+   "Ekri sa ki chanje konkrètman: rad, pafen, kwafi, konbyen fwa. Separe sa ak sa ou te imajine.",
+   "Mande tèt ou si patnè w ap travèse yon peryòd espesyal: nouvo travay, pwoblèm sante, moral ki ba.",
+   "Mande kijan li ye: «Kijan ou santi w kounye a, nan kò w ak nan lavi w?»",
+   "Kòmanse ak yon konpliman sensè, apre sa poze kesyon ou, san sou-entandi."
+  ],
+  "avoid": [
+   "Fè remak sou yon ton ironik oswa sispèk («Pou kiyès w ap bèl konsa?»).",
+   "Swiv patnè w oswa verifye ajanda l pou konnen kiyès li pral wè.",
+   "Kritike aparans li pou l pa pran swen tèt li konsa ankò."
+  ],
+  "firstHours": [
+   "Kite enkyetid la desann anvan ou pale: yon konpliman pi bon pase yon entèwogatwa lè l ap soti.",
+   "Ekri sa ou santi nan «Jounal mwen», epi separe sa ou te wè ak sa ou pè.",
+   "Mande tèt ou si enkyetid sa a rejwenn lòt dout ki pi ansyen. Si wi, sitiyasyon 13 ka ede w."
+  ],
+  "question": "Ou chwazi yon bèl rad jodi a, li byen sou ou. Ou gen yon okazyon espesyal?",
+  "answers": [
+   {
+    "label": "Yon okazyon presi (reyinyon, randevou travay, fanmi…)",
+    "advice": "Resevwa eksplikasyon an tou senp. Ou ka di ou renmen wè l konsa, san ou pa mete okenn kondisyon.",
+    "followUp": "Li vrèman byen sou ou. Sa t ap fè m plezi pou nou de a soti tou yon swa."
+   },
+   {
+    "label": "«Anyen espesyal, mwen te anvi santi m byen»",
+    "advice": "Se yon repons ki ase. Pwofite pou ou mande kijan moral li ye ak konfyans li nan tèt li.",
+    "followUp": "Mwen kontan ou santi w byen. Kijan bagay yo ye pou ou kounye a, an jeneral?"
+   },
+   {
+    "label": "Yon bezwen pou l reprann konfyans (sante, kò, moral)",
+    "advice": "Koute san ou pa minimize sa. Pwopoze sipò w, epi si difikilte a dire, èd yon doktè oswa yon sikològ.",
+    "followUp": "Mèsi paske ou di m sa. Kisa ki ta ka ede w kounye a, e kijan m ka la pou ou?"
+   },
+   {
+    "label": "Iritasyon («Ou sispèk mwen?»)",
+    "advice": "Rekonèt kesyon ou a ka te sanble sispèk. Si ton an monte, pwopoze yon poz olye ou pase anpil tan ap jistifye w.",
+    "followUp": "Mwen pa t vle sispèk ou. Mwen te santi m yon ti jan enkyete, se tout."
+   },
+   {
+    "label": "Li refize reponn",
+    "advice": "Refi a pa yon konfesyon. Chak moun ka chwazi rad li san li pa bezwen jistifye l. Ekri sa ou santi epi pale de sa ankò si enkyetid la rete.",
+    "followUp": "Dakò, ou pa oblije jistifye w. Si yon jou yon bagay ap peze w, mwen la."
+   }
+  ],
+  "next": [
+   "Pwopoze moman pou nou de a, kote chak moun pran plezi bèl pou lòt la.",
+   "Si enkyetid la tounen souvan san okenn nouvo fè, chèche sa k ap alimante l (sitiyasyon 13).",
+   "Si yon pwoblèm byennèt parèt, pale de sa ankò ak kalm epi panse a yon èd ki adapte."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 9,
+  "id": "contradiction",
+  "type": "doute",
+  "badge": "context",
+  "title": "Istwa patnè w rakonte a gen yon kontradiksyon",
+  "subtitle": "Klarifye san pyèj",
+  "conclude": "De vèsyon diferan pou menm moman an montre gen yon pwen ki rete pou klarifye. Memwa, yon malantandi oswa yon chanjman plan souvan ase pou esplike sa. Yon omisyon oswa yon manti posib, men anyen pa di sou kisa li ta ye.",
+  "explanations": [
+   "Yon erè memwa sou yon lè, yon kote oswa lòd bagay yo te pase.",
+   "Yon chanjman plan pandan jounen an, patnè w pa t panse pou l di w.",
+   "Yon malantandi: ou te konprann yon lòt bagay pase sa ki te di a.",
+   "Yon omisyon pou evite yon jèn oswa yon diskisyon, sou yon sijè ki pa nesesèman konsène yon lòt moun.",
+   "Yon manti pou kache yon sòti, yon depans oswa yon relasyon."
+  ],
+  "clarify": [
+   "Ekri de vèsyon yo mo pou mo, ak lè chak te di. Verifye ou pa konfonn ak yon lòt jou.",
+   "Chwazi yon sèl pwen presi pou klarifye, olye ou reprann tout istwa a.",
+   "Mande tèt ou si diferans lan enpòtan pou ou, oswa si se yon ti detay ki pa gen konsekans.",
+   "Poze kesyon an ouvètman, epi di ou ap chèche konprann, pa kenbe l nan fot."
+  ],
+  "avoid": [
+   "Poze menm kesyon an plizyè fwa pou «wè si repons lan chanje»: se yon pyèj ki kraze konfyans.",
+   "Verifye ak zanmi, kòlèg oswa ak jeolokalizasyon anvan ou pale.",
+   "Fè diskisyon an tounen yon entèwogatwa, ak yon lis kesyon ou prepare davans."
+  ],
+  "firstHours": [
+   "Ekri de vèsyon yo nan «Jounal mwen» pandan yo fre nan tèt ou.",
+   "Tann ou kalm anvan ou pale: yon ton ki akize ap fè l defann tèt li olye l esplike.",
+   "Si dout la anvayi w, louvri yon dosye nan «Analize yon istwa» pou separe fè yo ak sa ou sipoze."
+  ],
+  "question": "Talè a, ou te di m [vèsyon 1], e kounye a [vèsyon 2]. Petèt se mwen ki mele: èske ou ka ede m konprann?",
+  "answers": [
+   {
+    "label": "Yon erè memwa oswa yon chanjman plan",
+    "advice": "Repete sa ou konprann pou verifye ou byen konprann. Si eksplikasyon an satisfè w, di klèman ke koze a fini.",
+    "followUp": "Dakò, mwen konprann pi byen. Sa ede m lè ou di m si plan yo chanje."
+   },
+   {
+    "label": "«Ou pa t byen konprann sa m te di a»",
+    "advice": "Sa posib. Konpare ak kalm sa chak moun sonje li te di oswa tande, san ou pa chèche gen rezon.",
+    "followUp": "Petèt mwen pa t byen konprann. Èske ou ka di m ankò sa ou te vle di a?"
+   },
+   {
+    "label": "Li rekonèt yon omisyon oswa yon ti manti",
+    "advice": "Di patnè w mèsi paske li korije. Mande l kisa ki te pouse l pa di sa, san repwòch. Si manti a konsène yon relasyon, gade sitiyasyon 21.",
+    "followUp": "Mèsi paske ou di m sa. Kisa ki te fè ou pa t vle pale m de sa okòmansman?"
+   },
+   {
+    "label": "Kòlè («Ou rele m mantò?»)",
+    "advice": "Presize ou ap pale de yon pwen presi, pa de moun li ye a. Si ton an monte, pwopoze yon poz epi reprann pita.",
+    "followUp": "Mwen pa rele w mantò. Mwen jis ap chèche konprann pwen sa a."
+   },
+   {
+    "label": "Li refize reponn",
+    "advice": "Refi a pa yon konfesyon. Di pwen sa a enpòtan pou ou, epi pwopoze pou nou pale de sa nan yon lòt moman.",
+    "followUp": "Dakò, pa kounye a. Mwen ta renmen nou pale de sa ankò lè ou santi w pare."
+   }
+  ],
+  "next": [
+   "Dakò pou nou avèti youn lòt lè yon plan chanje, san okenn moun pa oblije bay rapò (gade sitiyasyon 06).",
+   "Si eksplikasyon an satisfè w, pa tounen sou diferans sa a ankò.",
+   "Si dout la rete, louvri yon dosye nan «Analize yon istwa» pou fè pwen an ak tèt frèt."
+  ],
+  "studies": [
+   "mazzini2025"
+  ],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 10,
+  "id": "less-intimacy",
+  "type": "doute",
+  "badge": "context",
+  "title": "Patnè w vle mwens kontak entim",
+  "subtitle": "Koute bezwen yo",
+  "conclude": "Dezi ak bezwen pou moun pre youn ak lòt chanje pandan lavi a, pou anpil rezon diferan. Lè li bese, sa pa di, pou kont li, kisa ki lakòz sa. Chak moun ka refize yon kontak, san li pa oblije pwouve fidelite li.",
+  "explanations": [
+   "Fatig, estrès oswa yon peryòd chaje (travay, timoun, pwoblèm fanmi).",
+   "Yon pwoblèm sante, yon tretman, doulè oswa chanjman nan òmòn.",
+   "Moral ki ba, anksyete, depresyon oswa yon malèz ak pwòp kò li.",
+   "Tansyon nan koup la ki pa t di: rankin, santiman yo pa koute l.",
+   "Yon atirans oswa yon relasyon ak yon lòt moun."
+  ],
+  "clarify": [
+   "Chèche depi kilè chanjman sa a la, ak sa k te pase alantou: travay, sante, lanmò yon moun, diskisyon.",
+   "Mande kijan li ye an jeneral, pa sèlman nan entimite: «Kijan ou santi w kounye a?»",
+   "Eksprime pwòp bezwen pa w pandan w ap pale de tèt ou («Mwen bezwen nou pi pre»), san ou pa mande kont.",
+   "Panse a lòt fòm pou nou pre youn ak lòt: tandrès, tan ansanm, konvèsasyon."
+  ],
+  "avoid": [
+   "Ensiste, negosye oswa fè presyon pou jwenn yon kontak entim: chak moun gen dwa refize.",
+   "Entèprete chak refi kòm yon prèv, oswa fè l tounen yon repwòch.",
+   "Konpare ak kòmansman relasyon an oswa ak lòt koup."
+  ],
+  "firstHours": [
+   "Apre yon refi, evite pale de sa tou cho: desepsyon ka fè pawòl yo blese.",
+   "Ekri sa ou santi nan «Jounal mwen»: manke, enkyetid, santiman yo rejte w.",
+   "Chwazi yon moman kalm, andeyò chanm nan, pou pale de sijè a."
+  ],
+  "question": "Mwen gen enpresyon nou gen mwens moman entim dènye tan sa yo. Kijan ou santi w kounye a, e nan entimite nou?",
+  "answers": [
+   {
+    "label": "«Mwen bouke, mwen estrese»",
+    "advice": "Resevwa repons sa a san ou pa diskite l. Mande kisa ki ta ka soulaje chay li, epi chèche lòt moman pou nou pre youn ak lòt.",
+    "followUp": "Mwen konprann. Kisa ki ta ede w respire yon ti jan? Nou ta ka jis pase tan ansanm, san atant."
+   },
+   {
+    "label": "Yon pwoblèm sante, kò oswa moral",
+    "advice": "Koute san ou pa minimize sa. Pwopoze sipò w epi, si patnè w vle, yon konsiltasyon ak yon doktè, yon seksològ oswa yon sikològ.",
+    "followUp": "Mèsi paske ou di m sa. Mwen pa vle mete presyon sou ou. Kijan m ka ede w?"
+   },
+   {
+    "label": "«Gen yon bagay ki pa bon ant nou»",
+    "advice": "Se yon ouvèti enpòtan. Koute jiska lafen anvan ou reponn, epi mande kisa ki ta ede.",
+    "followUp": "Mwen vle konprann. Kisa k ap peze w ant nou, e kisa ki ta ka chanje?"
+   },
+   {
+    "label": "Kòlè («Ou panse m ap twonpe w?»)",
+    "advice": "Di ou ap pale de bezwen ou, pa de yon sispèk. Si ton an monte, pwopoze yon poz epi reprann pita.",
+    "followUp": "Mwen pa akize w de anyen. Mwen bezwen nou pi pre, e mwen te vle konnen kijan ou ye."
+   },
+   {
+    "label": "Li refize pale de sa",
+    "advice": "Refi a pa yon konfesyon. Entimite se yon sijè ki delika. Di ou toujou disponib epi pwopoze pou nou pale de sa pita.",
+    "followUp": "Dakò. Mwen pa vle fòse w. N a ka pale de sa ankò lè ou alèz."
+   }
+  ],
+  "next": [
+   "Dakò sou moman pou nou de a san atant entimite fizik, pou nou rejwenn youn lòt.",
+   "Si yon pwoblèm sante oswa moral parèt, ankouraje yon konsiltasyon, san ou pa enpoze l.",
+   "Si sijè a rete bloke, panse a yon terapis koup oswa yon seksològ."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 11,
+  "id": "many-messages",
+  "type": "doute",
+  "badge": "context",
+  "title": "Patnè w voye anpil mesaj ak yon moun",
+  "subtitle": "Dakò sou limit yo",
+  "conclude": "Kantite mesaj yo montre gen yon lyen, men li pa montre ki kalite lyen. Sa ki konte, se sa ou menm ak patnè w te dakò pou echanj ak lòt moun. Kesyon an se sou antant sa a, pa sou aksè nan telefòn nan.",
+  "explanations": [
+   "Yon zanmi, yon moun nan fanmi an oswa yon kòlèg patnè w ekri anpil.",
+   "Yon pwojè, yon òganizasyon oswa yon gwoup ki mande anpil mesaj.",
+   "Yon sipò pandan yon moman difisil, pou youn oswa pou lòt.",
+   "Yon pwoksimite emosyonèl k ap grandi, ki ta ka depase limit ou te gen nan tèt ou.",
+   "Echanj damou oswa seksyèl."
+  ],
+  "clarify": [
+   "Ekri sa ou obsève vrèman: konbyen fwa, ki lè. Ou pa konnen sa ki ladan yo, e sa nòmal.",
+   "Mande tèt ou kisa ou tann: konnen kiyès moun sa a ye, oswa dakò sou limit pou lavni?",
+   "Pale de antant koup la sou echanj zanmitay, damou oswa seksyèl ak lòt moun (gade sitiyasyon 15).",
+   "Mande tou senp kiyès moun sa a ye, jan ou ta fè pou nenpòt moun ki pwòch."
+  ],
+  "avoid": [
+   "Fouye telefòn oswa kont yo: sa entèdi nan anpil peyi e sa kraze konfyans pou lontan.",
+   "Egzije kòd yo oswa li konvèsasyon yo kòm «prèv».",
+   "Kontakte moun nan oswa gade rezo sosyal li pou fè ankèt."
+  ],
+  "firstHours": [
+   "Reziste anvi pou gade ekran an oswa pran telefòn nan: sa t ap anpeche yon diskisyon ki kalm.",
+   "Ekri enkyetid ou nan «Jounal mwen», ak sa ou te obsève toutbon.",
+   "Prepare yon kesyon sou antant koup la, pa sou sa ki nan mesaj yo."
+  ],
+  "question": "Mwen remake ou ekri souvan ak [non]. Kiyès moun sa a ye pou ou? E ki limit nou vle pou echanj nou ak lòt moun?",
+  "answers": [
+   {
+    "label": "Yon zanmi, yon fanmi oswa yon kòlèg",
+    "advice": "Resevwa eksplikasyon an. Di sa ou te santi, san repwòch, epi pwopoze pou nou pale de limit nou ansanm.",
+    "followUp": "Mèsi. Mwen te santi m yon ti jan sou kote. Èske nou ka pale de sa ki bon pou nou de a?"
+   },
+   {
+    "label": "«Ou vle li mesaj mwen?»",
+    "advice": "Presize ou pa mande aksè nan telefòn nan. Ou ap chèche dakò sou limit koup la.",
+    "followUp": "Non, mwen pa vle li mesaj ou. Mwen ta renmen nou dakò sou sa ki OK pou nou."
+   },
+   {
+    "label": "Li rekonèt yon lyen emosyonèl oswa damou",
+    "advice": "Pran tan pou ou absòbe sa. Ou pa gen anyen pou deside kounye a. Gade sitiyasyon 19 ak 22.",
+    "followUp": "Mèsi paske ou di m sa. Mwen bezwen tan pou m reflechi. N a pale de sa ankò lè m pare."
+   },
+   {
+    "label": "Kòlè («W ap siveye m?»)",
+    "advice": "Di se paske ou pa vle siveye l ou ap pale de sa. Si ton an monte, pwopoze yon poz.",
+    "followUp": "Mwen pa vle siveye w. Mwen pito pale avè w pase m kenbe sa pou kont mwen."
+   },
+   {
+    "label": "Li refize reponn",
+    "advice": "Refi a pa yon konfesyon. Respekte l pou kounye a, epi di kesyon limit yo toujou enpòtan pou ou.",
+    "followUp": "Dakò, pa kounye a. Men mwen ta renmen nou pale de limit nou yon lòt jou."
+   }
+  ],
+  "next": [
+   "Ekri ansanm sa chak moun konsidere akseptab nan echanj ak lòt moun (sitiyasyon 15).",
+   "Dakò sou sa chak moun vle pataje pou kont li, san kontwòl telefòn.",
+   "Si dout la rete, louvri yon dosye nan «Analize yon istwa» pou separe fè yo ak sa ou sipoze."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 12,
+  "id": "relation-reconnue",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w rekonèt li gen yon relasyon ak yon lòt moun",
+  "subtitle": "Chwazi sa k ap vini apre",
+  "conclude": "Fè a rekonèt: te gen yon relasyon. Kalite relasyon an rete pou presize: emosyonèl oswa seksyèl, yon sèl fwa oswa pou lontan, fini oswa non. Sa li vle di pou ou depann de antant koup la ak sa ou santi.",
+  "explanations": [
+   "Yon relasyon kout, li prezante kòm yon erè yon sèl fwa, ki deja fini.",
+   "Yon relasyon ki dire, ak santiman, ki petèt toujou ap kontinye.",
+   "Yon relasyon sitou emosyonèl, san kontak fizik.",
+   "Yon relasyon patnè w te kwè ki pa t kontrè ak antant koup la (gade sitiyasyon 15).",
+   "Yon difikilte pèsonèl oswa nan koup la patnè w pa t eksprime. Sa ka ede konprann, san li pa eskize anyen."
+  ],
+  "clarify": [
+   "Mande sa ki konsène w dirèkteman: konbyen tan sa dire, si sa fini, si te gen relasyon seksyèl e si yo te pwoteje.",
+   "Ou pa oblije konnen tout bagay. Mande tèt ou ki detay ki ta ede w deside, ak kiyès ki ta fè w plis mal pase byen.",
+   "Ou ka poze kesyon ou yo an plizyè fwa, sou plizyè jou."
+  ],
+  "avoid": [
+   "Kontakte lòt moun nan, menase l oswa ekspoze l devan tout moun.",
+   "Fouye telefòn oswa kont patnè w pou jwenn «tout verite a».",
+   "Pran yon desizyon final nan premye èdtan an, oswa anonse nouvèl la bay tout moun bò kote w."
+  ],
+  "firstHours": [
+   "Chòk, kòlè, tristès oswa santi w vid, se reyaksyon ki nòmal.",
+   "Ou ka mande tan: «Mwen bezwen rete pou kont mwen aswè a.»",
+   "Manje, dòmi si ou kapab, rele yon moun ou fè konfyans.",
+   "Sèvi ak «Fè yon poz» si emosyon an vin twò fò."
+  ],
+  "question": "Ou di m ou te gen yon relasyon ak yon moun. Mwen bezwen konprann sa k te pase: depi kilè, e ki kote ou ye ak moun sa a jodi a?",
+  "answers": [
+   {
+    "label": "«Sa fini, se te yon erè»",
+    "advice": "Ou ka kwè l oswa non: toude chwa yo valab. Di sa ou ta bezwen pou ou reprann konfyans, san siveyans fòse.",
+    "followUp": "Mwen tande sa fini. Pou mwen, konfyans pa tounen yon sèl kou. N a pale de sa ankò."
+   },
+   {
+    "label": "«Sa toujou ap kontinye» oswa li ezite",
+    "advice": "Se yon enfòmasyon enpòtan pou deside. Ou pa bezwen tann chwa patnè w: ou ka fikse pwòp limit pa w.",
+    "followUp": "Mwen bezwen konnen sa ou gen entansyon fè. E mwen menm tou, m ap reflechi sou sa m vle."
+   },
+   {
+    "label": "Te gen relasyon seksyèl",
+    "advice": "Pou sante w, ou ka mande si yo te pwoteje. Panse a fè tès depistaj, kèlkeswa desizyon ou.",
+    "followUp": "Mwen bezwen konnen, pou sante m: èske relasyon sa yo te pwoteje?"
+   },
+   {
+    "label": "Kòlè oswa ton an ap monte",
+    "advice": "Kanpe diskisyon an epi sèvi ak «Fè yon poz». Si ou santi yo menase w oswa yo anpeche w soti, gade «Siy danje».",
+    "followUp": "M ap kanpe la pou aswè a. N a reprann lè nou ka pale san nou pa rele."
+   },
+   {
+    "label": "Li refize bay detay",
+    "advice": "Respekte sa pou aswè a: refi sa a pa yon lòt konfesyon. Di sa ou ap bezwen pou deside (sante, fen relasyon an, terapi).",
+    "followUp": "Dakò pou aswè a. Men pou m deside sa k ap vini apre, m ap bezwen nou pale de sa ankò."
+   }
+  ],
+  "shock": [
+   "Sa ou santi a lejitim, kèlkeswa kalite relasyon sa a.",
+   "Ou ka gen reyaksyon ki kontredi youn lòt: vle ale epi rete, vle konnen tout epi pa konnen anyen.",
+   "Evite sèlman zak ou ta regrèt: menas, vyolans, pataje mesaj."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, petèt dòmi apa pandan kèk jou.",
+   "Panse a yon reparasyon ak kondisyon klè: fen lòt relasyon an, transparans nou chwazi, terapi koup.",
+   "Mete fen nan relasyon an.",
+   "Padon pa fèt sou lòd. Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": "Si te gen relasyon seksyèl ak lòt moun nan, li bon pou ou ak patnè w fè tès depistaj IST (enfeksyon seksyèlman transmisib). Sa vo kèlkeswa desizyon ou. Yon sant sante oswa yon doktè ka fè l an konfidans.",
+  "support": [
+   "Yon moun ou fè konfyans, si posib yon moun ki pa nan antouraj lòt moun nan.",
+   "Yon sikològ pou ou menm sèlman, ak yon terapis koup si ou panse kontinye.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Ekri nan «Jounal mwen» sa ki pa negosyab pou ou.",
+   "Fikse yon moman pou nou pale ankò, lè chòk la pa twò fò ankò.",
+   "Klarifye antant koup la sou eksklizivite pou pita (sitiyasyon 15)."
+  ],
+  "studies": [
+   "apostolou2022"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "n": 13,
+  "id": "recurring-doubts",
+  "type": "communication",
+  "badge": "communication",
+  "title": "Ou sispèk enfidelite souvan san nouvo enfòmasyon",
+  "subtitle": "Konprann enkyetid ou",
+  "conclude": "Dout ki tounen san okenn nouvo fè pale sitou de enkyetid ou ak de relasyon an. Pou kont yo, yo pa di anyen sou sa patnè w ap fè. Konprann yo se yon travay sou tèt ou, e yon akonpayman endividyèl ka fasilite l.",
+  "explanations": [
+   "Yon ansyen blesi: yon twonpri ou te viv, yon separasyon brital, yon anfans kote ou te santi yo abandone w.",
+   "Yon peryòd estrès, fatig oswa izolman ki fè enkyetid la pi fò.",
+   "Yon anksyete ki nouri tèt li: chak verifikasyon soulaje w yon ti moman, apre sa dout la tounen.",
+   "Mank tan ansanm oswa mank ti atansyon, ki kite plas pou laperèz.",
+   "Yon distans reyèl nan relasyon an, oswa yon sekrè, ou santi san ou pa ka nonmen l."
+  ],
+  "clarify": [
+   "Nan «Jounal mwen», ekri chak dout: dat la, sa ki te deklanche l, epi si te gen yon nouvo fè.",
+   "Nan «Kontèks mwen», chèche ansyen eksperyans ki ta ka ap nouri laperèz sa a.",
+   "Separe twa bagay: sa ou obsève, sa ou santi, sa ou imajine.",
+   "Mande tèt ou kisa ki vrèman rasire w, e konbyen tan soulajman sa a dire."
+  ],
+  "avoid": [
+   "Mande patnè w pou l rasire w ankò e ankò: soulajman an kout e relasyon an fatige.",
+   "Verifye telefòn, rezo sosyal oswa deplasman li pou kalme kè w.",
+   "Prezante laperèz ou kòm akizasyon («Mwen konnen w ap kache m yon bagay»)."
+  ],
+  "firstHours": [
+   "Lè dout la monte, tann anvan ou aji: respire, mache, kite pik kè sere a pase.",
+   "Ekri panse ki enkyete w la, epi mande tèt ou: «Ki nouvo fè mwen obsève?»",
+   "Si kè sere a twò fò, sèvi ak «Fè yon poz» oswa rele yon moun ou fè konfyans."
+  ],
+  "question": "Mwen remake enkyetid mwen yo tounen souvan, menm san yon rezon presi. Mwen ta renmen pale avè w de sa, pa pou m akize w, men pou nou konprann ansanm. Kijan ou viv sa bò kote pa w?",
+  "answers": [
+   {
+    "label": "Li koute ak bon kè",
+    "advice": "Di patnè w mèsi. Pale de sa ou santi ak sa ou gen entansyon fè, olye ou mande prèv.",
+    "followUp": "Mèsi paske ou koute m. M ap travay sou laperèz mwen. Sa t ap ede m si nou pase plis tan ansanm."
+   },
+   {
+    "label": "Li fatige («Sijè sa a ankò?»)",
+    "advice": "Rekonèt dout sa yo peze sou patnè w tou. Montre ou ap chèche yon solisyon, pa yon lòt fwa pou l rasire w.",
+    "followUp": "Mwen konprann sa fatige w. Se pou sa mwen vle okipe m de sa yon lòt jan, pou nou de a."
+   },
+   {
+    "label": "Ton an ap monte",
+    "advice": "Pa chèche konvenk li a tout pri. Pwopoze yon poz epi reprann lè nou tou de kalm.",
+    "followUp": "Mwen santi sa ap chofe. Ann fè yon poz epi n a pale de sa pita, dakò?"
+   },
+   {
+    "label": "Li refize pale de sa",
+    "advice": "Refi a pa yon konfesyon. Patnè w ka fatige oswa blese. Avanse bò kote pa w ak yon akonpayman endividyèl.",
+    "followUp": "Dakò, mwen respekte sa. M ap pale ak yon moun pou m avanse bò kote pa m."
+   }
+  ],
+  "next": [
+   "Konsilte yon sikològ oswa yon terapis pou travay sou anksyete ak ansyen blesi yo.",
+   "Ranpli «Kontèks mwen» pou konprann pi byen sa ki reveye laperèz ou.",
+   "Dakò ak patnè w sou moman regilye pou pale de relasyon an, san entèwogatwa.",
+   "Si yon nouvo fè parèt, sèvi ak sitiyasyon ki koresponn lan olye ou remete tout bagay an kesyon."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 14,
+  "id": "argument",
+  "type": "communication",
+  "badge": "communication",
+  "title": "Konvèsasyon sou fidelite a tounen diskisyon",
+  "subtitle": "Pran distans",
+  "conclude": "Yon diskisyon ki vire montre sijè a touche yon bagay ki sansib pou youn oswa lòt, oswa pou toude. Li pa di kiyès ki gen rezon, ni sa k te pase. Priyorite a, se pwoteje diskisyon an, e anvan tout bagay, sekirite w.",
+  "explanations": [
+   "Yon moman ki pa t bon: fatig, alkòl, reta, timoun yo la.",
+   "Pawòl ki sonnen tankou yon akizasyon, ki pouse moun nan defann tèt li.",
+   "Ansyen blesi, nan youn oswa lòt, sijè fidelite a reveye.",
+   "Dout oswa repwòch ki te akimile depi lontan, ki soti yon sèl kou.",
+   "Yon rapò fòs kote youn ap eseye fè lòt pe ak rele, menas oswa entimidasyon."
+  ],
+  "clarify": [
+   "Rekonèt siy ki montre diskisyon an ap dewoute: vwa k ap monte, kè k ap bat pi vit, anvi gen dènye mo a.",
+   "Apre sa, ekri nan «Jounal mwen» sa ki te deklanche diskisyon an ak sa chak moun te di.",
+   "Nan «Kontèks mwen», gade si sijè sa a reveye ansyen eksperyans nan ou.",
+   "Mande tèt ou si ou te pè pandan diskisyon an. Si wi, gade «Siy danje»."
+  ],
+  "avoid": [
+   "Kontinye kèlkeswa pri a pou «regle sa aswè a».",
+   "Bloke pòt la, kenbe patnè w, oswa aksepte yo kenbe w.",
+   "Pran telefòn patnè w oswa rale mesaj soti pandan diskisyon an."
+  ],
+  "firstHours": [
+   "Ale yon lòt kote: yon lòt chanm, yon ti mache deyò. Sèvi ak «Fè yon poz».",
+   "Si ou pè, si yo menase w oswa anpeche w soti, mete tèt ou an sekirite. Apre sa, kontakte yon moun ou fè konfyans oswa sèvis ijans.",
+   "Pa reprann diskisyon an menm swa a si ou toujou fache.",
+   "Ekri sa ou santi, san ou pa voye l bay patnè w."
+  ],
+  "question": "Mwen santi nou tou de ap fache. Mwen pwopoze yon poz inèdtan. N a reprann apre, lè nou ka pale san nou pa rele, dakò?",
+  "answers": [
+   {
+    "label": "Li aksepte poz la",
+    "advice": "Fikse yon moman pou reprann. Pandan poz la, fè yon bagay ki kalme w, san ou pa prepare agiman w.",
+    "followUp": "Mèsi. N a jwenn nan inèdtan, oswa demen si nou bezwen plis tan."
+   },
+   {
+    "label": "Ton an kontinye monte",
+    "advice": "Pa reponn sou menm ton an. Sèvi ak «Fè yon poz» epi kite chanm nan ak kalm.",
+    "followUp": "Mwen pa vle kontinye konsa. M ap soti yon ti moman, n a pale de sa pita."
+   },
+   {
+    "label": "Patnè w anpeche w soti oswa li menase w",
+    "advice": "Sekirite w pase anvan tout bagay. Ale si ou kapab, kontakte yon moun ou fè konfyans oswa sèvis ijans. Gade «Siy danje».",
+    "followUp": "Mwen bezwen soti kounye a. Tanpri, kite m pase."
+   },
+   {
+    "label": "Li refize reprann sijè a",
+    "advice": "Refi a pa yon konfesyon. Patnè w ka bezwen tan. Pwopoze pou nou pale de sa pita, petèt ak yon terapis.",
+    "followUp": "Dakò, nou kanpe pou jodi a. Mwen ta renmen nou pale de sa ankò, petèt ak èd yon moun."
+   },
+   {
+    "label": "Li mande eskiz epi li vle reprann ak kalm",
+    "advice": "Aksepte eskiz yo epi mande eskiz tou si sa nesesè. Reprann ak yon sèl kesyon, pandan w ap pale de tèt ou.",
+    "followUp": "Mwen menm tou, mwen regrèt. Mwen jis vle di w sa m santi, san m pa akize w."
+   }
+  ],
+  "next": [
+   "Dakò sou yon siyal nou de a konnen pou mande yon poz pandan diskisyon difisil.",
+   "Travay sou pwòp anksyete w ak yon akonpayman endividyèl, epi ranpli «Kontèks mwen».",
+   "Si diskisyon yo repete, panse a yon terapi koup, sof si gen vyolans.",
+   "Si gen laperèz, menas oswa vyolans, gade «Siy danje» anvan tout bagay."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "pause",
+   "danger",
+   "journal"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "n": 15,
+  "id": "accord-exclusivite",
+  "type": "communication",
+  "badge": "communication",
+  "title": "Nou pa gen menm antant sou fidelite",
+  "subtitle": "Klarifye fidelite a",
+  "conclude": "Chak koup fikse pwòp limit li, souvan san yo pa di yo. Sa ki yon trayizon pou youn ka sanble pa anyen pou lòt. Yon dezakò sou antant lan pa pwouve yon twonpri: li montre fòk nou di l klèman.",
+  "explanations": [
+   "Ou menm ak patnè w pa t janm pale klèman de limit koup la: chak moun te sipoze lòt la panse menm jan.",
+   "Istwa, kilti oswa antouraj chak moun ba l yon ide diferan sou fidelite.",
+   "Bezwen youn oswa lòt chanje depi kòmansman relasyon an.",
+   "Chak moun pa wè echanj sou entènèt, zanmitay ki pwòch oswa aplikasyon yo menm jan.",
+   "Patnè w pale de yon dezakò apre bagay la fin pase, pou jistifye yon konpòtman li te konnen ki t ap blese w."
+  ],
+  "clarify": [
+   "Anvan ou pale, ekri pou tèt ou sa ki akseptab, sa ki jennen w ak sa ki pa negosyab.",
+   "Pale de konpòtman konkrè olye de mo jeneral: yon dine tèt a tèt ak yon moun, mesaj pou sedui, yon aplikasyon, yon bo.",
+   "Pwopoze patnè w fè menm egzèsis la, san ou pa chèche kiyès ki gen rezon.",
+   "Separe antant ki te la avan, sa chak moun te kwè, ak antant pou lavni, sa nou vle kounye a.",
+   "Yon akonpayman endividyèl ka ede w konprann ki kote atant ou yo soti."
+  ],
+  "avoid": [
+   "Enpoze definisyon pa w kòm sèl definisyon «nòmal», oswa chèche genyen deba a.",
+   "Verifye an kachèt si patnè w respekte limit ou: telefòn, kont, deplasman.",
+   "Aksepte yon antant ki pa bon pou ou paske ou pè pèdi relasyon an."
+  ],
+  "firstHours": [
+   "Lè ou dekouvri nou pa t panse menm bagay, sa ka destabilize w. Pran tan pou dijere sa.",
+   "Ekri limit ou yo nan «Jounal mwen» pandan yo klè nan tèt ou.",
+   "Si dezakò a soti nan yon fè presi ki te blese w, gade tou sitiyasyon ki koresponn lan."
+  ],
+  "question": "Mwen reyalize petèt nou pa mete menm bagay dèyè angajman nou. Kisa li vle di pou ou jodi a?",
+  "answers": [
+   {
+    "label": "Yon definisyon ki pre pa w la",
+    "advice": "Nonmen pwen nou dakò yo ak kèk diferans. Yon antant klè bati sou egzanp konkrè.",
+    "followUp": "Nou dakò sou sa ki pi enpòtan. Èske nou ka fè yon lis ansanm sa ki akseptab ak sa ki pa akseptab?"
+   },
+   {
+    "label": "Yon definisyon ki trè diferan de pa w la",
+    "advice": "Koute jiska lafen anvan ou reponn. Pèsonn pa gen tò pa prensip: kesyon an, se konnen si yon antant komen posib.",
+    "followUp": "Mwen pa t konprann sa. Kite m reflechi sou li. Di m sa ki vrèman enpòtan pou ou."
+   },
+   {
+    "label": "«Pa bezwen pale de sa, se bagay ki klè»",
+    "advice": "Sa ki klè pou youn pa toujou klè pou lòt. Esplike ou pale de sa pou evite blesi, pa pou akize.",
+    "followUp": "Pou mwen, se pa tèlman klè. Mwen pito nou di sa youn ak lòt, pou nou pa blese youn lòt san nou pa vle."
+   },
+   {
+    "label": "Kòlè oswa ton an ap monte",
+    "advice": "Sijè sa a touche sekirite emosyonèl: se nòmal pou l sansib. Pwopoze «Fè yon poz». Si ou santi yo menase w, gade «Siy danje».",
+    "followUp": "Mwen pa akize w de anyen. Èske nou ka fè yon poz epi pale de sa pi kalm demen?"
+   },
+   {
+    "label": "Li refize pale de sa",
+    "advice": "Refi a pa yon konfesyon. Li ka soti nan jèn oswa nan laperèz konfli. Di sijè sa a enpòtan pou ou epi pwopoze yon lòt moman (sitiyasyon 16).",
+    "followUp": "Dakò, pa kounye a. Men sa enpòtan pou mwen: èske nou ka pale de sa ankò wikenn sa a?"
+   }
+  ],
+  "next": [
+   "Ekri ansanm kèk egzanp konkrè: sa ki aksepte, sa ki poze kesyon, sa ki pa aksepte ditou.",
+   "Planifye pou nou revize antant sa a de tanzantan, paske bezwen yo chanje.",
+   "Si pa gen antant komen ki sanble posib, pale de sa ak yon terapis koup, oswa pou kont ou ak yon sikològ.",
+   "Li «Kontèks mwen» ankò pou wè sa ki, nan istwa w, nouri atant ou yo."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 16,
+  "id": "refus-discussion",
+  "type": "communication",
+  "badge": "communication",
+  "title": "Patnè w refize pale sou dout ou yo",
+  "subtitle": "Respè ak bezwen pèsonèl",
+  "conclude": "Yon refi pa yon konfesyon. Lè yon moun pa vle pale, sa ka soti nan fatig, jèn, laperèz konfli oswa ansyen diskisyon ki te fè mal. Ou ka eksprime bezwen ou epi deside si relasyon an bon pou ou.",
+  "explanations": [
+   "Patnè w santi yo akize l, e li pè diskisyon an tounen yon jijman.",
+   "Fatig, estrès oswa yon peryòd difisil pa kite l anpil fòs pou yon sijè ki lou.",
+   "Dènye diskisyon sou sijè sa a te pase mal, e li pito evite yo.",
+   "An jeneral, patnè w gen difikilte pou pale de emosyon, kèlkeswa sijè a.",
+   "Patnè w evite sijè a paske li touche yon bagay li pa vle di."
+  ],
+  "clarify": [
+   "Mande tèt ou kisa egzakteman ki enkyete w: yon fè ki fèk pase, oswa yon ansyen enkyetid ki tounen (sitiyasyon 13)?",
+   "Reflechi sou fason ou prezante sijè a: moman, ton, konbyen fwa. Chanje fòm nan ka louvri pòt la.",
+   "Mande patnè w kisa ki ta fè diskisyon an pi fasil pou li.",
+   "Yon akonpayman endividyèl ka ede w pote dout ou yo san ou pa depann sèlman de repons lòt la."
+  ],
+  "avoid": [
+   "Ensiste, swiv patnè w de yon chanm a yon lòt oswa anpeche l soti pou jwenn yon repons.",
+   "Pran silans lan pou yon prèv, oswa chèche repons lan nan fouye afè li.",
+   "Menase kraze relasyon an pou fòse diskisyon an, si se pa yon desizyon toutbon."
+  ],
+  "firstHours": [
+   "Yon refi ka blese w oswa enkyete w. Kite emosyon an desann anvan ou relanse.",
+   "Ekri nan «Jounal mwen» sa k ap tracase w, pou klarifye bezwen ou.",
+   "Pale ak yon moun ou fè konfyans olye ou rete ap repase sa pou kont ou."
+  ],
+  "question": "Mwen respekte ou pa vle pale de sa kounye a. Sa enpòtan pou mwen: ki lè e kijan nou ta ka reprann diskisyon sa a?",
+  "answers": [
+   {
+    "label": "Li pwopoze yon moman",
+    "advice": "Aksepte moman li pwopoze a epi respekte l. Prepare youn oswa de fraz sou sa ou santi, olye de yon lis kesyon.",
+    "followUp": "Mèsi. Alò n a pale de sa samdi maten, trankil."
+   },
+   {
+    "label": "«Mwen refize pale de sa, pwen final»",
+    "advice": "Se yon refi, pa yon konfesyon. Ou pa ka fòse patnè w pale. Ou ka di sa silans sa a fè w.",
+    "followUp": "Mwen pa p fòse w. Men silans sa a kite m pou kont mwen ak enkyetid mwen, e mwen te bezwen ou konnen sa."
+   },
+   {
+    "label": "«Nou deja pale de sa san fwa»",
+    "advice": "Repwòch sa a ka jis. Mande tèt ou si yon lòt diskisyon t ap pote yon bagay, oswa si dout ou yo bezwen yon lòt sipò (sitiyasyon 13).",
+    "followUp": "Petèt ou gen rezon. Èske gen yon fason pou nou pale de sa ki t ap mwens lou pou ou?"
+   },
+   {
+    "label": "Kòlè oswa ton an ap monte",
+    "advice": "Kanpe diskisyon an epi sèvi ak «Fè yon poz». Si ou pè, si yo menase w oswa yo anpeche w soti, gade «Siy danje».",
+    "followUp": "M ap kanpe la pou aswè a. N a pale de sa ankò lè nou tou de pi kalm."
+   },
+   {
+    "label": "Li mande konprann anvan kisa ki enkyete w",
+    "advice": "Se yon ouvèti. Dekri yon fè presi ak sa ou santi, san ou pa akize ni rale tout bagay soti.",
+    "followUp": "Sa ki enkyete m plis, se [fè]. Mwen pa akize w, mwen bezwen pale de sa avè w."
+   }
+  ],
+  "next": [
+   "Di klèman sa ou bezwen pou ou santi w an sekirite nan relasyon an.",
+   "Si refi a dire, al konsilte pou kont ou yon sikològ oswa yon konseye pou wè pi klè.",
+   "Pwopoze yon terapi koup, kòm yon envitasyon, pa kòm yon pinisyon.",
+   "Mande tèt ou, nan ritm pa w, si relasyon an bon pou ou jan li ye a. Li «Kontèks mwen» ankò ka ede."
+  ],
+  "studies": [],
+  "links": [
+   "contexte",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": false,
+  "reviewed": false
+ },
+ {
+  "n": 17,
+  "id": "messages-effaces",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w rekonèt li te efase mesaj pou kache yo pou ou",
+  "subtitle": "Li rekonèt efase yo, sa ki te ladan yo pou klarifye",
+  "conclude": "Sa li rekonèt, se li te vle kache kèk mesaj pou ou. Sa ki te ladan yo rete enkonni. Lè yon moun rekonèt li kache yon bagay, sa ka blese, san sa pa pwouve li gen yon lòt relasyon.",
+  "explanations": [
+   "Echanj pou sedui, damou oswa seksyèl ak yon moun.",
+   "Yon konvèsasyon ki jennen l, ki pa gen rapò ak yon relasyon: dèt, sante, konfli fanmi, pwoblèm nan travay.",
+   "Yon sipriz, yon kado oswa yon pwojè patnè w te vle kenbe pou pita.",
+   "Konfidans sou ou oswa sou koup la li te fè yon zanmi, e li te pè pou ou pa li yo.",
+   "Laperèz reyaksyon w, menm pou mesaj ki pa gen anyen ladan yo, apre ansyen tansyon."
+  ],
+  "clarify": [
+   "Mande sou kisa mesaj yo te ye, ak ki antant, dapre patnè w, yo te touche.",
+   "Separe de sijè: lefèt li kache, ak sa li te kache a. Toude merite yon diskisyon.",
+   "Ou pa bezwen li mesaj yo pou pale de yo. Sa ki konte, se sa patnè w aksepte di."
+  ],
+  "avoid": [
+   "Eseye rekipere mesaj ki efase yo, sou telefòn nan oswa sou yon kont sou entènèt.",
+   "Kontakte moun ki te nan konvèsasyon an pou konnen sa ki te ladan l.",
+   "Egzije aksè pèmanan nan telefòn nan kòm kondisyon touswit."
+  ],
+  "firstHours": [
+   "Se nòmal pou ou santi yo trayi w lè yon moun kache w bagay, menm si ou pa konnen sa ki te ladan l.",
+   "Ekri nan «Jounal mwen» egzakteman sa ki te di, san ou pa ajoute ipotèz.",
+   "Si emosyon an twò fò, sèvi ak «Fè yon poz» anvan ou poze lòt kesyon."
+  ],
+  "question": "Ou di m ou te efase kèk mesaj pou m pa wè yo. Èske ou ka esplike m sou kisa yo te ye?",
+  "answers": [
+   {
+    "label": "Yon sijè ki pa gen rapò ak yon relasyon (lajan, fanmi, travay…)",
+    "advice": "Repete sa ou konprann pou verifye ou byen konprann. Apre sa, pale de lefèt li te kache: kisa ki te fè sijè sa a enposib pou di?",
+    "followUp": "Mwen konprann pi byen. Kisa ki te fè ou pa t ka pale m de sa?"
+   },
+   {
+    "label": "Echanj pou sedui oswa entim",
+    "advice": "Fè li rekonèt la chanje nati. Mande si echanj sa yo fini e si te gen rankont. Gade tou sitiyasyon 12.",
+    "followUp": "Mwen bezwen konnen: èske sa fini, e èske ou te rankontre moun nan?"
+   },
+   {
+    "label": "«Mwen te pè reyaksyon w»",
+    "advice": "Laperèz sa a merite pou yo tande l, san ou pa akize tèt ou. Mande sa ki te nouri l, ak sa ki ta ede nou pale pi lib.",
+    "followUp": "Mwen pa vle ou pè pale avè m. Kisa ki te fè ou pè reyaksyon mwen?"
+   },
+   {
+    "label": "Li refize di sa ki te ladan yo",
+    "advice": "Refi sa a pa yon konfesyon relasyon. Di lefèt li te kache a touche w, ak sa ou ta bezwen pou reprann konfyans.",
+    "followUp": "Mwen pa p fòse w. Men lè m konnen ou te kache m yon bagay, sa peze m. M ap bezwen nou pale de sa ankò."
+   },
+   {
+    "label": "Kòlè oswa ton an ap monte",
+    "advice": "Kanpe diskisyon an epi sèvi ak «Fè yon poz». Si ou santi yo menase w, gade «Siy danje».",
+    "followUp": "Nou kanpe pou aswè a. N a pale de sa ankò pi kalm."
+   }
+  ],
+  "shock": [
+   "Sa ou santi a lejitim: lè yon moun kache yon bagay, sa ka fè mal menm jan ak sa li te kache a.",
+   "Pa ranpli vid la ak pi move senaryo a. Rete sou sa ki te di.",
+   "Evite zak ou ta regrèt: menas, vyolans, rekipere oswa pataje mesaj."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside kichòy.",
+   "Kontinye relasyon an, epi dakò sou yon fason pou nou pale de sijè difisil.",
+   "Mande yon akonpayman, an koup oswa pou kont ou, pou rebati konfyans.",
+   "Mete fen nan relasyon an si konfyans pa sanble posib ankò pou ou.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": null,
+  "support": [
+   "Yon moun ou fè konfyans.",
+   "Yon terapis koup oswa yon sikològ, ansanm oswa chak pou kont yo.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Presize ansanm sa chak moun konsidere kòm yon sekrè ki akseptab oswa ki pa akseptab.",
+   "Ekri nan «Jounal mwen» sa ou bezwen pou reprann konfyans.",
+   "Si li rekonèt echanj damou, ale nan sitiyasyon 12. Si antant koup la pa klè, gade sitiyasyon 15."
+  ],
+  "studies": [
+   "apostolou2022",
+   "mazzini2025"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "n": 18,
+  "id": "compte-non-declare",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w pale w de yon kont mesaj li pa t mansyone",
+  "subtitle": "Yon lòt kont, itilizasyon pou klarifye",
+  "conclude": "Patnè w rekonèt li gen yon kont ou pa t konnen egziste. Yon kont apa ka sèvi pou travay, pou vi prive oswa pou echanj damou. Sa ki konte, se jan li rekonèt li sèvi avè l, ak antant koup la.",
+  "explanations": [
+   "Yon kont pou travay oswa pou yon asosyasyon, separe pou rezon pratik.",
+   "Yon espas prive pou zanmi, yon gwoup oswa yon loisi, san okenn koze damou.",
+   "Yon kont li kenbe paske li bezwen diskresyon: sante, fanmi, ansyen relasyon.",
+   "Yon kont li itilize pou echanj sediksyon, damou oswa seksyèl.",
+   "Yon kont li kreye pou ou pa wè l, kèlkeswa sa li sèvi."
+  ],
+  "clarify": [
+   "Mande pou kisa kont sa a sèvi e depi kilè, apati sa patnè w te di w.",
+   "Separe «gen yon espas prive», ki ka lejitim, ak «itilize l kont antant koup la».",
+   "Respè vi prive a valab pou toude: kesyon an se sou antant koup la, pa sou aksè nan kont lan."
+  ],
+  "avoid": [
+   "Eseye konekte sou kont lan, devine modpas la oswa enstale yon aplikasyon siveyans.",
+   "Kreye yon fo pwofil pou ekri patnè w sou kont sa a.",
+   "Egzije pou li efase l oswa ouvri l la menm, anvan nou pale de sa."
+  ],
+  "firstHours": [
+   "Lè ou aprann gen yon kont ou pa t konnen, ou ka santi yo trayi w, menm anvan ou konnen pou kisa li sèvi.",
+   "Ekri nan «Jounal mwen» sa ki te di, mo pou mo si posib.",
+   "Kite pik emosyon an pase anvan ou poze kesyon ou yo."
+  ],
+  "question": "Ou pale m de yon kont mwen pa t konnen. Èske ou ka esplike m pou kisa li sèvi, ak kisa ki te fè ou kenbe l pou kont ou?",
+  "answers": [
+   {
+    "label": "Yon itilizasyon pou travay oswa pratik",
+    "advice": "Repete sa ou konprann pou montre ou te koute. Di tou sa nouvèl la te fè w santi, san repwòch.",
+    "followUp": "Dakò, mwen konprann pi byen. Pwochen fwa, mwen ta renmen ou pale m de sa tou senp."
+   },
+   {
+    "label": "Yon espas prive pou zanmi oswa yon loisi",
+    "advice": "Gen yon espas pa w ka lejitim. Pale de sa chak moun vle konnen sou lòt la, san kontwòl.",
+    "followUp": "Mwen respekte ou gen yon espas pa w. Kisa nou di youn lòt, oswa nou pa di, sou echanj nou ak lòt moun?"
+   },
+   {
+    "label": "Echanj damou oswa seksyèl",
+    "advice": "Fè li rekonèt la chanje nati. Mande si echanj sa yo fini e si te gen rankont. Gade sitiyasyon 12 ak 22.",
+    "followUp": "Mwen bezwen konnen: èske sa fini, e èske ou te rankontre yon moun?"
+   },
+   {
+    "label": "Li refize esplike pou kisa li sèvi",
+    "advice": "Refi sa a pa yon konfesyon. Pa eseye antre nan kont lan. Di sa ou bezwen pou ou santi w an konfyans.",
+    "followUp": "Mwen pa p chèche antre ladan l. Men mwen bezwen nou pale de sa chak moun pèmèt tèt li."
+   },
+   {
+    "label": "Kòlè («ou pa bezwen konnen»)",
+    "advice": "Raple se patnè w ki te pale de sa, e ou pito diskite sou li. Si ton an monte, sèvi ak «Fè yon poz».",
+    "followUp": "Mwen pa mande w kòd ou. Mwen ta jis renmen konprann sa sa reprezante pou nou."
+   }
+  ],
+  "shock": [
+   "Sa ou santi a lejitim, menm si li vin parèt kont lan pa t sèvi pou anyen ki grav.",
+   "Yon dekouvèt sou entènèt ka fè w imajine anpil bagay. Rete sou sa ki te di.",
+   "Evite zak ou ta regrèt: antre nan kont lan, menas, pataje mesaj."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, yon fwa ou konprann pou kisa kont lan sèvi.",
+   "Dakò ansanm sou sa ki akseptab nan echanj sou entènèt ak lòt moun.",
+   "Mande yon akonpayman, an koup oswa pou kont ou, si konfyans lan blese.",
+   "Mete fen nan relasyon an si sa li rekonèt la depase yon limit ki esansyèl pou ou.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": null,
+  "support": [
+   "Yon moun ou fè konfyans.",
+   "Yon terapis koup oswa yon sikològ, ansanm oswa chak pou kont yo.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Defini ansanm limit nou pou echanj zanmitay, damou oswa seksyèl sou entènèt (sitiyasyon 15).",
+   "Ekri bezwen ou ak limit ou nan «Jounal mwen» pou ou li yo ak tèt frèt.",
+   "Si li rekonèt echanj seksyèl sou entènèt, gade sitiyasyon 22."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "n": 19,
+  "id": "emotional-intimacy",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w rekonèt yon pwoksimite emosyonèl li te kache ak yon moun",
+  "subtitle": "Lyen emosyonèl ak limit koup la",
+  "conclude": "Sa li rekonèt, se yon lyen emosyonèl ki pwòch, li te kenbe sekrè. Yon zanmitay ki pwòch pa otomatikman yon enfidelite. Sa ki rete pou klarifye: èske lyen sa a se renmen oswa non, sekrè a limenm, ak sa koup la te dakò.",
+  "explanations": [
+   "Yon zanmitay trè pwòch, li te kache paske li te pè reyaksyon w.",
+   "Yon bezwen pou yo koute l oswa sipòte l, li pa t jwenn ankò nan koup la, san li pa di sa.",
+   "Yon atachman damou, youn oswa toude bò, san kontak fizik.",
+   "Yon relasyon emosyonèl ki te gen jès entim tou.",
+   "Yon antant koup chak moun konprann yon lòt jan sou lyen emosyonèl (gade sitiyasyon 15)."
+  ],
+  "clarify": [
+   "Mande sa lyen sa a reprezante pou patnè w, depi kilè li egziste e si li toujou ap kontinye.",
+   "Mande si te gen kontak fizik. Enfòmasyon sa a konsène w dirèkteman, pou sante w ak pou antant koup la.",
+   "Ou pa oblije konnen tout detay. Mande tèt ou sa ou bezwen pou deside, ak sa ki ta fè w plis mal pase byen."
+  ],
+  "avoid": [
+   "Kontakte lòt moun nan pou mande l kont, menase l oswa imilye l.",
+   "Li echanj yo an kachèt oswa montre lòt moun yo: se yon atak sou vi prive, pafwa ilegal.",
+   "Pran yon desizyon final nan premye èdtan an."
+  ],
+  "firstHours": [
+   "Tristès, jalouzi, santiman yo ranplase w oswa anvi konnen tout bagay, se reyaksyon ki nòmal.",
+   "Ou ka mande tan: «Mwen bezwen rete pou kont mwen aswè a.»",
+   "Manje, dòmi si ou kapab, rele yon moun ou fè konfyans. Sèvi ak «Fè yon poz» si emosyon an twò fò."
+  ],
+  "question": "Ou di m ou te gen yon lyen trè pwòch ak moun sa a, san ou pa t pale m de li. Ki plas relasyon sa a genyen pou ou, e kisa nou te dakò sou lyen damou ak lòt moun?",
+  "answers": [
+   {
+    "label": "«Se yon zanmitay, pa plis»",
+    "advice": "Ou ka kwè l oswa non: toude chwa yo valab. Pale de sekrè a, ki touche w kèlkeswa kalite lyen an.",
+    "followUp": "Menm si se yon zanmitay, lefèt ou te kache l pou mwen fè m mal. Kisa ki te anpeche w pale m de li?"
+   },
+   {
+    "label": "Santiman damou, san kontak fizik",
+    "advice": "Mande si lyen sa a toujou ap kontinye ak sa patnè w vle fè avè l. Di sa sa reprezante pou ou, san ou pa chèche minimize l.",
+    "followUp": "Èske lyen sa a toujou ap kontinye jodi a? Kisa ou vle fè avè l, pou ou ak pou nou?"
+   },
+   {
+    "label": "Kontak fizik",
+    "advice": "Se yon enfòmasyon enpòtan pou sante w: ou ka mande si te gen relasyon seksyèl e si yo te pwoteje. Gade tou sitiyasyon 12.",
+    "followUp": "Mwen bezwen konnen, pou sante m: èske te gen relasyon seksyèl, e èske yo te pwoteje?"
+   },
+   {
+    "label": "Kòlè («ou egzajere, se pa anyen»)",
+    "advice": "Pa chèche konvenk li. Nonmen sa ou santi. Si ton an monte, pwopoze «Fè yon poz».",
+    "followUp": "Mwen pa akize w, m ap di w sa sa fè m. Ann fè yon poz epi n a reprann pita."
+   },
+   {
+    "label": "Li refize bay detay",
+    "advice": "Respekte sa pou aswè a: refi sa a pa yon konfesyon anplis. Di sa ou ap bezwen pou avanse.",
+    "followUp": "Dakò pou aswè a. Men pou m deside sa k ap vini apre, m ap bezwen nou pale de sa ankò."
+   }
+  ],
+  "shock": [
+   "Sa ou santi a lejitim, kit te gen jès entim kit pa t genyen.",
+   "Yon lyen emosyonèl kache ka fè otan mal ke yon relasyon fizik. Ou pa bezwen jistifye lapenn ou.",
+   "Evite sèlman zak ou ta regrèt: menas, vyolans, pataje mesaj."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, petèt dòmi apa pandan kèk jou.",
+   "Kontinye relasyon an ak kondisyon klè (distans ak moun sa a, transparans nou dakò sou li, terapi koup).",
+   "Mete fen nan relasyon an.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": "Si te gen kontak fizik entim ak moun sa a, li bon pou ou ak patnè w fè tès depistaj IST (enfeksyon seksyèlman transmisib). Yon sant sante oswa yon doktè ka fè l an konfidans.",
+  "support": [
+   "Yon moun ou fè konfyans, de preferans yon moun ki pa konnen lòt moun nan.",
+   "Yon terapis koup oswa yon sikològ, ansanm oswa chak pou kont yo.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Defini ansanm sa chak moun aksepte nan zanmitay pwòch ak konfidans ak lòt moun.",
+   "Ekri sa ki pa negosyab pou ou nan «Jounal mwen», pou ou li l ak tèt frèt.",
+   "Klarifye antant eksklizivite koup la, emosyonèl kou fizik (sitiyasyon 15)."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "id": "dating-app",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w rekonèt li sèvi ak yon aplikasyon pou rankont damou",
+  "subtitle": "Itilizasyon aktyèl, estati ak entansyon",
+  "conclude": "Fè a rekonèt. Sa li vle di rete pou presize: yon pwofil ki pa aktif, echanj, rankont? Sitou, èske sa te mache ak antant koup la oswa non? Repons lan pa depann de aplikasyon an, men de sa ou menm ak patnè w te pwomèt youn lòt.",
+  "explanations": [
+   "Yon ansyen pwofil li pa t janm efase.",
+   "Kiryozite oswa yon bezwen pou l santi l rasire sou kapasite l pou l sedui, san rankont.",
+   "Echanj ki dire ak youn oswa plizyè moun.",
+   "Rankont toutbon.",
+   "Yon antant koup chak moun konprann yon lòt jan (gade sitiyasyon 15)."
+  ],
+  "clarify": [
+   "Mande sa k te pase, sou ki peryòd, e si te gen rankont. Ou gen dwa konnen sa ki konsène w dirèkteman (sante w, sekirite w, antant koup la).",
+   "Ou pa oblije konnen tout detay. Mande tèt ou sa ou bezwen pou deside, ak sa ki ta fè w plis mal pase byen."
+  ],
+  "avoid": [
+   "Kreye yon fo pwofil pou pyeje patnè w, oswa kontakte moun li te ekri yo.",
+   "Pibliye oswa pataje kapti ekran: se yon atak sou vi prive, pafwa ilegal.",
+   "Pran yon desizyon final nan premye èdtan an."
+  ],
+  "firstHours": [
+   "Chòk, kòlè, anvi konnen tout bagay oswa okontrè pa konnen anyen, se reyaksyon ki nòmal.",
+   "Ou ka mande tan: «Mwen bezwen rete pou kont mwen aswè a.»",
+   "Manje, dòmi si ou kapab, rele yon moun ou fè konfyans. Sèvi ak «Fè yon poz» si emosyon an twò fò."
+  ],
+  "question": "Ou di m ou itilize yon aplikasyon pou rankont damou. Mwen bezwen konprann: depi kilè, e kisa k te pase konkrètman?",
+  "answers": [
+   {
+    "label": "«Mwen te jis ap gade, mwen pa t rankontre pèsonn»",
+    "advice": "Ou ka kwè l oswa non: toude chwa yo valab. Di sa sa reprezante pou ou, menm san rankont.",
+    "followUp": "Menm san rankont, sa touche m. Kisa ou t ap chèche lè ou te ale la?"
+   },
+   {
+    "label": "Echanj, men pa gen rankont",
+    "advice": "Mande si echanj sa yo fini, ak sa ki, dapre patnè w, te depase yon limit oswa non.",
+    "followUp": "Èske echanj sa yo fini? Kisa ou gen entansyon fè ak pwofil la?"
+   },
+   {
+    "label": "Rankont",
+    "advice": "Se yon enfòmasyon enpòtan pou sante w: ou ka mande si te gen relasyon seksyèl e si yo te pwoteje. Desizyon an se pou ou.",
+    "followUp": "Mwen bezwen konnen, pou sante m: èske te gen relasyon seksyèl, e èske yo te pwoteje?"
+   },
+   {
+    "label": "«Pou mwen, sa pa t twonpe w»",
+    "advice": "Petèt ou pa gen menm antant sou eksklizivite. Nonmen limit ou san ou pa chèche konvenk. Gade sitiyasyon 15.",
+    "followUp": "Pou mwen, se te sa. Li klè nou pa gen menm antant: fòk nou pale de sa klèman."
+   },
+   {
+    "label": "Li refize bay detay",
+    "advice": "Respekte sa pou aswè a. Di sa ou ap bezwen pou avanse (verite sou sante, fen echanj yo, yon terapi…).",
+    "followUp": "Dakò pou aswè a. Men pou m deside sa k ap vini apre, m ap bezwen nou pale de sa ankò."
+   }
+  ],
+  "shock": [
+   "Sa ou santi a lejitim, kit te gen rankont kit pa t genyen.",
+   "Ou pa dwe pèsonn yon reyaksyon «modere»: ou jis dwe evite zak ou ta regrèt (menas, vyolans, pataje mesaj)."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, petèt dòmi apa pandan kèk jou.",
+   "Kontinye relasyon an ak kondisyon klè (efase pwofil la, transparans pandan yon tan, terapi koup).",
+   "Mete fen nan relasyon an.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": "Si te gen relasyon seksyèl ak lòt moun, li bon pou ou ak patnè w fè tès depistaj IST (enfeksyon seksyèlman transmisib). Sa vo kèlkeswa desizyon ou. Yon sant sante oswa yon doktè ka fè l an konfidans.",
+  "support": [
+   "Yon moun ou fè konfyans.",
+   "Yon terapis koup oswa yon sikològ, ansanm oswa chak pou kont yo.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Fikse ansanm (oswa pou kont ou) sa ki pa negosyab pou ou.",
+   "Ekri desizyon ou ak kondisyon ou nan «Jounal mwen» pou ou li yo ak tèt frèt.",
+   "Klarifye antant eksklizivite koup la (sitiyasyon 15)."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "n": 20,
+  "reviewed": false
+ },
+ {
+  "n": 21,
+  "id": "invented-outing",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w rekonèt li te envante yon sòti oswa deplasman",
+  "subtitle": "Yon fo istwa li rekonèt",
+  "conclude": "Manti a rekonèt. Li konsène istwa presi sa a. Pou kont li, li pa pwouve yon relasyon seksyèl oswa yon lòt relasyon. Sa k te pase toutbon rete pou tande.",
+  "explanations": [
+   "Yon moman pou kont li oswa ak zanmi, li te kache paske li te pè yon repwòch oswa yon konfli.",
+   "Yon aktivite ki difisil pou l avoue: dèt, jwèt aza, alkòl, randevou doktè oswa sikològ.",
+   "Yon èd li te bay yon moun pwòch, patnè w te vle kenbe l an silans.",
+   "Yon randevou ak yon moun patnè w gen yon relasyon kache avè l.",
+   "Yon abitid ti manti pou evite diskisyon difisil."
+  ],
+  "clarify": [
+   "Mande sa k te pase olye de sa, e si li te envante lòt istwa.",
+   "Separe de kesyon: sa k te pase, ak lefèt li te manti w. Toude konte, chak pou kont yo.",
+   "Ekri sa li rekonèt nan «Jounal mwen», san ou pa ajoute sipozisyon ou."
+  ],
+  "avoid": [
+   "Verifye tout ansyen deplasman li: relve, jeolokalizasyon, rele zanmi oswa kòlèg patnè w.",
+   "Tann pyèj pou teste pwochen istwa li yo: sa kraze konfyans, kèlkeswa repons lan.",
+   "Konkli fòk gen yon relasyon, oswa okontrè minimize manti a pou evite konfli."
+  ],
+  "firstHours": [
+   "Li lejitim pou ou santi yo twonpe konfyans ou, menm si rezon an pa grav.",
+   "Ou ka mande tan anvan ou tande rès la: «Mwen bezwen respire anvan nou pale de sa.»",
+   "Rele yon moun ou fè konfyans si ou bezwen. Sèvi ak «Fè yon poz» si emosyon an twò fò."
+  ],
+  "question": "Ou rekonèt eksplikasyon sa a te envante. Èske ou ka di m sa k te pase olye de sa? Mwen bezwen konnen pou m reflechi sou sa k ap vini apre.",
+  "answers": [
+   {
+    "label": "Yon rezon ki pa gen rapò ak yon lòt moun (dèt, sante, bezwen respire…)",
+    "advice": "Resevwa enfòmasyon an. Manti a rete yon sijè apa: di sa li fè w, san repwòch sou rezon an limenm.",
+    "followUp": "Mèsi paske ou di m sa. Sa ki touche m, se ou te pito envante. Kisa ki te fè verite a tèlman difisil?"
+   },
+   {
+    "label": "Yon randevou ak yon moun",
+    "advice": "Mande kiyès moun sa a ye pou patnè w, san ou pa egzije tout detay. Si li rekonèt yon relasyon, gade sitiyasyon 12.",
+    "followUp": "Kiyès moun sa a ye pou ou, e kisa k te pase ant ou menm ak li?"
+   },
+   {
+    "label": "«Se pa grav, se te yon ti manti»",
+    "advice": "Pou ou, petèt li grav. Nonmen bezwen ou pou istwa ou ka fè konfyans, san ou pa chèche genyen diskisyon an.",
+    "followUp": "Pou mwen, se pa yon ti detay. Mwen bezwen kapab kwè sa ou rakonte m."
+   },
+   {
+    "label": "Kòlè, oswa ton an ap monte",
+    "advice": "Pa kontinye anba tansyon. Pwopoze «Fè yon poz». Si ou santi yo menase w, gade «Siy danje».",
+    "followUp": "Mwen pa vle nou blese youn lòt. Ann fè yon poz epi n a reprann lè nou pi kalm."
+   },
+   {
+    "label": "Li refize di sa k te pase",
+    "advice": "Refi sa a pa yon konfesyon pou lòt bagay. Respekte l pou kounye a, epi di ou ap bezwen repons sa a pou deside.",
+    "followUp": "Dakò, pa kounye a. Men pou m konnen ki kote m ye, m ap bezwen nou pale de sa ankò."
+   }
+  ],
+  "shock": [
+   "Lè ou dekouvri yon manti, sa ka souke konfyans ou nan tout sa ki te di anvan. Se yon reyaksyon nòmal.",
+   "Manti a ka blese w, menm si sa li t ap kache a pa grav.",
+   "Evite sèlman zak ou ta regrèt: menas, vyolans, fè ankèt bò kote fanmi ak zanmi."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, tan pou ou tande sa k te pase.",
+   "Kontinye relasyon an ak angajman klè (istwa ou ka fè konfyans, pale de sijè difisil, akonpayman si sa nesesè).",
+   "Mete fen nan relasyon an, si konfyans pa sanble posib ankò pou ou.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": null,
+  "support": [
+   "Yon moun ou fè konfyans.",
+   "Yon terapis koup oswa yon sikològ, ansanm oswa chak pou kont yo.",
+   "Si manti a t ap kache yon dèt, jwèt aza oswa yon konsomasyon: yon asosyasyon oswa yon pwofesyonèl espesyalize.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Dakò sou sa chak moun bezwen konnen lè lòt la pa la, san kontwòl ni rapò fòse.",
+   "Louvri yon dosye nan «Analize yon istwa» pou separe sa li rekonèt ak sa ou sipoze.",
+   "Ekri desizyon ou ak kondisyon ou nan «Jounal mwen» pou ou li yo ak tèt frèt."
+  ],
+  "studies": [
+   "apostolou2022",
+   "mazzini2025"
+  ],
+  "links": [
+   "recit",
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "n": 22,
+  "id": "online-sexual",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w admèt mesaj seksyèl sou entènèt men li di «se sèlman vityèl»",
+  "subtitle": "Defini enfidelite sou entènèt ansanm",
+  "conclude": "Li rekonèt echanj yo. Lefèt pa t gen kontak fizik pa regle kesyon limit yo. Gen koup ki aksepte echanj konsa, gen lòt ki pa aksepte. Limit lan depann de antant koup la, pa de yon règ jeneral (sitiyasyon 15).",
+  "explanations": [
+   "Kiryozite oswa rechèch eksitasyon, patnè w te wè kòm yon bagay san konsekans.",
+   "Yon fason pou ranplase yon mank nan entimite koup la, san li pa pale de sa.",
+   "Echanj ki dire ak yon moun presi, ki tounen yon lyen.",
+   "Echanj ki te mennen, oswa ki te dwe mennen, nan rankont.",
+   "Yon antant eksklizivite koup la pa t janm diskite pou entènèt, chak moun konprann yon lòt jan (gade sitiyasyon 15)."
+  ],
+  "clarify": [
+   "Mande sou ki peryòd, ak youn oswa plizyè moun, e si echanj sa yo toujou ap kontinye.",
+   "Mande si te gen rankont, oswa si yo te planifye youn. Sa konsène sante w dirèkteman.",
+   "Di ki kote limit ou ye. Ou pa oblije pwouve li «rezonab»."
+  ],
+  "avoid": [
+   "Li konvèsasyon yo, rekipere foto oswa montre yo yon moun: pataje kontni entim ka ilegal.",
+   "Kontakte moun patnè w te ekri yo.",
+   "Fèmen tèt ou nan yon deba sou definisyon twonpri olye ou pale de antant koup la."
+  ],
+  "firstHours": [
+   "Chòk, degou, konparezon oswa dout sou tèt ou, se reyaksyon ki souvan rive e ki lejitim.",
+   "Ou ka mande tan: «Mwen bezwen rete pou kont mwen aswè a.»",
+   "Manje, dòmi si ou kapab, rele yon moun ou fè konfyans. Sèvi ak «Fè yon poz» si emosyon an twò fò."
+  ],
+  "question": "Pou mwen, echanj sa yo touche angajman nou. Ki limit nou te panse nou genyen, e kisa chak nan nou vle kounye a?",
+  "answers": [
+   {
+    "label": "«Se sèlman vityèl, se pa twonpe»",
+    "advice": "Petèt ou pa gen menm limit. Pa chèche kiyès ki gen rezon: nonmen pa w la epi klarifye antant koup la (sitiyasyon 15).",
+    "followUp": "Pou ou, se pa twonpe. Pou mwen, sa touche angajman nou. Fòk nou dakò sou limit nou."
+   },
+   {
+    "label": "Echanj ki fini, ak regrè",
+    "advice": "Ou ka kwè l oswa non: toude chwa yo valab. Mande sa patnè w te bezwen, ak sa ki ta ede w reprann konfyans.",
+    "followUp": "Kisa ou t ap chèche nan echanj sa yo? E kijan ou gen entansyon asire ke yo fini?"
+   },
+   {
+    "label": "Rankont, oswa rankont ki te planifye",
+    "advice": "Sitiyasyon an chanje nati. Ou ka mande si te gen relasyon seksyèl e si yo te pwoteje. Gade tou sitiyasyon 12.",
+    "followUp": "Mwen bezwen konnen, pou sante m: èske ou te wè moun nan, e èske te gen relasyon seksyèl?"
+   },
+   {
+    "label": "Wont oswa kòlè, ton an ap monte",
+    "advice": "Wont ka tounen yon fason pou defann tèt li. Pa kontinye anba tansyon: pwopoze «Fè yon poz».",
+    "followUp": "Mwen pa ap chèche imilye w. Ann fè yon poz epi n a reprann lè nou ka pale ak kalm."
+   },
+   {
+    "label": "Li refize pale de sa",
+    "advice": "Refi sa a pa yon konfesyon anplis. Respekte l pou aswè a, epi di sa ou ap bezwen pou deside.",
+    "followUp": "Dakò pou aswè a. Men limit nou konsène m tou: m ap bezwen nou pale de sa ankò."
+   }
+  ],
+  "shock": [
+   "Sa ou santi a lejitim, menm san kontak fizik.",
+   "Pa gen yon reyaksyon «kòrèk» pou kalite dekouvèt sa a. Evite sèlman zak ou ta regrèt: menas, vyolans, pataje kontni."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, petèt dòmi apa pandan kèk jou.",
+   "Kontinye relasyon an ak yon antant klè sou entènèt (sa ki aksepte, sa ki pa aksepte), ak oswa san terapi.",
+   "Mete fen nan relasyon an.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": "Si te gen rankont ak kontak seksyèl, li bon pou ou ak patnè w fè tès depistaj IST (enfeksyon seksyèlman transmisib). Yon sant sante oswa yon doktè ka fè l an konfidans.",
+  "support": [
+   "Yon moun ou fè konfyans.",
+   "Yon terapis koup oswa yon seksològ, ansanm oswa chak pou kont yo.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Chak moun ekri pou kont li sa ki aksepte sou entènèt pou li, apre sa konpare (sitiyasyon 15).",
+   "Pale de entimite koup la, san ou pa fè l tounen kòz sa k te pase a.",
+   "Ekri desizyon ou ak kondisyon ou nan «Jounal mwen» pou ou li yo ak tèt frèt."
+  ],
+  "studies": [
+   "mcdaniel2017"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "n": 23,
+  "id": "hidden-spending",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w rekonèt li kache yon depans ki gen rapò ak yon moun",
+  "subtitle": "Sekrè sou lajan, rezon pou konprann",
+  "conclude": "Sekrè a se sou yon depans. Li ka poze yon vrè pwoblèm lajan ak konfyans, san li pa pwouve yon relasyon kache. Rechèch la (Dew et al., 2022) separe sekrè sou lajan ak enfidelite: se de sijè diferan.",
+  "explanations": [
+   "Yon èd pou yon moun pwòch (fanmi, zanmi) patnè w pa t oze pale de li.",
+   "Yon kado oswa yon depans li te jwenn twòp, li kache paske li te pè yon repwòch.",
+   "Yon sipò lajan regilye pou yon moun, san lyen damou, men ou menm ak patnè w pa t janm pale de li.",
+   "Kado oswa sòti li ofri yon moun patnè w gen yon relasyon kache avè l.",
+   "Règ lajan koup la ki pa klè, oswa chak moun konprann yon lòt jan."
+  ],
+  "clarify": [
+   "Mande pou kisa depans lan te ye, pou kiyès, e si se yon sèl fwa oswa regilye.",
+   "Separe de sijè: jesyon lajan komen an, ak kalite relasyon ak moun sa a.",
+   "Sonje sa ou menm ak patnè w te dakò sou lajan pataje ak kado, si te gen yon antant."
+  ],
+  "avoid": [
+   "Kontwole kont prive, relve oswa aplikasyon labank patnè w san dakò li.",
+   "Kontakte moun ki te benefisye depans lan.",
+   "Konkli gen yon relasyon kache sèlman apati depans lan."
+  ],
+  "firstHours": [
+   "Santi yo trayi w, enkyete pou bidjè a oswa santi w imilye, se reyaksyon ki nòmal.",
+   "Si bidjè komen an touche, ekri fè li rekonèt yo (montan, peryòd) nan «Jounal mwen», san sipozisyon.",
+   "Tann ou pi kalm pou pale de sa. Sèvi ak «Fè yon poz» si emosyon an twò fò."
+  ],
+  "question": "Ou rekonèt ou te kache m depans sa a. Èske ou ka di m pou kisa li te ye, e ki antant nou genyen sou lajan pataje ak kado?",
+  "answers": [
+   {
+    "label": "Yon èd pou yon fanmi oswa yon zanmi",
+    "advice": "Resevwa eksplikasyon an. Pale de sekrè a ak règ lajan komen yo, san ou pa jije moun li te ede a.",
+    "followUp": "Mwen konprann ou te vle ede. Pwochen fwa, kijan nou ka deside ansanm pou yon depans konsa?"
+   },
+   {
+    "label": "Yon depans li kache paske li te jennen oswa li te pè yon repwòch",
+    "advice": "Sekrè a touche konfyans ak bidjè a. Chèche yon règ klè, ki valab pou toude, pou gwo depans yo.",
+    "followUp": "Mwen pito nou ka di youn lòt bagay yo, menm sa ki jennen. Apati ki montan nou vle pale de sa anvan?"
+   },
+   {
+    "label": "Kado pou yon moun li gen yon relasyon avè l",
+    "advice": "Se yon lòt kesyon pase lajan. Pran tan pou absòbe sa, ou pa gen anyen pou deside kounye a. Gade sitiyasyon 12.",
+    "followUp": "Mwen bezwen tan pou m reflechi. N a pale de sa ankò lè m pare."
+   },
+   {
+    "label": "Kòlè («se lajan pa m»)",
+    "advice": "Chak moun ka kenbe yon pati otonomi. Retounen sou sa ki komen ak sou sekrè a, pa sou kontwòl. Si ton an monte, fè yon poz.",
+    "followUp": "Mwen pa vle kontwole lajan ou. Mwen vle nou klè sou sa ki komen. Èske n a pale de sa ak kalm?"
+   },
+   {
+    "label": "Li refize esplike",
+    "advice": "Refi sa a pa yon konfesyon relasyon. Respekte l pou kounye a, epi di lajan komen an ap mande yon diskisyon.",
+    "followUp": "Dakò, pa kounye a. Men lajan komen an konsène nou tou de: n ap gen pou n pale de sa ankò."
+   }
+  ],
+  "shock": [
+   "Yon sekrè sou lajan ka blese otan ke yon trayizon emosyonèl. Reyaksyon w lejitim.",
+   "Evite sèlman zak ou ta regrèt: menas, bloke kont komen yo brid sou kou san pale, akize l devan tout moun."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, tan pou ou konprann rezon depans lan.",
+   "Kontinye ak règ lajan ki klè e ki valab pou toude (bidjè komen, yon montan apati ki nou konsilte youn lòt).",
+   "Separe finans ou ak patnè w plis, pandan nou rete an koup.",
+   "Mete fen nan relasyon an.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": null,
+  "support": [
+   "Yon moun ou fè konfyans.",
+   "Yon konseye bidjè oswa yon asosyasyon ki ede fanmi ak finans yo, si bidjè komen an touche.",
+   "Yon terapis koup, si sekrè a touche relasyon an tou.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Ekri ansanm règ nou sou lajan pataje, kado ak èd pou fanmi ak zanmi.",
+   "Separe sa ki konsène lajan ak sa ki konsène relasyon an, epi pale de yo apa.",
+   "Ekri desizyon ou ak kondisyon ou nan «Jounal mwen» pou ou li yo ak tèt frèt."
+  ],
+  "studies": [
+   "dew2022"
+  ],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ },
+ {
+  "n": 24,
+  "id": "claimed-single",
+  "type": "aveu",
+  "badge": "acknowledged",
+  "title": "Patnè w rekonèt li te di yon moun li selibatè",
+  "subtitle": "Li nye relasyon an devan yon lòt moun",
+  "conclude": "Sa li rekonèt, se manti sa a sou koup ou a, li te di yon moun. Li pa konfime yon relasyon seksyèl. Men li touche angajman koup la, e konsekans li yo merite yon diskisyon.",
+  "explanations": [
+   "Yon fason pou evite kesyon nan yon kontèks presi (travay, fanmi, moun li pa konnen).",
+   "Yon bezwen pou l plè oswa pou yo rasire l, san entansyon pou l ale pi lwen.",
+   "Yon pòt li kite louvri pou yon rankont oswa yon relasyon.",
+   "Yon relasyon ki te deja kòmanse ak moun li te di manti sa a.",
+   "Yon ezitasyon sou relasyon an, patnè w pa t eksprime."
+  ],
+  "clarify": [
+   "Mande ak kiyès, nan ki kontèks e depi kilè patnè w prezante l konsa.",
+   "Mande si te gen rankont oswa kontak entim. Sa konsène sante w dirèkteman.",
+   "Mande sa patnè w santi jodi a pou relasyon an."
+  ],
+  "avoid": [
+   "Kontakte moun nan pou retabli verite a oswa pou avèti l.",
+   "Egzije, anba presyon, prèv piblik sou koup la (foto, estati sou entènèt).",
+   "Siveye rezo sosyal patnè w oswa moun sa a."
+  ],
+  "firstHours": [
+   "Santi yo nye w, efase w oswa imilye w, se yon reyaksyon nòmal.",
+   "Ou ka mande tan: «Mwen bezwen rete pou kont mwen aswè a.»",
+   "Rele yon moun ou fè konfyans. Sèvi ak «Fè yon poz» si emosyon an twò fò."
+  ],
+  "question": "Ou rekonèt ou te di ou selibatè. Nan ki kontèks, e kisa sa vle di pou angajman nou?",
+  "answers": [
+   {
+    "label": "«Se te pou yo kite m trankil, sa pa t vle di anyen»",
+    "advice": "Ou ka kwè l oswa non: toude chwa yo valab. Di sa manti sa a fè w, menm si pa gen anyen ki te swiv.",
+    "followUp": "Menm si sa pa t vle di anyen pou ou, sa te fè m mal. Nan ki sitiyasyon ou bezwen pa pale de nou?"
+   },
+   {
+    "label": "«Mwen gen dout sou relasyon nou»",
+    "advice": "Se yon enfòmasyon enpòtan, menm si li fè mal. Koute san ou pa jistifye w, apre sa pran tan pou reflechi sou sa.",
+    "followUp": "Mèsi paske ou di m sa. Kisa ki fè ou gen dout sou nou?"
+   },
+   {
+    "label": "Rankont oswa yon relasyon ak moun sa a",
+    "advice": "Ou ka mande si te gen relasyon seksyèl e si yo te pwoteje. Pran tan pou absòbe sa epi gade sitiyasyon 12.",
+    "followUp": "Mwen bezwen konnen, pou sante m: èske te gen relasyon seksyèl, e èske yo te pwoteje?"
+   },
+   {
+    "label": "Kòlè, oswa ton an ap monte",
+    "advice": "Pa kontinye anba tansyon. Pwopoze «Fè yon poz». Si ou santi yo menase w, gade «Siy danje».",
+    "followUp": "Mwen pa vle nou blese youn lòt. Ann fè yon poz epi n a reprann pita."
+   },
+   {
+    "label": "Li refize esplike",
+    "advice": "Refi sa a pa yon konfesyon anplis. Respekte l pou aswè a, epi di sa ou ap bezwen pou deside.",
+    "followUp": "Dakò pou aswè a. Men pou m konnen ki kote nou ye, m ap bezwen nou pale de sa ankò."
+   }
+  ],
+  "shock": [
+   "Sa ou santi a lejitim, kit te gen yon swit kit pa t genyen.",
+   "Evite sèlman zak ou ta regrèt: menas, vyolans, mesaj bay moun nan."
+  ],
+  "decide": [
+   "Pran tan anvan ou deside, petèt dòmi apa pandan kèk jou.",
+   "Kontinye relasyon an ak kondisyon klè (fen echanj ki pa klè, plas koup la asime devan lòt moun, terapi).",
+   "Mete fen nan relasyon an.",
+   "Pa gen okenn chwa ki pi bon: se desizyon pa w, e ou ka chanje lide."
+  ],
+  "health": "Si te gen relasyon seksyèl ak lòt moun, li bon pou ou ak patnè w fè tès depistaj IST (enfeksyon seksyèlman transmisib). Sa vo kèlkeswa desizyon ou. Yon sant sante oswa yon doktè ka fè l an konfidans.",
+  "support": [
+   "Yon moun ou fè konfyans.",
+   "Yon terapis koup oswa yon sikològ, ansanm oswa chak pou kont yo.",
+   "Si diskisyon an vin menasan oswa vyolan: gade «Siy danje»."
+  ],
+  "next": [
+   "Pale de plas chak moun vle bay koup la devan lòt moun.",
+   "Klarifye antant eksklizivite koup la ak sa li vle di nan rankont (sitiyasyon 15).",
+   "Ekri desizyon ou ak kondisyon ou nan «Jounal mwen» pou ou li yo ak tèt frèt."
+  ],
+  "studies": [],
+  "links": [
+   "journal",
+   "pause",
+   "danger"
+  ],
+  "safety": true,
+  "reviewed": false
+ }
+]
