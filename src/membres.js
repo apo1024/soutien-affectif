@@ -1,10 +1,10 @@
 /* ===== Espace membres =====
    Le lien public (vidéo) ouvre une vitrine : l'accueil, la fiche 02 et « Signaux de danger ».
    Tout le reste est chiffré (AES-GCM, clé dérivée du code par PBKDF2) dans MEMBERS_PAYLOAD :
-   sans le code donné aux membres de la chaîne, ce contenu est illisible, même en lisant le code de la page.
+   sans le code donné aux abonnés de la chaîne, ce contenu est illisible, même en lisant le code de la page.
    La version complète utilisée par les tests n'a pas de MEMBERS_PAYLOAD : tout y est ouvert. */
 const MEMBERS_KEY = 'soutien-acces-membres';
-const MEMBERS_JOIN = 'https://www.youtube.com/@compumasterhaiti/join';
+const MEMBERS_JOIN = 'https://www.youtube.com/channel/UCUJ-ay76QvkmdlkiXcAhcVw?sub_confirmation=1'; // ouvre directement la fenêtre d'abonnement YouTube
 const FREE_FICHE = 1; // fiche 02 — l'hôtel
 const FREE_PAGES = ['home', 'safety', 'lock'];
 let unlocked = typeof MEMBERS_PAYLOAD === 'undefined';
